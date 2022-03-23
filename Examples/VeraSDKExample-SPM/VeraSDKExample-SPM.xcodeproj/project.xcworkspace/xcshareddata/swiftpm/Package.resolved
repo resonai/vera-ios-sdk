@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "VeraSDK",
+        "repositoryURL": "git@github.com:resonai/vera-ios-sdk.git",
+        "state": {
+          "branch": "main",
+          "revision": "535230a113f64b699f3eaa38b6db7e4279126a2c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
