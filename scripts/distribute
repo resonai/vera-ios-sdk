@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+if [ $# -eq 0 ]
+  then
+    echo "Please provide a new version, i.e. 1.2.3"
+fi
+
+VERSION="$1"
+PACKAGE_SWIFT=Package.swift
+PODSPEC=VeraSDK.podspec
+XCFRAMEWORK=VeraSDK.xcframework
+
+sed -i -r "s/\(s.version.*= \)'\(.*\)'/\1'$VERSION'/g" $PODSPEC
+sed -i -r "s/\(let version = \)\"\(.*\)\"/\1\"$VERSION\"/g" $PACKAGE_SWIFT
+git add $PACKAGE_SWIFT $PODSPEC $XCFRAMEWORK
+git commit -m "Release $VERSION"
+git push
+
+git tag "v$VERSION"
+git push --tags

@@ -8,15 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VeraSDK'
-  s.version          = '1.0.1'
+  s.version          = '0.0.1'
   s.summary          = 'Transform commercial buildings into intelligent environments using just your phone.'
-  s.homepage         = 'https://github.com/s2dentik/vera-ios-sdk'
+  s.homepage         = 'https://github.com/resonai/vera-ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { "ResonAI" => "support@resonai.com" }
-  s.source           = { :http => "https://github.com/S2dentik/vera-ios-sdk/releases/download/v#{s.version.to_s}/VeraSDK.xcframework.zip" }
+  s.source           = { :http => "https://github.com/resonai/vera-ios-sdk/releases/download/v#{s.version.to_s}/VeraSDK.xcframework.zip" }
 
   s.platform         = :ios, '13.5'
   s.frameworks       = 'UIKit', 'ARKit', 'CoreLocation', 'JavaScriptCore', 'WebKit', 'LocalAuthentication', 'Combine', 'SystemConfiguration'
-  # s.dependency       'gRPC-Swift', '~> 1.0'
   s.vendored_frameworks = 'VeraSDK.xcframework'
 end

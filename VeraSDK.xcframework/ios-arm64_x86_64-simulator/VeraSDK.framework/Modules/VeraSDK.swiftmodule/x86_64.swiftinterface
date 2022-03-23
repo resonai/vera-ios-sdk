@@ -1,0 +1,215 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios13.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeraSDK
+import ARKit
+import AVFoundation
+import SystemConfiguration.CaptiveNetwork
+import Combine
+import CoreImage
+import CoreLocation
+import Foundation
+import GameplayKit
+import JavaScriptCore
+import LocalAuthentication
+import Metal
+import MetalKit
+import Swift
+import SystemConfiguration
+import UIKit
+@_exported import VeraSDK
+import WebKit
+import _Concurrency
+import simd
+postfix operator >!
+public enum VeraClientEvent {
+  case updateToken(VeraSDK.VeraConfiguration.User.Token)
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 13.5, *)
+@_Concurrency.MainActor(unsafe) final public class VeraViewController : UIKit.UIViewController, ARKit.ARSessionDelegate, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) public static func build(config: VeraSDK.VeraConfiguration) -> VeraSDK.VeraViewController
+  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) final public func handleEvent(_ event: VeraSDK.VeraClientEvent)
+  @objc deinit
+}
+extension VeraSDK.VeraViewController : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc final public func webViewWebContentProcessDidTerminate(_ webView: WebKit.WKWebView)
+}
+public enum ReachabilityError : Swift.Error {
+  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
+  case failedToCreateWithHostname(Swift.String, Swift.Int32)
+  case unableToSetCallback(Swift.Int32)
+  case unableToSetDispatchQueue(Swift.Int32)
+  case unableToGetFlags(Swift.Int32)
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+extension Foundation.NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+public class Reachability {
+  public typealias NetworkReachable = (VeraSDK.Reachability) -> ()
+  public typealias NetworkUnreachable = (VeraSDK.Reachability) -> ()
+  @available(*, unavailable, renamed: "Connection")
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: VeraSDK.Reachability.NetworkStatus, b: VeraSDK.Reachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Connection : Swift.CustomStringConvertible {
+    @available(*, deprecated, renamed: "unavailable")
+    case none
+    case unavailable, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: VeraSDK.Reachability.Connection, b: VeraSDK.Reachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: VeraSDK.Reachability.NetworkReachable?
+  public var whenUnreachable: VeraSDK.Reachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: VeraSDK.Reachability.Connection {
+    get
+  }
+  public var connection: VeraSDK.Reachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  @objc deinit
+}
+extension VeraSDK.Reachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  @available(*, deprecated, message: "Please use `connection != .none`")
+  public var isReachable: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .cellular`")
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .wifi`")
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol Mall {
+  func prepareDataOpsGraph()
+}
+public protocol OutputNode : AnyObject {
+  associatedtype Output
+  typealias Updater = (Self.Output) -> Self.Output
+  typealias FilterUpdater = (Self.Output) -> (Swift.Bool, Self.Output)
+  func push(_ value: Self.Output)
+  func update(_ with: @escaping (Self.Output) -> Self.Output)
+  func maybeUpdate(_ with: @escaping Self.FilterUpdater)
+}
+extension Combine.CurrentValueSubject : VeraSDK.OutputNode {
+  final public func push(_ value: Output)
+  final public func update(_ with: (Output) -> Output)
+  final public func maybeUpdate(_ with: (Output) -> (Swift.Bool, Output))
+}
+prefix operator ~>
+postfix operator >?
+postfix operator >%
+public struct VeraConfiguration {
+  public var user: VeraSDK.VeraConfiguration.User {
+    get
+  }
+  public var link: VeraSDK.VeraConfiguration.Link {
+    get
+  }
+  public let app: VeraSDK.VeraConfiguration.App
+  public let eventHandler: (VeraSDK.VeraConfiguration.Event) -> Swift.Void
+  public var language: VeraSDK.VeraConfiguration.Language {
+    get
+  }
+  public init(language: VeraSDK.VeraConfiguration.Language = .en, app: VeraSDK.VeraConfiguration.App, user: VeraSDK.VeraConfiguration.User, link: VeraSDK.VeraConfiguration.Link, eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
+}
+extension VeraSDK.VeraConfiguration {
+  public struct RegistrationEndpoint {
+    public init(url: Foundation.URL, port: Swift.Int)
+  }
+  public struct User : Swift.Equatable {
+    public enum Token : Swift.Equatable {
+      case anonymous
+      case offline
+      case loggedIn(Swift.String, Swift.String)
+      public static func == (a: VeraSDK.VeraConfiguration.User.Token, b: VeraSDK.VeraConfiguration.User.Token) -> Swift.Bool
+    }
+    public let username: Swift.String?
+    public var token: VeraSDK.VeraConfiguration.User.Token? {
+      get
+    }
+    public init(username: Swift.String?)
+    public static func == (a: VeraSDK.VeraConfiguration.User, b: VeraSDK.VeraConfiguration.User) -> Swift.Bool
+  }
+  public struct App {
+    public let clientID: Swift.String
+    public init(clientID: Swift.String)
+  }
+  public struct Link {
+    public let path: Swift.String?
+    public init(path: Swift.String?)
+  }
+  public enum Language : Swift.String {
+    case en, ru, zh, de, ja, vi
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Event {
+    case refreshToken
+    public static func == (a: VeraSDK.VeraConfiguration.Event, b: VeraSDK.VeraConfiguration.Event) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@available(*, unavailable, renamed: "Connection")
+extension VeraSDK.Reachability.NetworkStatus : Swift.Equatable {}
+@available(*, unavailable, renamed: "Connection")
+extension VeraSDK.Reachability.NetworkStatus : Swift.Hashable {}
+extension VeraSDK.Reachability.Connection : Swift.Equatable {}
+extension VeraSDK.Reachability.Connection : Swift.Hashable {}
+extension VeraSDK.VeraConfiguration.Language : Swift.Equatable {}
+extension VeraSDK.VeraConfiguration.Language : Swift.Hashable {}
+extension VeraSDK.VeraConfiguration.Language : Swift.RawRepresentable {}
+extension VeraSDK.VeraConfiguration.Event : Swift.Equatable {}
+extension VeraSDK.VeraConfiguration.Event : Swift.Hashable {}
