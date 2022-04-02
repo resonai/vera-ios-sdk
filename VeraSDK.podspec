@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VeraSDK'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Transform commercial buildings into intelligent environments using just your phone.'
   s.homepage         = 'https://github.com/resonai/vera-ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
