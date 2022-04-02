@@ -157,6 +157,7 @@ public struct VeraConfiguration {
   public var language: VeraSDK.VeraConfiguration.Language {
     get
   }
+  public init(domain: Foundation.URL, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint, app: VeraSDK.VeraConfiguration.App, user: VeraSDK.VeraConfiguration.User, link: VeraSDK.VeraConfiguration.Link, eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
   public init(language: VeraSDK.VeraConfiguration.Language = .en, app: VeraSDK.VeraConfiguration.App, user: VeraSDK.VeraConfiguration.User, link: VeraSDK.VeraConfiguration.Link, eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
 }
 extension VeraSDK.VeraConfiguration {
