@@ -6,6 +6,6 @@ framework module VeraSDK {
 }
 
 module VeraSDK.Swift {
-    header "VeraSDK-Swift.h"
-    requires objc
+  header "VeraSDK-Swift.h"
+  requires objc
 }

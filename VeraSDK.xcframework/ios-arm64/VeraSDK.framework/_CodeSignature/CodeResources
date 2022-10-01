@@ -4,110 +4,121 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/ShaderTypes.h</key>
+		<data>
+		IxinWWaTgjW/eAX1TTvloHnd4iU=
+		</data>
 		<key>Headers/VeraSDK-Swift.h</key>
 		<data>
-		c4QREPKDZKTdL3m42XulqDSPxVM=
+		qonRcm68lW0CN7Ub4UZ55VCFmSk=
 		</data>
 		<key>Headers/VeraSDK.h</key>
 		<data>
-		p71+EYKMBqb1CWbupTQmfRqw/q0=
+		aphko+aDtCoD3M5VzQ/EtPmlMnY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		g/a+O0uTitTUhxLbKizBWS/mlpw=
+		gGNNXYljbvDdMfZlIhmDqee6peA=
+		</data>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		ir1icOqyvnGAt/8D+1/S7907uPs=
+		</data>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		2wkegb6NgBV3YOHAquM70HBITz8=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		O922ZNkfEROu3op8EOFJ8u3Ja7w=
+		CHivq+2sqWmPfiFhuObTkOc8zPc=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		X8aaRaUvdBFhR66CGoVSFyNBrD8=
+		2wkegb6NgBV3YOHAquM70HBITz8=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		A1fHYixaTpeK6rnhdJptH85nhmI=
-		</data>
-		<key>Modules/VeraSDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		O922ZNkfEROu3op8EOFJ8u3Ja7w=
-		</data>
-		<key>Modules/VeraSDK.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		X8aaRaUvdBFhR66CGoVSFyNBrD8=
-		</data>
-		<key>Modules/VeraSDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		A1fHYixaTpeK6rnhdJptH85nhmI=
+		h7Nnq0FWNJZwKzTic3v+bNo9GeU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		/5NU6RR7SjtifrWmt9NjO9f4s/g=
+		KmhKSFhV1UykBKWi69Ie2NigYMk=
+		</data>
+		<key>default.metallib</key>
+		<data>
+		Ow9VOmsNUyAYjVReGYwWW9dBeuU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/ShaderTypes.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fMDzxBP8FEoPKDofv1yaScXcCXXF6U/dKSm+KSNqxOs=
+			</data>
+		</dict>
 		<key>Headers/VeraSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P/Og+WOoqTEPF5UYUWCIsquepQSxNSK4iNRgHzJ5RTA=
+			uFStZq2AcEZFWO9t+tUoW0dVIxPUji+B+8JbJ6gPCUI=
 			</data>
 		</dict>
 		<key>Headers/VeraSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UL34gvt1auAALY1gYCYbuKZWf724YMvwLw6/dEQE0WY=
+			KHmMijVcSqCC8GSLGQ64jGy/kVO+FCzOYcB5KKlB2tk=
+			</data>
+		</dict>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ROBMWmAin2LgvRN6r/A5TpCVd8iyIT6US0zp8VPWCDw=
+			</data>
+		</dict>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y1w3OWvuszCsjWjDMgzkzTrgZkwBRXMplcXfKEFlqn0=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HrQC7KaKPnQndDrfMzhjlQABog+Y+SB4RZ/++lQcbVk=
+			XRUlGQ6Jzb9ikUGoy4awTjAwi+Z1OnZtOboy0D+8QoU=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			alyQWyhTkMA9oMs1moXwr5x8UdY93HafJimHLCWi+wQ=
+			y1w3OWvuszCsjWjDMgzkzTrgZkwBRXMplcXfKEFlqn0=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q9YhUqO1vfqS3eJRMSdSqrnaTMVJBoxIocRIQHaNUlQ=
-			</data>
-		</dict>
-		<key>Modules/VeraSDK.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HrQC7KaKPnQndDrfMzhjlQABog+Y+SB4RZ/++lQcbVk=
-			</data>
-		</dict>
-		<key>Modules/VeraSDK.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			alyQWyhTkMA9oMs1moXwr5x8UdY93HafJimHLCWi+wQ=
-			</data>
-		</dict>
-		<key>Modules/VeraSDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			q9YhUqO1vfqS3eJRMSdSqrnaTMVJBoxIocRIQHaNUlQ=
+			ICv79x6VHTZuWo9IfnSZMu45DaEJnJHZMAhxSImazLU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			luTjX/zY1BX88RF/oAHSitncYi86PoRXcf98ux6Od8Q=
+			yheAnAO6agByAs/Cq5N8WdZC+uP+b9shv4mJzcRJR5k=
+			</data>
+		</dict>
+		<key>default.metallib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NNyj8dcz77EIjvM6qatxrzZxlYIxjBkMfy3iCpRVefk=
 			</data>
 		</dict>
 	</dict>

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeraSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
 import AVFoundation
 import SystemConfiguration.CaptiveNetwork
@@ -13,29 +14,44 @@ import JavaScriptCore
 import LocalAuthentication
 import Metal
 import MetalKit
+import NetworkExtension
+import Security
 import Swift
 import SystemConfiguration
 import UIKit
 @_exported import VeraSDK
 import WebKit
 import _Concurrency
+import _StringProcessing
 import simd
 postfix operator >!
+public struct Memory {
+  public static var formattedFootprint: Swift.String? {
+    get
+  }
+}
 public enum VeraClientEvent {
-  case updateToken(VeraSDK.VeraConfiguration.User.Token)
+  case updateToken(VeraSDK.VeraConfiguration.Authentication.Token)
+  case pause
+  case resume
 }
 @objc @_hasMissingDesignatedInitializers @available(iOS 13.5, *)
 @_Concurrency.MainActor(unsafe) final public class VeraViewController : UIKit.UIViewController, ARKit.ARSessionDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) public static func build(config: VeraSDK.VeraConfiguration) -> VeraSDK.VeraViewController
   @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @_Concurrency.MainActor(unsafe) @objc get
+    @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor(unsafe) final public func handleEvent(_ event: VeraSDK.VeraClientEvent)
   @objc deinit
+}
+extension VeraSDK.VeraViewController : MetalKit.MTKViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) @objc final public func draw(in view: MetalKit.MTKView)
 }
 extension VeraSDK.VeraViewController : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
@@ -126,8 +142,23 @@ extension VeraSDK.Reachability {
     get
   }
 }
+public protocol Logger {
+  func log(_ message: Swift.String)
+  func exception(_ message: Swift.String)
+}
+extension VeraSDK.Logger {
+  public func error(_ message: Swift.String, _ source: Swift.StaticString = #function)
+  public func error(_ error: Swift.Error, _ source: Swift.StaticString = #function)
+  public func warn(_ message: Swift.String, _ source: Swift.StaticString = #function)
+  public func verbose(_ message: Swift.String, _ source: Swift.StaticString = #function)
+  public func exception(_ message: Swift.String)
+}
 public protocol Mall {
   func prepareDataOpsGraph()
+}
+public struct ConsoleLogger : VeraSDK.Logger {
+  public init()
+  public func log(_ message: Swift.String)
 }
 public protocol OutputNode : AnyObject {
   associatedtype Output
@@ -146,41 +177,43 @@ prefix operator ~>
 postfix operator >?
 postfix operator >%
 public struct VeraConfiguration {
-  public var user: VeraSDK.VeraConfiguration.User {
+  public var auth: VeraSDK.VeraConfiguration.Authentication {
     get
   }
   public var link: VeraSDK.VeraConfiguration.Link {
     get
   }
   public let app: VeraSDK.VeraConfiguration.App
+  public let logger: VeraSDK.Logger
   public let eventHandler: (VeraSDK.VeraConfiguration.Event) -> Swift.Void
   public var language: VeraSDK.VeraConfiguration.Language {
     get
   }
-  public init(domain: Foundation.URL, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint, app: VeraSDK.VeraConfiguration.App, user: VeraSDK.VeraConfiguration.User, link: VeraSDK.VeraConfiguration.Link, eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
-  public init(language: VeraSDK.VeraConfiguration.Language = .en, app: VeraSDK.VeraConfiguration.App, user: VeraSDK.VeraConfiguration.User, link: VeraSDK.VeraConfiguration.Link, eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
+  public init(domain: Foundation.URL, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, useExternalAuthentication: Swift.Bool = false, link: VeraSDK.VeraConfiguration.Link, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
+  public init(language: VeraSDK.VeraConfiguration.Language = .en, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, link: VeraSDK.VeraConfiguration.Link, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
 }
 extension VeraSDK.VeraConfiguration {
   public struct RegistrationEndpoint {
     public init(url: Foundation.URL, port: Swift.Int)
   }
-  public struct User : Swift.Equatable {
+  public struct Authentication : Swift.Equatable {
     public enum Token : Swift.Equatable {
       case anonymous
       case offline
-      case loggedIn(Swift.String, Swift.String)
-      public static func == (a: VeraSDK.VeraConfiguration.User.Token, b: VeraSDK.VeraConfiguration.User.Token) -> Swift.Bool
+      case loggedIn(token: Swift.String, userID: Swift.String)
+      public static func == (a: VeraSDK.VeraConfiguration.Authentication.Token, b: VeraSDK.VeraConfiguration.Authentication.Token) -> Swift.Bool
     }
     public let username: Swift.String?
-    public var token: VeraSDK.VeraConfiguration.User.Token? {
+    public var token: VeraSDK.VeraConfiguration.Authentication.Token? {
       get
     }
     public init(username: Swift.String?)
-    public static func == (a: VeraSDK.VeraConfiguration.User, b: VeraSDK.VeraConfiguration.User) -> Swift.Bool
+    public static func == (a: VeraSDK.VeraConfiguration.Authentication, b: VeraSDK.VeraConfiguration.Authentication) -> Swift.Bool
   }
   public struct App {
     public let clientID: Swift.String
-    public init(clientID: Swift.String)
+    public let implementsAuthentication: Swift.Bool
+    public init(clientID: Swift.String, implementsAuthentication: Swift.Bool = true)
   }
   public struct Link {
     public let path: Swift.String?
@@ -195,6 +228,8 @@ extension VeraSDK.VeraConfiguration {
     }
   }
   public enum Event {
+    case login
+    case logout
     case refreshToken
     public static func == (a: VeraSDK.VeraConfiguration.Event, b: VeraSDK.VeraConfiguration.Event) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -202,6 +237,83 @@ extension VeraSDK.VeraConfiguration {
       get
     }
   }
+}
+open class KeychainSwift {
+  open var lastResultCode: Darwin.OSStatus
+  open var accessGroup: Swift.String?
+  open var synchronizable: Swift.Bool
+  public init()
+  public init(keyPrefix: Swift.String)
+  @discardableResult
+  open func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: VeraSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: VeraSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: VeraSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  open func get(_ key: Swift.String) -> Swift.String?
+  open func getData(_ key: Swift.String, asReference: Swift.Bool = false) -> Foundation.Data?
+  open func getBool(_ key: Swift.String) -> Swift.Bool?
+  @discardableResult
+  open func delete(_ key: Swift.String) -> Swift.Bool
+  public var allKeys: [Swift.String] {
+    get
+  }
+  @discardableResult
+  open func clear() -> Swift.Bool
+  @objc deinit
+}
+public struct KeychainSwiftConstants {
+  public static var accessGroup: Swift.String {
+    get
+  }
+  public static var accessible: Swift.String {
+    get
+  }
+  public static var attrAccount: Swift.String {
+    get
+  }
+  public static var attrSynchronizable: Swift.String {
+    get
+  }
+  public static var klass: Swift.String {
+    get
+  }
+  public static var matchLimit: Swift.String {
+    get
+  }
+  public static var returnData: Swift.String {
+    get
+  }
+  public static var valueData: Swift.String {
+    get
+  }
+  public static var returnReference: Swift.String {
+    get
+  }
+  public static var returnAttributes: Swift.String {
+    get
+  }
+  public static var secMatchLimitAll: Swift.String {
+    get
+  }
+}
+public enum KeychainSwiftAccessOptions {
+  case accessibleWhenUnlocked
+  case accessibleWhenUnlockedThisDeviceOnly
+  case accessibleAfterFirstUnlock
+  case accessibleAfterFirstUnlockThisDeviceOnly
+  case accessibleWhenPasscodeSetThisDeviceOnly
+  public static func == (a: VeraSDK.KeychainSwiftAccessOptions, b: VeraSDK.KeychainSwiftAccessOptions) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct VeraLoggers : VeraSDK.Logger {
+  public let loggers: [VeraSDK.Logger]
+  public init(_ loggers: [VeraSDK.Logger] = [ConsoleLogger()])
+  public func log(_ message: Swift.String)
+  public func exception(_ message: Swift.String)
 }
 @available(*, unavailable, renamed: "Connection")
 extension VeraSDK.Reachability.NetworkStatus : Swift.Equatable {}
@@ -214,3 +326,5 @@ extension VeraSDK.VeraConfiguration.Language : Swift.Hashable {}
 extension VeraSDK.VeraConfiguration.Language : Swift.RawRepresentable {}
 extension VeraSDK.VeraConfiguration.Event : Swift.Equatable {}
 extension VeraSDK.VeraConfiguration.Event : Swift.Hashable {}
+extension VeraSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
+extension VeraSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
