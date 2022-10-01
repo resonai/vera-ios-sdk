@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693A6EDC28E8C676006E8D99 /* TestSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693A6EDB28E8C676006E8D99 /* TestSizeViewController.swift */; };
 		69D4742327EB86B2001DC411 /* VeraSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 69D4742227EB86B2001DC411 /* VeraSDK */; };
 		69D4CC5027E63BED008FFC6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CC4F27E63BED008FFC6C /* AppDelegate.swift */; };
 		69D4CC5227E63BED008FFC6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CC5127E63BED008FFC6C /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		693A6EDB28E8C676006E8D99 /* TestSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSizeViewController.swift; sourceTree = "<group>"; };
 		69D4CC4C27E63BED008FFC6C /* VeraSDKExample-SPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VeraSDKExample-SPM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CC4F27E63BED008FFC6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D4CC5127E63BED008FFC6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				69D4CC4F27E63BED008FFC6C /* AppDelegate.swift */,
 				69D4CC5127E63BED008FFC6C /* SceneDelegate.swift */,
 				69D4CC5327E63BED008FFC6C /* ViewController.swift */,
+				693A6EDB28E8C676006E8D99 /* TestSizeViewController.swift */,
 				69D4CC5527E63BED008FFC6C /* Main.storyboard */,
 				69D4CC5827E63BF1008FFC6C /* Assets.xcassets */,
 				69D4CC5A27E63BF1008FFC6C /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D4CC5427E63BED008FFC6C /* ViewController.swift in Sources */,
+				693A6EDC28E8C676006E8D99 /* TestSizeViewController.swift in Sources */,
 				69D4CC5027E63BED008FFC6C /* AppDelegate.swift in Sources */,
 				69D4CC5227E63BED008FFC6C /* SceneDelegate.swift in Sources */,
 			);
