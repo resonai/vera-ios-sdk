@@ -89,7 +89,7 @@ final class TestSizeViewController: UIViewController {
     private func buildVera() -> VeraViewController {
         let config = VeraConfiguration(
             app: .init(clientID: "test"),
-            user: .init(username: nil),
+            auth: .init(username: nil),
             link: .init(path: nil),
             eventHandler: { [weak self] in self?.handleVeraEvent($0) }
         )
@@ -104,6 +104,10 @@ final class TestSizeViewController: UIViewController {
         switch event {
         case .refreshToken:
             vera.handleEvent(.updateToken(.anonymous))
+        case .login:
+            break
+        case .logout:
+            break
         @unknown default:
             fatalError()
         }
