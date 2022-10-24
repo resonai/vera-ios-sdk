@@ -267,9 +267,11 @@ using UInt = size_t;
 
 SWIFT_CLASS("_TtC7VeraSDK18VeraViewController") SWIFT_AVAILABILITY(ios,introduced=13.5)
 @interface VeraViewController : UIViewController <ARSessionDelegate, WKUIDelegate>
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)viewDidLoad;
+- (void)viewSafeAreaInsetsDidChange;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;

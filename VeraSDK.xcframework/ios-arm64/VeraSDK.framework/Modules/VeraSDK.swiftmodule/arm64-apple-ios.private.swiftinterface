@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
 import AVFoundation
+import Accelerate
 import SystemConfiguration.CaptiveNetwork
 import Combine
 import CoreImage
@@ -30,24 +31,33 @@ public struct Memory {
     get
   }
 }
+extension Swift.Result : Swift.Decodable where Success : Swift.Decodable, Failure == Swift.Error {
+  public init(from decoder: Swift.Decoder) throws
+}
 public enum VeraClientEvent {
   case updateToken(VeraSDK.VeraConfiguration.Authentication.Token)
   case pause
   case resume
+  case sendDeeplink(Swift.String)
+  case sendMessage(receiver: Swift.String, data: Swift.String)
 }
 @objc @_hasMissingDesignatedInitializers @available(iOS 13.5, *)
 @_Concurrency.MainActor(unsafe) final public class VeraViewController : UIKit.UIViewController, ARKit.ARSessionDelegate, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override final public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
   @_Concurrency.MainActor(unsafe) public static func build(config: VeraSDK.VeraConfiguration) -> VeraSDK.VeraViewController
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewSafeAreaInsetsDidChange()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor(unsafe) final public func handleEvent(_ event: VeraSDK.VeraClientEvent)
-  @objc deinit
 }
 extension VeraSDK.VeraViewController : MetalKit.MTKViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
@@ -180,17 +190,14 @@ public struct VeraConfiguration {
   public var auth: VeraSDK.VeraConfiguration.Authentication {
     get
   }
-  public var link: VeraSDK.VeraConfiguration.Link {
-    get
-  }
   public let app: VeraSDK.VeraConfiguration.App
   public let logger: VeraSDK.Logger
   public let eventHandler: (VeraSDK.VeraConfiguration.Event) -> Swift.Void
   public var language: VeraSDK.VeraConfiguration.Language {
     get
   }
-  public init(domain: Foundation.URL, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, useExternalAuthentication: Swift.Bool = false, link: VeraSDK.VeraConfiguration.Link, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
-  public init(language: VeraSDK.VeraConfiguration.Language = .en, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, link: VeraSDK.VeraConfiguration.Link, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
+  public init(domain: Foundation.URL, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, useExternalAuthentication: Swift.Bool = false, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
+  public init(language: VeraSDK.VeraConfiguration.Language = .en, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
 }
 extension VeraSDK.VeraConfiguration {
   public struct RegistrationEndpoint {
@@ -212,12 +219,9 @@ extension VeraSDK.VeraConfiguration {
   }
   public struct App {
     public let clientID: Swift.String
+    public let shouldShowCloseButton: Swift.Bool
     public let implementsAuthentication: Swift.Bool
-    public init(clientID: Swift.String, implementsAuthentication: Swift.Bool = true)
-  }
-  public struct Link {
-    public let path: Swift.String?
-    public init(path: Swift.String?)
+    public init(clientID: Swift.String, implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool)
   }
   public enum Language : Swift.String {
     case en, ru, zh, de, ja, vi
@@ -231,11 +235,7 @@ extension VeraSDK.VeraConfiguration {
     case login
     case logout
     case refreshToken
-    public static func == (a: VeraSDK.VeraConfiguration.Event, b: VeraSDK.VeraConfiguration.Event) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
+    case handleMessage(sender: Swift.String, data: Swift.String)
   }
 }
 open class KeychainSwift {
@@ -324,7 +324,5 @@ extension VeraSDK.Reachability.Connection : Swift.Hashable {}
 extension VeraSDK.VeraConfiguration.Language : Swift.Equatable {}
 extension VeraSDK.VeraConfiguration.Language : Swift.Hashable {}
 extension VeraSDK.VeraConfiguration.Language : Swift.RawRepresentable {}
-extension VeraSDK.VeraConfiguration.Event : Swift.Equatable {}
-extension VeraSDK.VeraConfiguration.Event : Swift.Hashable {}
 extension VeraSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
 extension VeraSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
