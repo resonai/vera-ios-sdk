@@ -88,28 +88,26 @@ final class TestSizeViewController: UIViewController {
 
     private func buildVera() -> VeraViewController {
         let config = VeraConfiguration(
-            app: .init(clientID: "test"),
-            auth: .init(username: nil),
-            link: .init(path: nil),
-            eventHandler: { [weak self] in self?.handleVeraEvent($0) }
-        )
+            language: .he,
+            app: .init(
+                clientID: "test",
+                shouldShowCloseButton: true
+            ),
+            auth: .init(username: nil)
+        ) { [weak self] event in
+            switch event {
+            case .refreshToken:
+                self?.vera.handleEvent(.updateToken(.anonymous))
+            case .login, .logout, .handleMessage:
+                break
+            @unknown default:
+                break
+            }
+        }
 
         let vc = VeraViewController.build(config: config)
         self.vera = vc
 
         return vc
-    }
-
-    private func handleVeraEvent(_ event: VeraConfiguration.Event) {
-        switch event {
-        case .refreshToken:
-            vera.handleEvent(.updateToken(.anonymous))
-        case .login:
-            break
-        case .logout:
-            break
-        @unknown default:
-            fatalError()
-        }
     }
 }

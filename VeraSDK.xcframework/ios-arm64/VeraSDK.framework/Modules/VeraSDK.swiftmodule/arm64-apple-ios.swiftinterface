@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeraSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -224,7 +224,7 @@ extension VeraSDK.VeraConfiguration {
     public init(clientID: Swift.String, implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool)
   }
   public enum Language : Swift.String {
-    case en, ru, zh, de, ja, vi
+    case en, ru, zh, de, hi, th, ja, vi, fr, es, sv, he
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {

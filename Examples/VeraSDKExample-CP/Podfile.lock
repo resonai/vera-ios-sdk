@@ -1,21 +1,16 @@
 PODS:
-  - VeraSDK (0.0.1)
+  - VeraSDK (0.0.5)
 
 DEPENDENCIES:
-  - VeraSDK (from `https://github.com/resonai/vera-ios-sdk`)
+  - VeraSDK (from `../..`)
 
 EXTERNAL SOURCES:
   VeraSDK:
-    :git: https://github.com/resonai/vera-ios-sdk
-
-CHECKOUT OPTIONS:
-  VeraSDK:
-    :commit: 535230a113f64b699f3eaa38b6db7e4279126a2c
-    :git: https://github.com/resonai/vera-ios-sdk
+    :path: "../.."
 
 SPEC CHECKSUMS:
-  VeraSDK: 3ea90675044bb2e225141a6cb36b0d80432dd343
+  VeraSDK: a6e0046b2c032785dc48d3fbc100ec861a55eff6
 
-PODFILE CHECKSUM: 8aa0e23777927a72f4ba4e750e762a493ac90f1f
+PODFILE CHECKSUM: b0e8956dc53a73a61e7c98d44f691cd81e797319
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

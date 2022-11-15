@@ -16,24 +16,26 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         let config = VeraConfiguration(
-            app: .init(clientID: "test"),
-            user: .init(username: nil),
-            link: .init(path: nil),
-            eventHandler: { [weak self] in self?.handleVeraEvent($0) }
-        )
+            language: .he,
+            app: .init(
+                clientID: "test",
+                shouldShowCloseButton: true
+            ),
+            auth: .init(username: nil)
+        ) { [weak self] event in
+            switch event {
+            case .refreshToken:
+                self?.vera.handleEvent(.updateToken(.anonymous))
+            case .login, .logout, .handleMessage:
+                break
+            @unknown default:
+                break
+            }
+        }
 
         let vc = VeraViewController.build(config: config)
         self.vera = vc
         present(vc, animated: true)
-    }
-
-    private func handleVeraEvent(_ event: VeraConfiguration.Event) {
-        switch event {
-        case .refreshToken:
-            vera.handleEvent(.updateToken(.anonymous))
-        @unknown default:
-            fatalError()
-        }
     }
 }
 

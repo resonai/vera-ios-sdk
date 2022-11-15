@@ -5,5 +5,5 @@ target 'VeraSDKExample-CP' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'VeraSDK', :git => 'https://github.com/resonai/vera-ios-sdk'
+  pod 'VeraSDK', :path => '../..'
 end
