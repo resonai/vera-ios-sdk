@@ -2,22 +2,25 @@
 
 set -e
 
-if [ $# -eq 0 ]
+if ! [ $# -eq 2 ]
 then
-  echo "Please provide a new version, i.e. 1.2.3"
+  echo "Please provide a new version and branch, i.e. 1.2.3 main"
   exit 1
 fi
 
 VERSION="$1"
+BRANCH="$2"
 PACKAGE_SWIFT=Package.swift
 PODSPEC=VeraSDK.podspec
 XCFRAMEWORK=VeraSDK.xcframework
+
+git checkout $BRANCH || git checkout -b $BRANCH
 
 sed -i '' "s/\(s.version.*= \)'\(.*\)'/\1'$VERSION'/g" $PODSPEC
 sed -i '' "s/\(let version = \)\"\(.*\)\"/\1\"$VERSION\"/g" $PACKAGE_SWIFT
 git add $PACKAGE_SWIFT $PODSPEC $XCFRAMEWORK
 git commit -m "Release $VERSION"
-git push
+git push origin $BRANCH
 
 git tag "v$VERSION"
 git push --tags
