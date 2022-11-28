@@ -5,7 +5,6 @@
 import ARKit
 import AVFoundation
 import Accelerate
-import Atomics
 import SystemConfiguration.CaptiveNetwork
 import Combine
 import CoreImage

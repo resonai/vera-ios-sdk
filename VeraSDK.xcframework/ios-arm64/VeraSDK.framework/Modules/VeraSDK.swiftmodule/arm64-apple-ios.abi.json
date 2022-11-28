@@ -4026,7 +4026,10 @@
         "name": "Atomics",
         "printedName": "Atomics",
         "declKind": "Import",
-        "moduleName": "VeraSDK"
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -17575,14 +17578,14 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/registration\/GrpcLiveCallWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 582,
+      "offset": 603,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/registration\/GrpcLiveCallWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 660,
+      "offset": 681,
       "length": 5,
       "value": "false"
     },
