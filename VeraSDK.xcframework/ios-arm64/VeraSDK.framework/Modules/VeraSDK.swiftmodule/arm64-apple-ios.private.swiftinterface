@@ -5,10 +5,12 @@
 import ARKit
 import AVFoundation
 import Accelerate
+import Atomics
 import SystemConfiguration.CaptiveNetwork
 import Combine
 import CoreImage
 import CoreLocation
+import CoreMotion
 import Foundation
 import GameplayKit
 import JavaScriptCore
@@ -54,7 +56,7 @@ public enum VeraClientEvent {
   }
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewSafeAreaInsetsDidChange()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
@@ -197,12 +199,13 @@ public struct VeraConfiguration {
   public var language: VeraSDK.VeraConfiguration.Language {
     get
   }
-  public init(domain: Foundation.URL, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, useExternalAuthentication: Swift.Bool = false, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
-  public init(language: VeraSDK.VeraConfiguration.Language = .en, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
+  public init(domain: Foundation.URL, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication = .anonymous, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint = .default, useExternalAuthentication: Swift.Bool = false, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
+  public init(app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication = .anonymous, language: VeraSDK.VeraConfiguration.Language = .en, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
 }
 extension VeraSDK.VeraConfiguration {
   public struct RegistrationEndpoint {
     public init(url: Foundation.URL, port: Swift.Int)
+    public static let `default`: VeraSDK.VeraConfiguration.RegistrationEndpoint
   }
   public struct Authentication : Swift.Equatable {
     public enum Token : Swift.Equatable {
@@ -216,13 +219,15 @@ extension VeraSDK.VeraConfiguration {
       get
     }
     public init(username: Swift.String?)
+    public static let anonymous: VeraSDK.VeraConfiguration.Authentication
     public static func == (a: VeraSDK.VeraConfiguration.Authentication, b: VeraSDK.VeraConfiguration.Authentication) -> Swift.Bool
   }
   public struct App {
     public let clientID: Swift.String
+    public let siteIDs: [Swift.String]
     public let shouldShowCloseButton: Swift.Bool
     public let implementsAuthentication: Swift.Bool
-    public init(clientID: Swift.String, implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool)
+    public init(clientID: Swift.String, siteIDs: [Swift.String] = [], implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool)
   }
   public enum Language : Swift.String {
     case en, ru, zh, de, hi, th, ja, vi, fr, es, sv, he

@@ -260,7 +260,6 @@ using UInt = size_t;
 
 
 @class NSCoder;
-@protocol UIViewControllerTransitionCoordinator;
 @class UIEvent;
 @class NSString;
 @class NSBundle;
@@ -272,7 +271,7 @@ SWIFT_CLASS("_TtC7VeraSDK18VeraViewController") SWIFT_AVAILABILITY(ios,introduce
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)viewDidLoad;
 - (void)viewSafeAreaInsetsDidChange;
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+- (void)viewDidLayoutSubviews;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent * _Nullable)event;
