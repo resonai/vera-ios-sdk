@@ -4,9 +4,45 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/ShaderTypes.h</key>
+		<data>
+		IxinWWaTgjW/eAX1TTvloHnd4iU=
+		</data>
+		<key>Headers/VeraSDK-Swift.h</key>
+		<data>
+		dFqisSEeCQW150IwH1+Smc7NSTI=
+		</data>
+		<key>Headers/VeraSDK.h</key>
+		<data>
+		aphko+aDtCoD3M5VzQ/EtPmlMnY=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		qdSkBbKl73oqCcqkJyDQAw/2LVk=
+		acuYyResAGxYvO5lsqVAYbzDPAw=
+		</data>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		LcCznlNxia+KSdX5QkYQfYKNqLI=
+		</data>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		kTyn8avnKFH9Qz/JDPlwG7VlyAo=
+		</data>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		Vc2z4nNFC4hQ2Skw5MBCwUBJG6E=
+		</data>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		kTyn8avnKFH9Qz/JDPlwG7VlyAo=
+		</data>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		n//X5bXlT9IFQbKZ1k1GSsZyAP0=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		KmhKSFhV1UykBKWi69Ie2NigYMk=
 		</data>
 		<key>default.metallib</key>
 		<data>
@@ -15,6 +51,69 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/ShaderTypes.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fMDzxBP8FEoPKDofv1yaScXcCXXF6U/dKSm+KSNqxOs=
+			</data>
+		</dict>
+		<key>Headers/VeraSDK-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u6yiW56fpVPOEOswYAwYsmIxx+XuG4fVK708+fGXcpI=
+			</data>
+		</dict>
+		<key>Headers/VeraSDK.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KHmMijVcSqCC8GSLGQ64jGy/kVO+FCzOYcB5KKlB2tk=
+			</data>
+		</dict>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BGrp118RYMWaMHTYWtAzS43nqYo2e4ZxgMTJUmC+HgI=
+			</data>
+		</dict>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			URKyvgVTtnh0Uo+cJfndz2na2UTvKYtehMikuTj/ed4=
+			</data>
+		</dict>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uDZO/l2aA1QmEiKT/MZLuvas0oDq6nWANpr1CrbJBKs=
+			</data>
+		</dict>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			URKyvgVTtnh0Uo+cJfndz2na2UTvKYtehMikuTj/ed4=
+			</data>
+		</dict>
+		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uc3XUZRXMYUl9a8/P/XkFLjwDnDB/VkITp1gNL9I1OM=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yheAnAO6agByAs/Cq5N8WdZC+uP+b9shv4mJzcRJR5k=
+			</data>
+		</dict>
 		<key>default.metallib</key>
 		<dict>
 			<key>hash2</key>
