@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import VeraSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,6 +32,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        // Get URL components from the incoming user activity.
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+            let incomingURL = userActivity.webpageURL,
+            let components = NSURLComponents(url: incomingURL, resolvingAgainstBaseURL: true) else {
+            return false
+        }
 
+        // Check for specific URL components that you need.
+        guard let fragment = components.fragment else {
+            return false
+        }
+        print("fragment = \(fragment)")
+        if fragment.hasPrefix("/play/") {
+            components.string.map(Vera.configureDeeplink)
+        } else {
+            return false
+        }
+        return true
+    }
 }
 

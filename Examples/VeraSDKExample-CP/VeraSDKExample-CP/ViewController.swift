@@ -6,36 +6,34 @@
 //
 
 import UIKit
-import VeraSDK
 
 class ViewController: UIViewController {
 
-    private var vera: VeraViewController!
+    private lazy var testSizeButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Test Size", for: .normal)
+        button.backgroundColor = .blue
+        button.addTarget(self, action: #selector(testSizeButtonTapped), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 4
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        return button
+    }()
 
-        let config = VeraConfiguration(
-            language: .he,
-            app: .init(
-                clientID: "test",
-                shouldShowCloseButton: true
-            ),
-            auth: .init(username: nil)
-        ) { [weak self] event in
-            switch event {
-            case .refreshToken:
-                self?.vera.handleEvent(.updateToken(.anonymous))
-            case .login, .logout, .handleMessage:
-                break
-            @unknown default:
-                break
-            }
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        let vc = VeraViewController.build(config: config)
-        self.vera = vc
-        present(vc, animated: true)
+        view.addSubview(testSizeButton)
+        view.backgroundColor = .white
+
+        NSLayoutConstraint.activate([
+            testSizeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            testSizeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            testSizeButton.widthAnchor.constraint(equalToConstant: 96)
+        ])
+    }
+
+    @objc func testSizeButtonTapped() {
+        navigationController?.pushViewController(TestSizeViewController(), animated: true)
     }
 }
-
