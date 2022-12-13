@@ -10,6 +10,7 @@ import Combine
 import CoreImage
 import CoreLocation
 import CoreMotion
+import FirebasePerformance
 import Foundation
 import GameplayKit
 import JavaScriptCore
@@ -36,19 +37,11 @@ public struct Memory {
 extension Swift.Result : Swift.Decodable where Success : Swift.Decodable, Failure == Swift.Error {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum VeraClientEvent {
-  case updateToken(VeraSDK.VeraConfiguration.Authentication.Token)
-  case pause
-  case resume
-  case sendDeeplink(Swift.String)
-  case sendMessage(receiver: Swift.String, data: Swift.String)
-}
 @objc @_hasMissingDesignatedInitializers @available(iOS 13.5, *)
 @_Concurrency.MainActor(unsafe) final public class VeraViewController : UIKit.UIViewController, ARKit.ARSessionDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) @objc override final public var prefersStatusBarHidden: Swift.Bool {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) public static func build(config: VeraSDK.VeraConfiguration) -> VeraSDK.VeraViewController
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
@@ -59,7 +52,6 @@ public enum VeraClientEvent {
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) final public func handleEvent(_ event: VeraSDK.VeraClientEvent)
 }
 extension VeraSDK.VeraViewController : MetalKit.MTKViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
@@ -172,6 +164,13 @@ public struct ConsoleLogger : VeraSDK.Logger {
   public init()
   public func log(_ message: Swift.String)
 }
+public enum Vera {
+  public static func useConfig(_ config: VeraSDK.Vera.Configuration)
+  public static func useEventHandler(_ eventHandler: @escaping VeraSDK.VeraEventHandler)
+  public static func handleEvent(_ event: VeraSDK.Vera.ClientEvent)
+  public static func configureDeeplink(_ deeplink: Swift.String)
+  public static func getController() -> VeraSDK.VeraViewController?
+}
 public protocol OutputNode : AnyObject {
   associatedtype Output
   typealias Updater = (Self.Output) -> Self.Output
@@ -188,45 +187,64 @@ extension Combine.CurrentValueSubject : VeraSDK.OutputNode {
 prefix operator ~>
 postfix operator >?
 postfix operator >%
-public struct VeraConfiguration {
-  public var auth: VeraSDK.VeraConfiguration.Authentication {
-    get
+public typealias VeraEventHandler = (VeraSDK.Vera.Event) -> Swift.Void
+extension VeraSDK.Vera {
+  public enum ClientEvent {
+    case updateToken(VeraSDK.Vera.Configuration.Authentication.Token)
+    case pause
+    case resume
+    case sendDeeplink(Swift.String)
+    case sendMessage(receiver: Swift.String, data: Swift.String)
   }
-  public let app: VeraSDK.VeraConfiguration.App
-  public let logger: VeraSDK.Logger
-  public let eventHandler: (VeraSDK.VeraConfiguration.Event) -> Swift.Void
-  public var language: VeraSDK.VeraConfiguration.Language {
-    get
+  public enum Event {
+    case login
+    case logout
+    case refreshToken
+    case handleMessage(sender: Swift.String, data: Swift.String)
   }
-  public init(domain: Foundation.URL, app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication = .anonymous, language: VeraSDK.VeraConfiguration.Language = .en, registration: VeraSDK.VeraConfiguration.RegistrationEndpoint = .default, useExternalAuthentication: Swift.Bool = false, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
-  public init(app: VeraSDK.VeraConfiguration.App, auth: VeraSDK.VeraConfiguration.Authentication = .anonymous, language: VeraSDK.VeraConfiguration.Language = .en, logger: VeraSDK.Logger = VeraLoggers(), eventHandler: @escaping (VeraSDK.VeraConfiguration.Event) -> Swift.Void)
 }
-extension VeraSDK.VeraConfiguration {
+extension VeraSDK.Vera {
+  public struct Configuration {
+    public var auth: VeraSDK.Vera.Configuration.Authentication {
+      get
+    }
+    public let app: VeraSDK.Vera.Configuration.App
+    public let logger: VeraSDK.Logger
+    public var language: VeraSDK.Vera.Configuration.Language {
+      get
+    }
+    public init(domain: Foundation.URL, app: VeraSDK.Vera.Configuration.App, auth: VeraSDK.Vera.Configuration.Authentication = .anonymous, language: VeraSDK.Vera.Configuration.Language = .en, registration: VeraSDK.Vera.Configuration.RegistrationEndpoint = .default, useExternalAuthentication: Swift.Bool = false, logger: VeraSDK.Logger = VeraLoggers())
+    public init(app: VeraSDK.Vera.Configuration.App, auth: VeraSDK.Vera.Configuration.Authentication = .anonymous, language: VeraSDK.Vera.Configuration.Language = .en, logger: VeraSDK.Logger = VeraLoggers())
+  }
+}
+extension VeraSDK.Vera.Configuration {
   public struct RegistrationEndpoint {
     public init(url: Foundation.URL, port: Swift.Int)
-    public static let `default`: VeraSDK.VeraConfiguration.RegistrationEndpoint
+    public static let `default`: VeraSDK.Vera.Configuration.RegistrationEndpoint
   }
   public struct Authentication : Swift.Equatable {
     public enum Token : Swift.Equatable {
       case anonymous
       case offline
       case loggedIn(token: Swift.String, userID: Swift.String)
-      public static func == (a: VeraSDK.VeraConfiguration.Authentication.Token, b: VeraSDK.VeraConfiguration.Authentication.Token) -> Swift.Bool
+      public static func == (a: VeraSDK.Vera.Configuration.Authentication.Token, b: VeraSDK.Vera.Configuration.Authentication.Token) -> Swift.Bool
     }
     public let username: Swift.String?
-    public var token: VeraSDK.VeraConfiguration.Authentication.Token? {
+    public var token: VeraSDK.Vera.Configuration.Authentication.Token? {
       get
     }
     public init(username: Swift.String?)
-    public static let anonymous: VeraSDK.VeraConfiguration.Authentication
-    public static func == (a: VeraSDK.VeraConfiguration.Authentication, b: VeraSDK.VeraConfiguration.Authentication) -> Swift.Bool
+    public static let anonymous: VeraSDK.Vera.Configuration.Authentication
+    public static func == (a: VeraSDK.Vera.Configuration.Authentication, b: VeraSDK.Vera.Configuration.Authentication) -> Swift.Bool
   }
   public struct App {
     public let clientID: Swift.String
     public let siteIDs: [Swift.String]
     public let shouldShowCloseButton: Swift.Bool
+    public let hideHeader: Swift.Bool
     public let implementsAuthentication: Swift.Bool
-    public init(clientID: Swift.String, siteIDs: [Swift.String] = [], implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool)
+    public let deepLinkPrefix: Swift.String?
+    public init(clientID: Swift.String, siteIDs: [Swift.String] = [], implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool, hideHeader: Swift.Bool, deepLinkPrefix: Swift.String? = nil)
   }
   public enum Language : Swift.String {
     case en, ru, zh, de, hi, th, ja, vi, fr, es, sv, he
@@ -235,12 +253,6 @@ extension VeraSDK.VeraConfiguration {
     public var rawValue: Swift.String {
       get
     }
-  }
-  public enum Event {
-    case login
-    case logout
-    case refreshToken
-    case handleMessage(sender: Swift.String, data: Swift.String)
   }
 }
 open class KeychainSwift {
@@ -326,8 +338,8 @@ extension VeraSDK.Reachability.NetworkStatus : Swift.Equatable {}
 extension VeraSDK.Reachability.NetworkStatus : Swift.Hashable {}
 extension VeraSDK.Reachability.Connection : Swift.Equatable {}
 extension VeraSDK.Reachability.Connection : Swift.Hashable {}
-extension VeraSDK.VeraConfiguration.Language : Swift.Equatable {}
-extension VeraSDK.VeraConfiguration.Language : Swift.Hashable {}
-extension VeraSDK.VeraConfiguration.Language : Swift.RawRepresentable {}
+extension VeraSDK.Vera.Configuration.Language : Swift.Equatable {}
+extension VeraSDK.Vera.Configuration.Language : Swift.Hashable {}
+extension VeraSDK.Vera.Configuration.Language : Swift.RawRepresentable {}
 extension VeraSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
 extension VeraSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
