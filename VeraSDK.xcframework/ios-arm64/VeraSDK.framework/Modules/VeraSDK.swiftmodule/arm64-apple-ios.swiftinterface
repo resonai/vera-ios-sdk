@@ -10,7 +10,6 @@ import Combine
 import CoreImage
 import CoreLocation
 import CoreMotion
-import FirebasePerformance
 import Foundation
 import GameplayKit
 import JavaScriptCore

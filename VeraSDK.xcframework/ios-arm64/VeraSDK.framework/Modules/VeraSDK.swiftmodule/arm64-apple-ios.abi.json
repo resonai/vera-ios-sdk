@@ -6222,16 +6222,6 @@
       },
       {
         "kind": "Import",
-        "name": "FirebasePerformance",
-        "printedName": "FirebasePerformance",
-        "declKind": "Import",
-        "moduleName": "VeraSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
