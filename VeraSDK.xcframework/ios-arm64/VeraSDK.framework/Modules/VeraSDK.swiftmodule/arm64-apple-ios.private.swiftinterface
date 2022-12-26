@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeraSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -188,8 +188,14 @@ postfix operator >?
 postfix operator >%
 public typealias VeraEventHandler = (VeraSDK.Vera.Event) -> Swift.Void
 extension VeraSDK.Vera {
+  public enum AuthenticationToken : Swift.Equatable {
+    case anonymous
+    case offline
+    case loggedIn(token: Swift.String, userID: Swift.String)
+    public static func == (a: VeraSDK.Vera.AuthenticationToken, b: VeraSDK.Vera.AuthenticationToken) -> Swift.Bool
+  }
   public enum ClientEvent {
-    case updateToken(VeraSDK.Vera.Configuration.Authentication.Token)
+    case updateToken(VeraSDK.Vera.AuthenticationToken)
     case pause
     case resume
     case sendDeeplink(Swift.String)
@@ -222,16 +228,7 @@ extension VeraSDK.Vera.Configuration {
     public static let `default`: VeraSDK.Vera.Configuration.RegistrationEndpoint
   }
   public struct Authentication : Swift.Equatable {
-    public enum Token : Swift.Equatable {
-      case anonymous
-      case offline
-      case loggedIn(token: Swift.String, userID: Swift.String)
-      public static func == (a: VeraSDK.Vera.Configuration.Authentication.Token, b: VeraSDK.Vera.Configuration.Authentication.Token) -> Swift.Bool
-    }
     public let username: Swift.String?
-    public var token: VeraSDK.Vera.Configuration.Authentication.Token? {
-      get
-    }
     public init(username: Swift.String?)
     public static let anonymous: VeraSDK.Vera.Configuration.Authentication
     public static func == (a: VeraSDK.Vera.Configuration.Authentication, b: VeraSDK.Vera.Configuration.Authentication) -> Swift.Bool
