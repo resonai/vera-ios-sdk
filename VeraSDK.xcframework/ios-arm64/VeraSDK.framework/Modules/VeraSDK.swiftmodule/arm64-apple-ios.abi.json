@@ -23,8 +23,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
@@ -419,6 +419,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
@@ -6696,6 +6706,16 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -9647,168 +9667,168 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 1510,
+      "offset": 1554,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 1552,
+      "offset": 1596,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 1730,
+      "offset": 1774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2507,
+      "offset": 2551,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2558,
+      "offset": 2602,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2606,
+      "offset": 2650,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2672,
+      "offset": 2716,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 2831,
+      "offset": 2875,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3798,
+      "offset": 3842,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3858,
+      "offset": 3902,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5110,
+      "offset": 5154,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "StringLiteral",
-      "offset": 5483,
+      "offset": 5527,
       "length": 13,
       "value": "\"usernetwork\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5691,
+      "offset": 5735,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5745,
+      "offset": 5789,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5919,
+      "offset": 5963,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5977,
+      "offset": 6021,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "Array",
-      "offset": 6089,
+      "offset": 6133,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6339,
+      "offset": 6383,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6563,
+      "offset": 6607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6622,
+      "offset": 6666,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6713,
+      "offset": 6757,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 7453,
+      "offset": 7497,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 7488,
+      "offset": 7532,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 7520,
+      "offset": 7564,
       "length": 1,
       "value": "1"
     },
@@ -12809,6 +12829,20 @@
       "value": "\"VeraSDK.IntermediateTrackingCache\""
     },
     {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/operators\/WebViewContentOps.swift",
+      "kind": "FloatLiteral",
+      "offset": 443,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/operators\/WebViewContentOps.swift",
+      "kind": "IntegerLiteral",
+      "offset": 556,
+      "length": 1,
+      "value": "5"
+    },
+    {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
       "offset": 2279,
@@ -13049,77 +13083,77 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 762,
+      "offset": 761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 940,
+      "offset": 939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 994,
       "length": 8,
       "value": "\"button\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1273,
+      "offset": 1272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
+      "offset": 1327,
       "length": 14,
       "value": "\"close_button\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1609,
+      "offset": 1608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1706,
+      "offset": 1705,
       "length": 4,
       "value": "25.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1810,
+      "offset": 1809,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2097,
+      "offset": 2096,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2210,
+      "offset": 2209,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 373,
+      "offset": 371,
       "length": 18,
       "value": "\"VeraSDK.VeraViewController\""
     },
@@ -25008,6 +25042,27 @@
       "offset": 13263,
       "length": 8,
       "value": "\"labels\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 288,
+      "length": 13,
+      "value": "\"no_internet\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 357,
+      "length": 15,
+      "value": "\"splash_screen\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 18,
+      "value": "\"splash_screen_2b\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/NetworkStatusService.swift",
