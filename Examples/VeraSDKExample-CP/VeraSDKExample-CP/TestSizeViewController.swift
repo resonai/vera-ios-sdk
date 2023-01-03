@@ -89,6 +89,10 @@ final class TestSizeViewController: UIViewController {
         Vera.useConfig(
             .init(
                 domain: URL(string: "https://beta-vera.resonai.com")!,
+                registration: .init(
+                    url: URL(string: "registration.resonai.com")!,
+                    port: 443
+                ),
                 app: .init(
                     clientID: "test",
                     siteIDs: ["azrieli-hashalom-tlv"],
@@ -96,13 +100,10 @@ final class TestSizeViewController: UIViewController {
                     hideHeader: false
                 ),
                 auth: .init(username: nil),
-                language: .he,
-                registration: .init(
-                    url: URL(string: "registration.resonai.com")!,
-                    port: 443
-                )
+                language: .he
             )
         )
+
         Vera.useEventHandler { event in
             switch event {
             case let .handleMessage(sender: sender, data: data):

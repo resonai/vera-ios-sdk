@@ -1,5 +1,5 @@
 PODS:
-  - VeraSDK (0.1.0)
+  - VeraSDK (0.1.5)
 
 DEPENDENCIES:
   - VeraSDK (from `../..`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../.."
 
 SPEC CHECKSUMS:
-  VeraSDK: 8ce7f7cd539fedec9769b2cd49875ad945515893
+  VeraSDK: 8347f6483404be7123ed348dd9926c35ee49ab25
 
 PODFILE CHECKSUM: b0e8956dc53a73a61e7c98d44f691cd81e797319
 
