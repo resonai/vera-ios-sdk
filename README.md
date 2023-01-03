@@ -42,28 +42,78 @@ easiest way to integrate VeraSDK with an existing `xcodeproj`.
 import VeraSDK
 ```
 
-2. Create a configuration object.
+2. Create a configuration object. Most fields are optional, check the [example integration](https://github.com/resonai/vera-ios-sdk/blob/main/Examples/VeraSDKExample-CP/VeraSDKExample-CP/TestSizeViewController.swift) for more parameters.
 
 ```swift
-let config = VeraConfiguration(
-    app: .init(clientID: "vera_client_app"),
-    user: .init(username: nil),
-    eventHandler: { event in
-        switch event {
-        case .refreshToken:
-            print("refresh the token")
-        @unknown default:
-            fatalError()
-        }
-    }
+Vera.useConfig(
+    .init(
+        app: .init(
+            clientID: "vera_client_id"
+        )
+    )
 )
 ```
 
-3. Build an instance of `VeraViewController` using the configuration and present it.
+3. Build an instance of `VeraViewController` and present it.
 
 ```swift
-let vera = VeraViewController.build(config: config)
+let vera = Vera.getController()
 present(vera, animated: true)
+```
+
+## Bi-directional Communication
+
+The SDK implements bi-directional communication between the Vera platform and the client application. Communication is done using events.
+
+### Sending Events
+
+In order to send an event to the SDK, call the `Vera.handleEvent(_:)` method.
+
+#### Pause / Resume
+
+The SDK can be paused or resumed. When paused, communication with external services like `ARSession` is stopped.
+
+```swift
+Vera.handleEvent(.pause)
+```
+
+#### Deeplinks
+
+The SDK supports deep link-ing to some AR Experiences. In order to open a deep link, implement the `func application(_:, continue:, restorationHandler:) -> Bool` in your `UIApplicationDelegate` subclass and pass the deep link to Vera:
+```swift
+func application(
+    _ application: UIApplication, 
+    continue userActivity: NSUserActivity, 
+    restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void
+) -> Bool {
+    // check to make sure it's a deep link into Vera
+    guard let url = userActivity.webpageURL?.absoluteString else { return false }
+    Vera.sendDeeplink(url)
+}
+```
+For an example check [this implementation](https://github.com/resonai/vera-ios-sdk/blob/e3f62fd94a051ee49ffbfec6460efee6ee15a7bc/Examples/VeraSDKExample-CP/VeraSDKExample-CP/AppDelegate.swift#L35).
+
+#### Custom event
+The client app can send events to any of our public your custom AR Experiences:
+```swift
+Vera.handleEvent(
+    .sendMessage(receiver: "custom_arx_name", data: "custom_data")
+)
+```
+
+### Receiving Events
+In the same manner, the SDK will send you events to ask you for additional information or deliver a message from an ARX. You should be prepared to handle them:
+```swift
+public enum Vera.Event {
+    case login
+    case logout
+    case refreshToken // you need to send a token into the SDK
+    case handleMessage(sender: String, data: String)
+}
+
+Vera.useEventHandler { event in
+   // handle event here
+}
 ```
 
 ## Info.plist Keys
