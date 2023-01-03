@@ -3799,7 +3799,8 @@
             "moduleName": "VeraSDK",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3838,7 +3839,8 @@
             "moduleName": "VeraSDK",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3865,7 +3867,8 @@
             "moduleName": "VeraSDK",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3892,7 +3895,8 @@
             "moduleName": "VeraSDK",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3922,7 +3926,8 @@
             "moduleName": "VeraSDK",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4169,7 +4174,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:7VeraSDK0A0O11ClientEventO11updateTokenyAeC014AuthenticationF0OcAEmF",
                 "mangledName": "$s7VeraSDK0A0O11ClientEventO11updateTokenyAeC014AuthenticationF0OcAEmF",
-                "moduleName": "VeraSDK"
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -4206,7 +4214,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:7VeraSDK0A0O11ClientEventO5pauseyA2EmF",
                 "mangledName": "$s7VeraSDK0A0O11ClientEventO5pauseyA2EmF",
-                "moduleName": "VeraSDK"
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -4243,7 +4254,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:7VeraSDK0A0O11ClientEventO6resumeyA2EmF",
                 "mangledName": "$s7VeraSDK0A0O11ClientEventO6resumeyA2EmF",
-                "moduleName": "VeraSDK"
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -4293,7 +4307,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:7VeraSDK0A0O11ClientEventO12sendDeeplinkyAESScAEmF",
                 "mangledName": "$s7VeraSDK0A0O11ClientEventO12sendDeeplinkyAESScAEmF",
-                "moduleName": "VeraSDK"
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -4356,13 +4373,19 @@
                 "declKind": "EnumElement",
                 "usr": "s:7VeraSDK0A0O11ClientEventO11sendMessageyAESS_SStcAEmF",
                 "mangledName": "$s7VeraSDK0A0O11ClientEventO11sendMessageyAESS_SStcAEmF",
-                "moduleName": "VeraSDK"
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               }
             ],
             "declKind": "Enum",
             "usr": "s:7VeraSDK0A0O11ClientEventO",
             "mangledName": "$s7VeraSDK0A0O11ClientEventO",
             "moduleName": "VeraSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "isFromExtension": true
           },
           {
@@ -4479,7 +4502,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:7VeraSDK0A0O5EventO12refreshTokenyA2EmF",
                 "mangledName": "$s7VeraSDK0A0O5EventO12refreshTokenyA2EmF",
-                "moduleName": "VeraSDK"
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -4542,13 +4568,19 @@
                 "declKind": "EnumElement",
                 "usr": "s:7VeraSDK0A0O5EventO13handleMessageyAESS_SStcAEmF",
                 "mangledName": "$s7VeraSDK0A0O5EventO13handleMessageyAESS_SStcAEmF",
-                "moduleName": "VeraSDK"
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               }
             ],
             "declKind": "Enum",
             "usr": "s:7VeraSDK0A0O5EventO",
             "mangledName": "$s7VeraSDK0A0O5EventO",
             "moduleName": "VeraSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "isFromExtension": true
           },
           {
@@ -4556,6 +4588,94 @@
             "name": "Configuration",
             "printedName": "Configuration",
             "children": [
+              {
+                "kind": "Var",
+                "name": "domain",
+                "printedName": "domain",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7VeraSDK0A0O13ConfigurationV6domain10Foundation3URLVvp",
+                "mangledName": "$s7VeraSDK0A0O13ConfigurationV6domain10Foundation3URLVvp",
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7VeraSDK0A0O13ConfigurationV6domain10Foundation3URLVvg",
+                    "mangledName": "$s7VeraSDK0A0O13ConfigurationV6domain10Foundation3URLVvg",
+                    "moduleName": "VeraSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "registration",
+                "printedName": "registration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RegistrationEndpoint",
+                    "printedName": "VeraSDK.Vera.Configuration.RegistrationEndpoint",
+                    "usr": "s:7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7VeraSDK0A0O13ConfigurationV12registrationAE20RegistrationEndpointVvp",
+                "mangledName": "$s7VeraSDK0A0O13ConfigurationV12registrationAE20RegistrationEndpointVvp",
+                "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegistrationEndpoint",
+                        "printedName": "VeraSDK.Vera.Configuration.RegistrationEndpoint",
+                        "usr": "s:7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7VeraSDK0A0O13ConfigurationV12registrationAE20RegistrationEndpointVvg",
+                    "mangledName": "$s7VeraSDK0A0O13ConfigurationV12registrationAE20RegistrationEndpointVvg",
+                    "moduleName": "VeraSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
               {
                 "kind": "Var",
                 "name": "auth",
@@ -4735,7 +4855,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(domain:app:auth:language:registration:useExternalAuthentication:logger:)",
+                "printedName": "init(domain:registration:app:auth:language:logger:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4747,27 +4867,8 @@
                     "kind": "TypeNominal",
                     "name": "URL",
                     "printedName": "Foundation.URL",
+                    "hasDefaultArg": true,
                     "usr": "s:10Foundation3URLV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "App",
-                    "printedName": "VeraSDK.Vera.Configuration.App",
-                    "usr": "s:7VeraSDK0A0O13ConfigurationV3AppV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Authentication",
-                    "printedName": "VeraSDK.Vera.Configuration.Authentication",
-                    "hasDefaultArg": true,
-                    "usr": "s:7VeraSDK0A0O13ConfigurationV14AuthenticationV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Language",
-                    "printedName": "VeraSDK.Vera.Configuration.Language",
-                    "hasDefaultArg": true,
-                    "usr": "s:7VeraSDK0A0O13ConfigurationV8LanguageO"
                   },
                   {
                     "kind": "TypeNominal",
@@ -4778,41 +4879,6 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "hasDefaultArg": true,
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Logger",
-                    "printedName": "VeraSDK.Logger",
-                    "hasDefaultArg": true,
-                    "usr": "s:7VeraSDK6LoggerP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7VeraSDK0A0O13ConfigurationV6domain3app4auth8language12registration25useExternalAuthentication6loggerAE10Foundation3URLV_AE3AppVAE0K0VAE8LanguageOAE20RegistrationEndpointVSbAA6Logger_ptcfc",
-                "mangledName": "$s7VeraSDK0A0O13ConfigurationV6domain3app4auth8language12registration25useExternalAuthentication6loggerAE10Foundation3URLV_AE3AppVAE0K0VAE8LanguageOAE20RegistrationEndpointVSbAA6Logger_ptcfc",
-                "moduleName": "VeraSDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(app:auth:language:logger:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Configuration",
-                    "printedName": "VeraSDK.Vera.Configuration",
-                    "usr": "s:7VeraSDK0A0O13ConfigurationV"
-                  },
-                  {
-                    "kind": "TypeNominal",
                     "name": "App",
                     "printedName": "VeraSDK.Vera.Configuration.App",
                     "usr": "s:7VeraSDK0A0O13ConfigurationV3AppV"
@@ -4840,8 +4906,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:7VeraSDK0A0O13ConfigurationV3app4auth8language6loggerA2E3AppV_AE14AuthenticationVAE8LanguageOAA6Logger_ptcfc",
-                "mangledName": "$s7VeraSDK0A0O13ConfigurationV3app4auth8language6loggerA2E3AppV_AE14AuthenticationVAE8LanguageOAA6Logger_ptcfc",
+                "usr": "s:7VeraSDK0A0O13ConfigurationV6domain12registration3app4auth8language6loggerAE10Foundation3URLV_AE20RegistrationEndpointVAE3AppVAE14AuthenticationVAE8LanguageOAA6Logger_ptcfc",
+                "mangledName": "$s7VeraSDK0A0O13ConfigurationV6domain12registration3app4auth8language6loggerAE10Foundation3URLV_AE20RegistrationEndpointVAE3AppVAE14AuthenticationVAE8LanguageOAA6Logger_ptcfc",
                 "moduleName": "VeraSDK",
                 "declAttributes": [
                   "AccessControl",
@@ -4939,6 +5005,9 @@
                 "usr": "s:7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV",
                 "mangledName": "$s7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV",
                 "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
                 "isFromExtension": true
               },
               {
@@ -5037,7 +5106,8 @@
                     "mangledName": "$s7VeraSDK0A0O13ConfigurationV14AuthenticationV8usernameAGSSSg_tcfc",
                     "moduleName": "VeraSDK",
                     "declAttributes": [
-                      "AccessControl"
+                      "AccessControl",
+                      "RawDocComment"
                     ],
                     "init_kind": "Designated"
                   },
@@ -5125,6 +5195,9 @@
                 "usr": "s:7VeraSDK0A0O13ConfigurationV14AuthenticationV",
                 "mangledName": "$s7VeraSDK0A0O13ConfigurationV14AuthenticationV",
                 "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
                 "isFromExtension": true,
                 "conformances": [
                   {
@@ -5480,12 +5553,14 @@
                         "kind": "TypeNominal",
                         "name": "Bool",
                         "printedName": "Swift.Bool",
+                        "hasDefaultArg": true,
                         "usr": "s:Sb"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Bool",
                         "printedName": "Swift.Bool",
+                        "hasDefaultArg": true,
                         "usr": "s:Sb"
                       },
                       {
@@ -5509,7 +5584,8 @@
                     "mangledName": "$s7VeraSDK0A0O13ConfigurationV3AppV8clientID7siteIDs24implementsAuthentication21shouldShowCloseButton10hideHeader14deepLinkPrefixAGSS_SaySSGS3bSSSgtcfc",
                     "moduleName": "VeraSDK",
                     "declAttributes": [
-                      "AccessControl"
+                      "AccessControl",
+                      "RawDocComment"
                     ],
                     "init_kind": "Designated"
                   }
@@ -5518,6 +5594,9 @@
                 "usr": "s:7VeraSDK0A0O13ConfigurationV3AppV",
                 "mangledName": "$s7VeraSDK0A0O13ConfigurationV3AppV",
                 "moduleName": "VeraSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
                 "isFromExtension": true
               },
               {
@@ -6093,7 +6172,8 @@
             "mangledName": "$s7VeraSDK0A0O13ConfigurationV",
             "moduleName": "VeraSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true
           }
@@ -6103,7 +6183,8 @@
         "mangledName": "$s7VeraSDK0A0O",
         "moduleName": "VeraSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -6149,6 +6230,16 @@
         "printedName": "ARKit",
         "declKind": "Import",
         "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -8593,6 +8684,26 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -9688,147 +9799,147 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2551,
+      "offset": 2650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2602,
+      "offset": 2701,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2650,
+      "offset": 2749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 2716,
+      "offset": 2815,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 2875,
+      "offset": 2974,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3842,
+      "offset": 3941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3902,
+      "offset": 4001,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5154,
+      "offset": 5253,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "StringLiteral",
-      "offset": 5527,
+      "offset": 5626,
       "length": 13,
       "value": "\"usernetwork\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5735,
+      "offset": 5834,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5789,
+      "offset": 5888,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5963,
+      "offset": 6062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6021,
+      "offset": 6120,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "Array",
-      "offset": 6133,
+      "offset": 6232,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6383,
+      "offset": 6482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6607,
+      "offset": 6706,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6666,
+      "offset": 6765,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6757,
+      "offset": 6856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 7497,
+      "offset": 7596,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 7532,
+      "offset": 7631,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 7564,
+      "offset": 7663,
       "length": 1,
       "value": "1"
     },
@@ -12845,238 +12956,238 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 2319,
       "length": 11,
       "value": "\"closeVera\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2341,
+      "offset": 2381,
       "length": 24,
       "value": "\"frameFinishedRendering\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2429,
+      "offset": 2469,
       "length": 22,
       "value": "\"getFingerprintStatus\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2500,
+      "offset": 2540,
       "length": 10,
       "value": "\"getToken\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2560,
+      "offset": 2600,
       "length": 13,
       "value": "\"handleError\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2626,
+      "offset": 2666,
       "length": 16,
       "value": "\"hapticFeedback\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2698,
+      "offset": 2738,
       "length": 12,
       "value": "\"hintRegion\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2762,
+      "offset": 2802,
       "length": 14,
       "value": "\"identifyUser\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2817,
+      "offset": 2857,
       "length": 5,
       "value": "\"log\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2864,
+      "offset": 2904,
       "length": 7,
       "value": "\"login\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2905,
+      "offset": 2945,
       "length": 8,
       "value": "\"logout\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2948,
+      "offset": 2988,
       "length": 17,
       "value": "\"onTagsAvailable\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3009,
+      "offset": 3049,
       "length": 14,
       "value": "\"openSettings\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3064,
+      "offset": 3104,
       "length": 9,
       "value": "\"openURL\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3122,
+      "offset": 3162,
       "length": 16,
       "value": "\"pauseARSession\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3181,
+      "offset": 3221,
       "length": 11,
       "value": "\"recording\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3243,
+      "offset": 3283,
       "length": 19,
       "value": "\"registrationToken\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3321,
+      "offset": 3361,
       "length": 21,
       "value": "\"requestCameraAccess\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3430,
       "length": 23,
       "value": "\"requestLocationAccess\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3463,
+      "offset": 3503,
       "length": 17,
       "value": "\"resumeARSession\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3537,
+      "offset": 3577,
       "length": 12,
       "value": "\"sendNative\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3601,
+      "offset": 3641,
       "length": 11,
       "value": "\"setBIData\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3696,
+      "offset": 3736,
       "length": 23,
       "value": "\"setCompressionQuality\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3782,
+      "offset": 3822,
       "length": 21,
       "value": "\"setGrayscaleEnabled\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3864,
+      "offset": 3904,
       "length": 16,
       "value": "\"setWebPEnabled\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3936,
+      "offset": 3976,
       "length": 35,
       "value": "\"setVariableRateRegistrationUpload\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4046,
+      "offset": 4086,
       "length": 16,
       "value": "\"startARSession\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4105,
+      "offset": 4145,
       "length": 22,
       "value": "\"startLocationUpdates\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4176,
+      "offset": 4216,
       "length": 21,
       "value": "\"stopLocationUpdates\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4245,
+      "offset": 4285,
       "length": 20,
       "value": "\"takePhotoImmediate\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4312,
+      "offset": 4352,
       "length": 11,
       "value": "\"takePhoto\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4374,
+      "offset": 4414,
       "length": 12,
       "value": "\"takeQrCode\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4438,
+      "offset": 4478,
       "length": 10,
       "value": "\"vetoPose\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4485,
+      "offset": 4525,
       "length": 9,
       "value": "\"vibrate\""
     },
@@ -14063,3129 +14174,3213 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 58773,
+      "offset": 59835,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 69374,
+      "offset": 70436,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 69449,
+      "offset": 70511,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 69531,
+      "offset": 70593,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72433,
+      "offset": 73495,
       "length": 13,
       "value": "\"ywz.irocket\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72586,
+      "offset": 73648,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72602,
+      "offset": 73664,
       "length": 6,
       "value": "\"LIVE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72615,
+      "offset": 73677,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72631,
+      "offset": 73693,
       "length": 8,
       "value": "\"REPLAY\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72646,
+      "offset": 73708,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72662,
+      "offset": 73724,
       "length": 10,
       "value": "\"PIPELINE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72679,
+      "offset": 73741,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72695,
+      "offset": 73757,
       "length": 11,
       "value": "\"UNIT_TEST\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72713,
+      "offset": 73775,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72729,
+      "offset": 73791,
       "length": 18,
       "value": "\"INDEPENDENT_MAIN\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72899,
+      "offset": 73961,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72915,
+      "offset": 73977,
       "length": 6,
       "value": "\"TEXT\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72928,
+      "offset": 73990,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72944,
+      "offset": 74006,
       "length": 6,
       "value": "\"MVPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72957,
+      "offset": 74019,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72973,
+      "offset": 74035,
       "length": 10,
       "value": "\"FRAME_RD\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73129,
+      "offset": 74191,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73145,
+      "offset": 74207,
       "length": 19,
       "value": "\"IOS_NOT_AVAILABLE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73171,
+      "offset": 74233,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73187,
+      "offset": 74249,
       "length": 13,
       "value": "\"IOS_LIMITED\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73207,
+      "offset": 74269,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73223,
+      "offset": 74285,
       "length": 12,
       "value": "\"IOS_NORMAL\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73242,
+      "offset": 74304,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73258,
+      "offset": 74320,
       "length": 16,
       "value": "\"ANDROID_PAUSED\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73281,
+      "offset": 74343,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73297,
+      "offset": 74359,
       "length": 17,
       "value": "\"ANDROID_STOPPED\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73321,
+      "offset": 74383,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73337,
+      "offset": 74399,
       "length": 18,
       "value": "\"ANDROID_TRACKING\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73502,
+      "offset": 74564,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73518,
+      "offset": 74580,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73531,
+      "offset": 74593,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73547,
+      "offset": 74609,
       "length": 18,
       "value": "\"IOS_INITIALIZING\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73572,
+      "offset": 74634,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73588,
+      "offset": 74650,
       "length": 18,
       "value": "\"IOS_RELOCALIZING\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73613,
+      "offset": 74675,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73629,
+      "offset": 74691,
       "length": 22,
       "value": "\"IOS_EXCESSIVE_MOTION\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73658,
+      "offset": 74720,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73674,
+      "offset": 74736,
       "length": 27,
       "value": "\"IOS_INSUFFICIENT_FEATURES\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73708,
+      "offset": 74770,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73724,
+      "offset": 74786,
       "length": 19,
       "value": "\"ANDROID_BAD_STATE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73750,
+      "offset": 74812,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73766,
+      "offset": 74828,
       "length": 28,
       "value": "\"ANDROID_CAMERA_UNAVAILABLE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73801,
+      "offset": 74863,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73817,
+      "offset": 74879,
       "length": 26,
       "value": "\"ANDROID_EXCESSIVE_MOTION\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73850,
+      "offset": 74912,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73866,
+      "offset": 74928,
       "length": 31,
       "value": "\"ANDROID_INSUFFICIENT_FEATURES\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 73904,
+      "offset": 74966,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 73920,
+      "offset": 74982,
       "length": 28,
       "value": "\"ANDROID_INSUFFICIENT_LIGHT\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74097,
+      "offset": 75159,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74113,
+      "offset": 75175,
       "length": 9,
       "value": "\"GRAVITY\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74129,
+      "offset": 75191,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74145,
+      "offset": 75207,
       "length": 21,
       "value": "\"GRAVITY_AND_HEADING\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74173,
+      "offset": 75235,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74189,
+      "offset": 75251,
       "length": 8,
       "value": "\"CAMERA\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74344,
+      "offset": 75406,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74360,
+      "offset": 75422,
       "length": 15,
       "value": "\"ACCURACY_HIGH\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74382,
+      "offset": 75444,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74398,
+      "offset": 75460,
       "length": 17,
       "value": "\"ACCURACY_MEDIUM\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74422,
+      "offset": 75484,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74438,
+      "offset": 75500,
       "length": 14,
       "value": "\"ACCURACY_LOW\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74459,
+      "offset": 75521,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74475,
+      "offset": 75537,
       "length": 12,
       "value": "\"NO_CONTACT\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74494,
+      "offset": 75556,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74510,
+      "offset": 75572,
       "length": 12,
       "value": "\"UNRELIABLE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74748,
+      "offset": 75810,
       "length": 34,
       "value": "\".RegistrationProcessMvpbEndState\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74846,
+      "offset": 75908,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74862,
+      "offset": 75924,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74878,
+      "offset": 75940,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74898,
+      "offset": 75960,
       "length": 27,
       "value": "\"last_registration_summary\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 76773,
+      "offset": 77835,
       "length": 21,
       "value": "\".FrameDataMvpbProto\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 76858,
+      "offset": 77920,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 76878,
+      "offset": 77940,
       "length": 11,
       "value": "\"mvpb_path\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 76896,
+      "offset": 77958,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 76916,
+      "offset": 77978,
       "length": 23,
       "value": "\"obsolete_vconfig_path\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 76946,
+      "offset": 78008,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 76966,
+      "offset": 78028,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 76986,
+      "offset": 78048,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77006,
+      "offset": 78068,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77024,
+      "offset": 78086,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77044,
+      "offset": 78106,
       "length": 37,
       "value": "\"registration_params_proto_text_file\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77088,
+      "offset": 78150,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77108,
+      "offset": 78170,
       "length": 18,
       "value": "\"debug_frame_path\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77133,
+      "offset": 78195,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77153,
+      "offset": 78215,
       "length": 14,
       "value": "\"frame_origin\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77174,
+      "offset": 78236,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77194,
+      "offset": 78256,
       "length": 13,
       "value": "\"replay_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77214,
+      "offset": 78276,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77234,
+      "offset": 78296,
       "length": 15,
       "value": "\"clear_netvlad\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77256,
+      "offset": 78318,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77277,
+      "offset": 78339,
       "length": 18,
       "value": "\"clear_superpoint\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77302,
+      "offset": 78364,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77323,
+      "offset": 78385,
       "length": 22,
       "value": "\"clear_user_veto_hint\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77352,
+      "offset": 78414,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77373,
+      "offset": 78435,
       "length": 40,
       "value": "\"prev_session_last_registration_summary\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84560,
+      "offset": 85622,
       "length": 13,
       "value": "\".DeviceInfo\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84637,
+      "offset": 85699,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84657,
+      "offset": 85719,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84675,
+      "offset": 85737,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84691,
+      "offset": 85753,
       "length": 14,
       "value": "\"manufacturer\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84712,
+      "offset": 85774,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84728,
+      "offset": 85790,
       "length": 7,
       "value": "\"model\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84742,
+      "offset": 85804,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84762,
+      "offset": 85824,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84781,
+      "offset": 85843,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84801,
+      "offset": 85863,
       "length": 23,
       "value": "\"native_app_session_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87384,
+      "offset": 88446,
       "length": 13,
       "value": "\".ReplayInfo\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 87461,
+      "offset": 88523,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87481,
+      "offset": 88543,
       "length": 12,
       "value": "\"user_label\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 87500,
+      "offset": 88562,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87520,
+      "offset": 88582,
       "length": 19,
       "value": "\"source_session_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 87546,
+      "offset": 88608,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87566,
+      "offset": 88628,
       "length": 21,
       "value": "\"vera_recording_path\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 87594,
+      "offset": 88656,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87614,
+      "offset": 88676,
       "length": 23,
       "value": "\"vera_recording_format\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 89998,
+      "offset": 91060,
       "length": 12,
       "value": "\".FrameData\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90074,
+      "offset": 91136,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90094,
+      "offset": 91156,
       "length": 10,
       "value": "\"frame_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90111,
+      "offset": 91173,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90127,
+      "offset": 91189,
       "length": 6,
       "value": "\"pose\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90140,
+      "offset": 91202,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90156,
+      "offset": 91218,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90170,
+      "offset": 91232,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90190,
+      "offset": 91252,
       "length": 9,
       "value": "\"cam_cal\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90206,
+      "offset": 91268,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90226,
+      "offset": 91288,
       "length": 18,
       "value": "\"netvlad_features\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90251,
+      "offset": 91313,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90271,
+      "offset": 91333,
       "length": 14,
       "value": "\"sparse_frame\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90292,
+      "offset": 91354,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90313,
+      "offset": 91375,
       "length": 13,
       "value": "\"ocr_results\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90333,
+      "offset": 91395,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90353,
+      "offset": 91415,
       "length": 20,
       "value": "\"registration_token\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90380,
+      "offset": 91442,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90401,
+      "offset": 91463,
       "length": 23,
       "value": "\"sent_by_client_params\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90431,
+      "offset": 91493,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90452,
+      "offset": 91514,
       "length": 20,
       "value": "\"intermediate_poses\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90479,
+      "offset": 91541,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90500,
+      "offset": 91562,
       "length": 25,
       "value": "\"intermediate_timestamps\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90532,
+      "offset": 91594,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90553,
+      "offset": 91615,
       "length": 30,
       "value": "\"intermediate_tracking_states\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90590,
+      "offset": 91652,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90611,
+      "offset": 91673,
       "length": 30,
       "value": "\"intermediate_tracking_reason\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90648,
+      "offset": 91710,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90669,
+      "offset": 91731,
       "length": 27,
       "value": "\"last_registration_summary\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90703,
+      "offset": 91765,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90724,
+      "offset": 91786,
       "length": 38,
       "value": "\"last_registration_received_timestamp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90769,
+      "offset": 91831,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90790,
+      "offset": 91852,
       "length": 13,
       "value": "\"client_type\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90810,
+      "offset": 91872,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90831,
+      "offset": 91893,
       "length": 13,
       "value": "\"device_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90851,
+      "offset": 91913,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90872,
+      "offset": 91934,
       "length": 14,
       "value": "\"frame_origin\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90893,
+      "offset": 91955,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90914,
+      "offset": 91976,
       "length": 13,
       "value": "\"replay_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90934,
+      "offset": 91996,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 90955,
+      "offset": 92017,
       "length": 23,
       "value": "\"sf_computed_by_client\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 90985,
+      "offset": 92047,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91006,
+      "offset": 92068,
       "length": 23,
       "value": "\"nv_computed_by_client\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91036,
+      "offset": 92098,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91057,
+      "offset": 92119,
       "length": 11,
       "value": "\"pose_hint\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91075,
+      "offset": 92137,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91096,
+      "offset": 92158,
       "length": 16,
       "value": "\"pose_hint_type\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91119,
+      "offset": 92181,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91140,
+      "offset": 92202,
       "length": 11,
       "value": "\"wifi_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91158,
+      "offset": 92220,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91179,
+      "offset": 92241,
       "length": 14,
       "value": "\"geo_location\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91200,
+      "offset": 92262,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91221,
+      "offset": 92283,
       "length": 15,
       "value": "\"ar_session_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91243,
+      "offset": 92305,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91263,
+      "offset": 92325,
       "length": 23,
       "value": "\"obsolete_cameraMatrix\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91293,
+      "offset": 92355,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91313,
+      "offset": 92375,
       "length": 38,
       "value": "\"obsolete_vconfig_path_for_tests_only\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91358,
+      "offset": 92420,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91379,
+      "offset": 92441,
       "length": 37,
       "value": "\"obsolete_registration_server_params\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91423,
+      "offset": 92485,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91444,
+      "offset": 92506,
       "length": 25,
       "value": "\"proxy_receive_timestamp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91476,
+      "offset": 92538,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91497,
+      "offset": 92559,
       "length": 14,
       "value": "\"heading_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91518,
+      "offset": 92580,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91539,
+      "offset": 92601,
       "length": 20,
       "value": "\"ar_world_alignment\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91566,
+      "offset": 92628,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91587,
+      "offset": 92649,
       "length": 13,
       "value": "\"region_hint\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 92165,
+      "offset": 93227,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 92235,
+      "offset": 93297,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 92306,
+      "offset": 93368,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 92897,
+      "offset": 93959,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 93034,
+      "offset": 94096,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 107770,
+      "offset": 108832,
       "length": 22,
       "value": "\".KeypointMatchRecord\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 107856,
+      "offset": 108918,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 107876,
+      "offset": 108938,
       "length": 14,
       "value": "\"idx_in_query\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 107897,
+      "offset": 108959,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 107917,
+      "offset": 108979,
       "length": 23,
       "value": "\"obsolete_ref_frame_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 107947,
+      "offset": 109009,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 107968,
+      "offset": 109030,
       "length": 28,
       "value": "\"ref_frame_idx_in_component\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108003,
+      "offset": 109065,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108024,
+      "offset": 109086,
       "length": 42,
       "value": "\"idx_of_best_ref_frame_in_ref_frames_list\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108073,
+      "offset": 109135,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108093,
+      "offset": 109155,
       "length": 12,
       "value": "\"idx_in_ref\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108112,
+      "offset": 109174,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108132,
+      "offset": 109194,
       "length": 13,
       "value": "\"match_score\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108152,
+      "offset": 109214,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108172,
+      "offset": 109234,
       "length": 15,
       "value": "\"reproj_err_l2\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108194,
+      "offset": 109256,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108214,
+      "offset": 109276,
       "length": 15,
       "value": "\"reproj_err_l1\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108236,
+      "offset": 109298,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108256,
+      "offset": 109318,
       "length": 13,
       "value": "\"query_pixel\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108276,
+      "offset": 109338,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108296,
+      "offset": 109358,
       "length": 14,
       "value": "\"ref_model_pt\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108317,
+      "offset": 109379,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108337,
+      "offset": 109399,
       "length": 14,
       "value": "\"is_symmetric\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 112675,
+      "offset": 113737,
       "length": 19,
       "value": "\".PoseSolverInfoPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 112758,
+      "offset": 113820,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 112778,
+      "offset": 113840,
       "length": 17,
       "value": "\"pose_score_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 112802,
+      "offset": 113864,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 112822,
+      "offset": 113884,
       "length": 31,
       "value": "\"ref_segments_calibrated_uv_uv\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 112860,
+      "offset": 113922,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 112880,
+      "offset": 113942,
       "length": 21,
       "value": "\"ref_global_line_ids\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 112908,
+      "offset": 113970,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 112928,
+      "offset": 113990,
       "length": 41,
       "value": "\"match_segments_xyz_xyz_calibrated_uv_uv\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 112976,
+      "offset": 114038,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 112996,
+      "offset": 114058,
       "length": 23,
       "value": "\"match_global_line_ids\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 113026,
+      "offset": 114088,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 113046,
+      "offset": 114108,
       "length": 15,
       "value": "\"match_sources\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 113068,
+      "offset": 114130,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 113088,
+      "offset": 114150,
       "length": 20,
       "value": "\"match_idx_in_query\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 113115,
+      "offset": 114177,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 113135,
+      "offset": 114197,
       "length": 18,
       "value": "\"match_idx_in_ref\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 113160,
+      "offset": 114222,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 113180,
+      "offset": 114242,
       "length": 28,
       "value": "\"match_calibrated_end_dists\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 113215,
+      "offset": 114277,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 113236,
+      "offset": 114298,
       "length": 24,
       "value": "\"model_segments_xyz_xyz\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113414,
+      "offset": 114476,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113455,
+      "offset": 114517,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113512,
+      "offset": 114574,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113555,
+      "offset": 114617,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113592,
+      "offset": 114654,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113632,
+      "offset": 114694,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113670,
+      "offset": 114732,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113717,
+      "offset": 114779,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 113760,
+      "offset": 114822,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 119884,
+      "offset": 120946,
       "length": 15,
       "value": "\".SolverInfoPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 119963,
+      "offset": 121025,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 119983,
+      "offset": 121045,
       "length": 31,
       "value": "\"qry_segments_calibrated_uv_uv\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 120021,
+      "offset": 121083,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 120041,
+      "offset": 121103,
       "length": 21,
       "value": "\"pt_pose_solver_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 120069,
+      "offset": 121131,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 120089,
+      "offset": 121151,
       "length": 23,
       "value": "\"pnpl_pose_solver_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 120119,
+      "offset": 121181,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 120139,
+      "offset": 121201,
       "length": 19,
       "value": "\"is_pnpl_pose_used\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 122601,
+      "offset": 123663,
       "length": 18,
       "value": "\".ComponentDataPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 122683,
+      "offset": 123745,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 122703,
+      "offset": 123765,
       "length": 13,
       "value": "\"solver_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 122723,
+      "offset": 123785,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 122739,
+      "offset": 123801,
       "length": 9,
       "value": "\"matches\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 122755,
+      "offset": 123817,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 122775,
+      "offset": 123837,
       "length": 17,
       "value": "\"maximal_matches\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 122799,
+      "offset": 123861,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 122819,
+      "offset": 123881,
       "length": 9,
       "value": "\"ref_idx\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125133,
+      "offset": 126195,
       "length": 26,
       "value": "\".RegistrationDebugRecord\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125223,
+      "offset": 126285,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125243,
+      "offset": 126305,
       "length": 12,
       "value": "\"frame_data\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125262,
+      "offset": 126324,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125282,
+      "offset": 126344,
       "length": 22,
       "value": "\"registration_summary\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125311,
+      "offset": 126373,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125327,
+      "offset": 126389,
       "length": 16,
       "value": "\"transformation\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125350,
+      "offset": 126412,
+      "length": 2,
+      "value": "34"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 126433,
+      "length": 19,
+      "value": "\"raw_ref_frame_ids\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 126459,
+      "length": 2,
+      "value": "35"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 126480,
+      "length": 22,
+      "value": "\"raw_ref_frame_scores\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 126509,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125370,
+      "offset": 126529,
       "length": 15,
       "value": "\"ref_frame_ids\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125392,
+      "offset": 126551,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125412,
+      "offset": 126571,
       "length": 18,
       "value": "\"ref_frame_scores\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125437,
+      "offset": 126596,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125458,
+      "offset": 126617,
       "length": 20,
       "value": "\"flat_component_ids\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125485,
+      "offset": 126644,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125506,
+      "offset": 126665,
       "length": 25,
       "value": "\"component_ids_begin_end\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125538,
+      "offset": 126697,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125559,
+      "offset": 126718,
       "length": 33,
       "value": "\"intermediate_registration_state\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125599,
+      "offset": 126758,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125620,
+      "offset": 126779,
       "length": 20,
       "value": "\"registration_state\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125647,
+      "offset": 126806,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125668,
+      "offset": 126827,
       "length": 19,
       "value": "\"receive_timestamp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125694,
+      "offset": 126853,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125715,
+      "offset": 126874,
       "length": 19,
       "value": "\"summary_timestamp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125741,
+      "offset": 126900,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125762,
+      "offset": 126921,
       "length": 15,
       "value": "\"vconfig_paths\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125784,
+      "offset": 126943,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125805,
+      "offset": 126964,
       "length": 16,
       "value": "\"real_estate_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125828,
+      "offset": 126987,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125849,
+      "offset": 127008,
       "length": 28,
       "value": "\"registration_server_params\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125884,
+      "offset": 127043,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125905,
+      "offset": 127064,
       "length": 28,
       "value": "\"component_keypoint_matches\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125940,
+      "offset": 127099,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 125961,
+      "offset": 127120,
       "length": 31,
       "value": "\"qry_segments_calibrated_uv_uv\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 125999,
+      "offset": 127158,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126020,
+      "offset": 127179,
       "length": 23,
       "value": "\"seed_pose_and_inliers\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126050,
+      "offset": 127209,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126071,
+      "offset": 127230,
       "length": 32,
       "value": "\"post_gradient_pose_and_inliers\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126110,
+      "offset": 127269,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126131,
+      "offset": 127290,
       "length": 27,
       "value": "\"max_match_pose_score_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126165,
+      "offset": 127324,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126186,
+      "offset": 127345,
       "length": 30,
       "value": "\"post_rematch_pose_score_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126223,
+      "offset": 127382,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126244,
+      "offset": 127403,
       "length": 14,
       "value": "\"poses_scores\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126265,
+      "offset": 127424,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126286,
+      "offset": 127445,
       "length": 19,
       "value": "\"ocr_error_message\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126312,
+      "offset": 127471,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126333,
+      "offset": 127492,
       "length": 21,
       "value": "\"ocr_results_locales\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126361,
+      "offset": 127520,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 127541,
+      "length": 18,
+      "value": "\"best_hits_params\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127566,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126381,
+      "offset": 127586,
       "length": 29,
       "value": "\"obsolete_query_sparse_frame\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126417,
+      "offset": 127622,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126438,
+      "offset": 127643,
       "length": 26,
       "value": "\"obsolete_ref_frame_poses\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126471,
+      "offset": 127676,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126491,
+      "offset": 127696,
       "length": 18,
       "value": "\"obsolete_matches\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126516,
+      "offset": 127721,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126537,
+      "offset": 127742,
       "length": 33,
       "value": "\"obsolete_query_netvlad_features\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126577,
+      "offset": 127782,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126598,
+      "offset": 127803,
       "length": 28,
       "value": "\"obsolete_pnp_component_ids\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126633,
+      "offset": 127838,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126654,
+      "offset": 127859,
       "length": 21,
       "value": "\"obsolete_token_data\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126682,
+      "offset": 127887,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126703,
+      "offset": 127908,
       "length": 22,
       "value": "\"obsolete_solver_info\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 126732,
+      "offset": 127937,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 126753,
+      "offset": 127958,
       "length": 26,
       "value": "\"obsolete_components_data\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127029,
+      "offset": 128237,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127067,
+      "offset": 128278,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127108,
+      "offset": 128314,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127153,
+      "offset": 128352,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127428,
+      "offset": 128393,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127626,
+      "offset": 128438,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127675,
+      "offset": 128713,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127745,
+      "offset": 128911,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127823,
+      "offset": 128960,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127895,
+      "offset": 129030,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 127970,
+      "offset": 129108,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 128006,
+      "offset": 129180,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 128088,
+      "offset": 129255,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 128270,
+      "offset": 129291,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 128384,
+      "offset": 129373,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "Array",
-      "offset": 128578,
+      "offset": 129621,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "Array",
+      "offset": 129735,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "Array",
+      "offset": 129929,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143030,
+      "offset": 145516,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143046,
+      "offset": 145532,
       "length": 12,
       "value": "\"FRAME_DATA\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143065,
+      "offset": 145551,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143081,
+      "offset": 145567,
       "length": 22,
       "value": "\"REGISTRATION_SUMMARY\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143110,
+      "offset": 145596,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143126,
+      "offset": 145612,
       "length": 16,
       "value": "\"TRANSFORMATION\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143149,
+      "offset": 145635,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143165,
+      "offset": 145651,
       "length": 15,
       "value": "\"REF_FRAME_IDS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143187,
+      "offset": 145673,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143203,
+      "offset": 145689,
       "length": 18,
       "value": "\"REF_FRAME_SCORES\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143228,
+      "offset": 145714,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143245,
+      "offset": 145731,
       "length": 20,
       "value": "\"REGISTRATION_STATE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143272,
+      "offset": 145758,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143289,
+      "offset": 145775,
       "length": 15,
       "value": "\"VCONFIG_PATHS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143311,
+      "offset": 145797,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143328,
+      "offset": 145814,
       "length": 16,
       "value": "\"REAL_ESTATE_ID\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143351,
+      "offset": 145837,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143368,
+      "offset": 145854,
       "length": 28,
       "value": "\"REGISTRATION_SERVER_PARAMS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143403,
+      "offset": 145889,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143420,
+      "offset": 145906,
       "length": 28,
       "value": "\"COMPONENT_KEYPOINT_MATCHES\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143455,
+      "offset": 145941,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143472,
+      "offset": 145958,
       "length": 30,
       "value": "\"QRY_SEGMENT_CALIBRATED_UV_UV\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143509,
+      "offset": 145995,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143526,
+      "offset": 146012,
       "length": 23,
       "value": "\"SEED_POSE_AND_INLIERS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143556,
+      "offset": 146042,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143573,
+      "offset": 146059,
       "length": 32,
       "value": "\"POST_GRADIENT_POSE_AND_INLIERS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143612,
+      "offset": 146098,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143629,
+      "offset": 146115,
       "length": 27,
       "value": "\"MAX_MATCH_POSE_SCORE_INFO\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143663,
+      "offset": 146149,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143680,
+      "offset": 146166,
       "length": 30,
       "value": "\"POST_REMATCH_POSE_SCORE_INFO\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143717,
+      "offset": 146203,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143734,
+      "offset": 146220,
       "length": 15,
       "value": "\"COMPONENT_IDS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143756,
+      "offset": 146242,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143773,
+      "offset": 146259,
       "length": 33,
       "value": "\"INTERMEDIATE_REGISTRATION_STATE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143813,
+      "offset": 146299,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143830,
+      "offset": 146316,
       "length": 14,
       "value": "\"POSES_SCORES\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143851,
+      "offset": 146337,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143868,
+      "offset": 146354,
       "length": 14,
       "value": "\"OCR_METADATA\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143889,
+      "offset": 146375,
+      "length": 2,
+      "value": "34"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 146392,
+      "length": 15,
+      "value": "\"RAW_BEST_HITS\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 146414,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 146431,
+      "length": 18,
+      "value": "\"BEST_HITS_PARAMS\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 146456,
       "length": 3,
       "value": "101"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143907,
+      "offset": 146474,
       "length": 15,
       "value": "\"FRAME_DATA_NV\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143929,
+      "offset": 146496,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143947,
+      "offset": 146514,
       "length": 15,
       "value": "\"FRAME_DATA_SP\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 143969,
+      "offset": 146536,
       "length": 3,
       "value": "103"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 143987,
+      "offset": 146554,
       "length": 16,
       "value": "\"FRAME_DATA_OCR\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 144215,
+      "offset": 146782,
       "length": 20,
       "value": "\".RegistrationToken\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 144299,
+      "offset": 146866,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 144319,
+      "offset": 146886,
       "length": 14,
       "value": "\"vconfig_path\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 144340,
+      "offset": 146907,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 144360,
+      "offset": 146927,
       "length": 17,
       "value": "\"expiration_time\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 144384,
+      "offset": 146951,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 144404,
+      "offset": 146971,
       "length": 16,
       "value": "\"real_estate_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 144427,
+      "offset": 146994,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 144443,
+      "offset": 147010,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 146755,
+      "offset": 149322,
       "length": 11,
       "value": "\".WifiInfo\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 146830,
+      "offset": 149397,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 146846,
+      "offset": 149413,
       "length": 6,
       "value": "\"ssid\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 146859,
+      "offset": 149426,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 146875,
+      "offset": 149442,
       "length": 7,
       "value": "\"bssid\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 146889,
+      "offset": 149456,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 146905,
+      "offset": 149472,
       "length": 6,
       "value": "\"rssi\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 146918,
+      "offset": 149485,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 146938,
+      "offset": 149505,
       "length": 14,
       "value": "\"is_connected\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149171,
+      "offset": 151738,
       "length": 18,
       "value": "\".FullGeoLocation\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149253,
+      "offset": 151820,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149269,
+      "offset": 151836,
       "length": 10,
       "value": "\"latitude\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149286,
+      "offset": 151853,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149302,
+      "offset": 151869,
       "length": 11,
       "value": "\"longitude\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149320,
+      "offset": 151887,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149336,
+      "offset": 151903,
       "length": 10,
       "value": "\"altitude\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149353,
+      "offset": 151920,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149369,
+      "offset": 151936,
       "length": 9,
       "value": "\"bearing\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149385,
+      "offset": 151952,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149401,
+      "offset": 151968,
       "length": 8,
       "value": "\"course\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149416,
+      "offset": 151983,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149432,
+      "offset": 151999,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149446,
+      "offset": 152013,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149466,
+      "offset": 152033,
       "length": 21,
       "value": "\"horizontal_accuracy\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149494,
+      "offset": 152061,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149514,
+      "offset": 152081,
       "length": 19,
       "value": "\"vertical_accuracy\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149540,
+      "offset": 152107,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149560,
+      "offset": 152127,
       "length": 18,
       "value": "\"bearing_accuracy\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149585,
+      "offset": 152152,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149606,
+      "offset": 152173,
       "length": 17,
       "value": "\"course_accuracy\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149630,
+      "offset": 152197,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149651,
+      "offset": 152218,
       "length": 16,
       "value": "\"speed_accuracy\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 149674,
+      "offset": 152241,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 149691,
+      "offset": 152258,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154147,
+      "offset": 156714,
       "length": 14,
       "value": "\".HeadingInfo\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154225,
+      "offset": 156792,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154245,
+      "offset": 156812,
       "length": 18,
       "value": "\"magnetic_heading\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154270,
+      "offset": 156837,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154290,
+      "offset": 156857,
       "length": 14,
       "value": "\"accuracy_ios\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154311,
+      "offset": 156878,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154327,
+      "offset": 156894,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154345,
+      "offset": 156912,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154365,
+      "offset": 156932,
       "length": 25,
       "value": "\"accuracy_status_android\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154397,
+      "offset": 156964,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154417,
+      "offset": 156984,
       "length": 38,
       "value": "\"rotation_matrix_y_up_z_north_android\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154462,
+      "offset": 157029,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154482,
+      "offset": 157049,
       "length": 31,
       "value": "\"cl_heading_magnetic_field_ios\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154520,
+      "offset": 157087,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154540,
+      "offset": 157107,
       "length": 27,
       "value": "\"motion_magnetic_field_ios\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154574,
+      "offset": 157141,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154594,
+      "offset": 157161,
       "length": 22,
       "value": "\"motion_timestamp_ios\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 154623,
+      "offset": 157190,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
       "kind": "StringLiteral",
-      "offset": 154643,
+      "offset": 157210,
       "length": 21,
       "value": "\"motion_accuracy_ios\""
     },
@@ -18025,28 +18220,35 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+OutgoingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11309,
+      "offset": 1159,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+OutgoingEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 11557,
       "length": 9,
       "value": "\"DEFAULT\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+OutgoingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11344,
+      "offset": 11592,
       "length": 12,
       "value": "\"SOFT_CRASH\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+OutgoingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11309,
+      "offset": 11557,
       "length": 9,
       "value": "\"DEFAULT\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+OutgoingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 11344,
+      "offset": 11592,
       "length": 12,
       "value": "\"SOFT_CRASH\""
     },
@@ -18077,6 +18279,34 @@
       "offset": 238,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/SmoothingEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/SmoothingEngine.swift",
+      "kind": "FloatLiteral",
+      "offset": 306,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/SmoothingEngine.swift",
+      "kind": "FloatLiteral",
+      "offset": 367,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/SmoothingEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 597,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS.swift",
@@ -20552,44 +20782,51 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 223,
+      "offset": 1124,
       "length": 26,
       "value": "\"https:\/\/vera.resonai.com\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 738,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2171,
+      "offset": 2058,
       "length": 26,
       "value": "\"registration.resonai.com\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2207,
+      "offset": 2094,
       "length": 3,
       "value": "443"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "Array",
-      "offset": 2810,
+      "offset": 3953,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2859,
+      "offset": 4002,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4050,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4087,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/DevTools\/DevToolsViewModel.swift",
@@ -20678,387 +20915,492 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "Array",
-      "offset": 1169,
+      "offset": 1153,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "Array",
-      "offset": 2341,
+      "offset": 1206,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "Array",
-      "offset": 2386,
+      "offset": 2378,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "Array",
-      "offset": 6155,
+      "offset": 2423,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "Array",
-      "offset": 7918,
+      "offset": 6193,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "Array",
-      "offset": 9600,
+      "offset": 7956,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "Array",
+      "offset": 9638,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "Array",
+      "offset": 11622,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10401,
+      "offset": 12369,
       "length": 18,
       "value": "\"ywz.registration\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10625,
+      "offset": 12593,
       "length": 17,
       "value": "\".OcrBoundingBox\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10706,
+      "offset": 12674,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10722,
+      "offset": 12690,
       "length": 10,
       "value": "\"vertices\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12707,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 11949,
+      "offset": 12727,
+      "length": 20,
+      "value": "\"polyhedra_vertices\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 14262,
       "length": 18,
       "value": "\".OcrTextProperty\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 12031,
+      "offset": 14344,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 12051,
+      "offset": 14364,
       "length": 12,
       "value": "\"break_type\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 12070,
+      "offset": 14383,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 12090,
+      "offset": 14403,
       "length": 17,
       "value": "\"break_is_prefix\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 12114,
+      "offset": 14427,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 12134,
+      "offset": 14447,
       "length": 25,
       "value": "\"detected_language_codes\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 12166,
+      "offset": 14479,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 12186,
+      "offset": 14499,
       "length": 27,
       "value": "\"language_codes_confidence\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 14647,
+      "offset": 16960,
       "length": 12,
       "value": "\".OcrSymbol\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 14723,
+      "offset": 17036,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 14743,
+      "offset": 17056,
       "length": 14,
       "value": "\"bounding_box\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 14764,
+      "offset": 17077,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 14780,
+      "offset": 17093,
       "length": 12,
       "value": "\"confidence\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 14799,
+      "offset": 17112,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 14815,
+      "offset": 17128,
       "length": 10,
       "value": "\"property\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 14832,
+      "offset": 17145,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 14848,
+      "offset": 17161,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 17126,
+      "offset": 19439,
       "length": 10,
       "value": "\".OcrWord\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 17200,
+      "offset": 19513,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 17220,
+      "offset": 19533,
       "length": 14,
       "value": "\"bounding_box\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 17241,
+      "offset": 19554,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 17257,
+      "offset": 19570,
       "length": 12,
       "value": "\"confidence\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 17276,
+      "offset": 19589,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 17292,
+      "offset": 19605,
       "length": 10,
       "value": "\"property\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 17309,
+      "offset": 19622,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 17325,
+      "offset": 19638,
       "length": 9,
       "value": "\"symbols\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 19619,
+      "offset": 21932,
       "length": 15,
       "value": "\".OcrParagraph\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 19698,
+      "offset": 22011,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 19718,
+      "offset": 22031,
       "length": 14,
       "value": "\"bounding_box\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 19739,
+      "offset": 22052,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 19755,
+      "offset": 22068,
       "length": 12,
       "value": "\"confidence\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 19774,
+      "offset": 22087,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 19790,
+      "offset": 22103,
       "length": 10,
       "value": "\"property\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 19807,
+      "offset": 22120,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 19823,
+      "offset": 22136,
       "length": 7,
       "value": "\"words\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 22126,
+      "offset": 24439,
       "length": 26,
       "value": "\".OcrTextDetectionResults\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 22216,
+      "offset": 24529,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 22236,
+      "offset": 24549,
       "length": 11,
       "value": "\"image_uri\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 22254,
+      "offset": 24567,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 22274,
+      "offset": 24587,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 22293,
+      "offset": 24606,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 22313,
+      "offset": 24626,
       "length": 15,
       "value": "\"error_message\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 22335,
+      "offset": 24648,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
       "kind": "StringLiteral",
-      "offset": 22351,
+      "offset": 24664,
       "length": 12,
       "value": "\"paragraphs\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24683,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 24699,
+      "length": 3,
+      "value": "\"h\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24709,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 24725,
+      "length": 3,
+      "value": "\"w\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24735,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 24751,
+      "length": 6,
+      "value": "\"pose\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24764,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 24784,
+      "length": 9,
+      "value": "\"cam_cal\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 28081,
+      "length": 31,
+      "value": "\".BatchOcrTextDetectionResults\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28176,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/text_detection.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 28196,
+      "length": 28,
+      "value": "\"oct_text_detection_results\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
@@ -21070,14 +21412,21 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1233,
+      "offset": 911,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1533,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1412,
+      "offset": 1712,
       "length": 1,
       "value": "4"
     },
@@ -22410,6 +22759,174 @@
       "offset": 7045,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "Array",
+      "offset": 3477,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "Array",
+      "offset": 3801,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "Array",
+      "offset": 3831,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 4596,
+      "length": 18,
+      "value": "\"ywz.registration\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 4822,
+      "length": 19,
+      "value": "\".BestHitsParamsPB\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4905,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 4925,
+      "length": 8,
+      "value": "\"n_best\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4940,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 4960,
+      "length": 19,
+      "value": "\"n_best_unfiltered\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4986,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5006,
+      "length": 13,
+      "value": "\"n_pose_hint\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5026,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5046,
+      "length": 11,
+      "value": "\"hint_type\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5064,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5084,
+      "length": 9,
+      "value": "\"wifi_id\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5100,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5120,
+      "length": 21,
+      "value": "\"building_floor_hint\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5148,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 5164,
+      "length": 8,
+      "value": "\"labels\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 8317,
+      "length": 20,
+      "value": "\".BuildingFloorHint\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8401,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 8421,
+      "length": 14,
+      "value": "\"building_ids\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8442,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/best_hits.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 8458,
+      "length": 8,
+      "value": "\"floors\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/SearchService.swift",

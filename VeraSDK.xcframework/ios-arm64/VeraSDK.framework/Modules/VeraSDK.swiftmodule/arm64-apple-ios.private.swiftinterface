@@ -210,6 +210,8 @@ extension VeraSDK.Vera {
 }
 extension VeraSDK.Vera {
   public struct Configuration {
+    public let domain: Foundation.URL
+    public let registration: VeraSDK.Vera.Configuration.RegistrationEndpoint
     public var auth: VeraSDK.Vera.Configuration.Authentication {
       get
     }
@@ -218,8 +220,7 @@ extension VeraSDK.Vera {
     public var language: VeraSDK.Vera.Configuration.Language {
       get
     }
-    public init(domain: Foundation.URL, app: VeraSDK.Vera.Configuration.App, auth: VeraSDK.Vera.Configuration.Authentication = .anonymous, language: VeraSDK.Vera.Configuration.Language = .en, registration: VeraSDK.Vera.Configuration.RegistrationEndpoint = .default, useExternalAuthentication: Swift.Bool = false, logger: VeraSDK.Logger = VeraLoggers())
-    public init(app: VeraSDK.Vera.Configuration.App, auth: VeraSDK.Vera.Configuration.Authentication = .anonymous, language: VeraSDK.Vera.Configuration.Language = .en, logger: VeraSDK.Logger = VeraLoggers())
+    public init(domain: Foundation.URL = URL(string: "https://vera.resonai.com")!, registration: VeraSDK.Vera.Configuration.RegistrationEndpoint = .default, app: VeraSDK.Vera.Configuration.App, auth: VeraSDK.Vera.Configuration.Authentication = .anonymous, language: VeraSDK.Vera.Configuration.Language = .en, logger: VeraSDK.Logger = VeraLoggers())
   }
 }
 extension VeraSDK.Vera.Configuration {
@@ -240,7 +241,7 @@ extension VeraSDK.Vera.Configuration {
     public let hideHeader: Swift.Bool
     public let implementsAuthentication: Swift.Bool
     public let deepLinkPrefix: Swift.String?
-    public init(clientID: Swift.String, siteIDs: [Swift.String] = [], implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool, hideHeader: Swift.Bool, deepLinkPrefix: Swift.String? = nil)
+    public init(clientID: Swift.String, siteIDs: [Swift.String] = [], implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool = true, hideHeader: Swift.Bool = false, deepLinkPrefix: Swift.String? = nil)
   }
   public enum Language : Swift.String {
     case en, ru, zh, de, hi, th, ja, vi, fr, es, sv, he
