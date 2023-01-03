@@ -67,7 +67,7 @@ The SDK implements bi-directional communication between the Vera platform and th
 
 ### Sending Events
 
-In order to send an event to the SDK, implement the `Vera.handleEvent(_:)` method.
+In order to send an event to the SDK, call the `Vera.handleEvent(_:)` method.
 
 #### Pause / Resume
 
