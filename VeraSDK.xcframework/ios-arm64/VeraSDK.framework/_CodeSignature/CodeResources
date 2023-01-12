@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		el45Z/83u82owsge1l6JFs6onPM=
+		uXqYy6PJHcuLVAj/euCUUtBlmyg=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		HBoTOTo3Vmd1AtOEVpKyGxAwCNM=
+		DCDGqyzbhAVx9w5mScu/j/FZsTo=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		3YOHky+hVZOvCAXTpXSWsoyL3M8=
+		Od6smjn7mMUVOF4o39V6V2GBhW8=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		3YOHky+hVZOvCAXTpXSWsoyL3M8=
+		Od6smjn7mMUVOF4o39V6V2GBhW8=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NRsva12y296RoTureP/c6+1jMOs=
+		W6QX+a8b0SIUB+RlxJq7IjSHi58=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,6 +47,10 @@
 		<key>default.metallib</key>
 		<data>
 		vQC63i/8hz8EUSEg82/MKKkjeTw=
+		</data>
+		<key>mergeDeep.js</key>
+		<data>
+		6crmOaUkY/n6VZIoAfKKkO4kR/M=
 		</data>
 		<key>no_internet.html</key>
 		<data>
@@ -88,14 +92,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JGgdrQ9g7bh6oy+j2D8sq9+tZOhoTQtvKwF/gWPKlqs=
+			s92U0ueJM4z7nGVnFJSO5Jk0iYTLFtoMhJbToe2/oNY=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0I3L5708evOeBjRvi2+0yiZZTevqREaDWm/MukbnrGw=
+			egiVv1RAUMhaMH8xyhAx7K4J8Tn+RjCtUlOJ4182HqQ=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -109,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0I3L5708evOeBjRvi2+0yiZZTevqREaDWm/MukbnrGw=
+			egiVv1RAUMhaMH8xyhAx7K4J8Tn+RjCtUlOJ4182HqQ=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			drn7nmCw3u/J8pHdrRJUIst+2l8gPV3vxsV7rUikpSw=
+			YNo0UeS0VS4YE84Ip3aHKDE4boaOSzlY3ZwKrMv2nt8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -131,6 +135,13 @@
 			<key>hash2</key>
 			<data>
 			XOkxUjdXzI4RdBC+aDuw7/MMoTqxQPVi6DQoNMmihyA=
+			</data>
+		</dict>
+		<key>mergeDeep.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WQl2vPviBx3rYKl07Sc8bamxnMT8RbcCdOBKEeQNWJU=
 			</data>
 		</dict>
 		<key>no_internet.html</key>

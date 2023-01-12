@@ -323,6 +323,8 @@ public enum KeychainSwiftAccessOptions {
     get
   }
 }
+public typealias MaybeUpdater<T> = (T) -> (Swift.Bool, T)
+infix operator ??= : NilCoalescingPrecedence
 public struct VeraLoggers : VeraSDK.Logger {
   public let loggers: [VeraSDK.Logger]
   public init(_ loggers: [VeraSDK.Logger] = [ConsoleLogger()])

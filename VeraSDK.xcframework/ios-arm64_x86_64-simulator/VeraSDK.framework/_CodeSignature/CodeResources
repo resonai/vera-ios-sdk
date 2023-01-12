@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9sJnU8Fnx2h6AlLuQK1FeCV/IRs=
+		j/cDDVFUFIjJsGplJ9184VJoj+4=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QNlbSXPRxmLNXHZhatuaTaTkcxg=
+		1DeLiu7X3y3gJwYT22AF1ygfKXQ=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/Qf58SzDMWqJVfjEYyGpkjslguk=
+		nIragV52BUjc8pCI6gBpxZpbKps=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/Qf58SzDMWqJVfjEYyGpkjslguk=
+		nIragV52BUjc8pCI6gBpxZpbKps=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/ZAzFm2u3HCyR6pxhXtv1IP9DJU=
+		woUEoxna0dlYKXrg1+KI6fKYyFY=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QNlbSXPRxmLNXHZhatuaTaTkcxg=
+		1DeLiu7X3y3gJwYT22AF1ygfKXQ=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Z/kOmxAP1qLZk6xJrTrxMarYeuo=
+		Wg3kwcIf6uNDpMIr+lTses5Pp5g=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Z/kOmxAP1qLZk6xJrTrxMarYeuo=
+		Wg3kwcIf6uNDpMIr+lTses5Pp5g=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iPAwNoKaGdWpdRsVWxgXesENJ+Y=
+		Toqmi5+un8hImzTAkwMq6o4gmC0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,6 +67,10 @@
 		<key>default.metallib</key>
 		<data>
 		FQXshrqAwmlOx6NCNVLR2vlqU2A=
+		</data>
+		<key>mergeDeep.js</key>
+		<data>
+		6crmOaUkY/n6VZIoAfKKkO4kR/M=
 		</data>
 		<key>no_internet.html</key>
 		<data>
@@ -108,14 +112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TSmEDn3DDX/o9KgdQFiRMmDaavy352SxtS86NemT18U=
+			VWfeHqNGCWeuDrVSo27mSLXJH+eea9OYdJw09bEz6MI=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uvI7QLjC5s5WPjl5f8d4HL+/qAd1El8JKKsxHq2AtJ4=
+			a+QXLuQf8saxltYvTjD7w1ls1l0HVurbX4V4LAeMjLs=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -129,28 +133,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uvI7QLjC5s5WPjl5f8d4HL+/qAd1El8JKKsxHq2AtJ4=
+			a+QXLuQf8saxltYvTjD7w1ls1l0HVurbX4V4LAeMjLs=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CXFryyuKlbRt7Vap+LsYJ6ujoWoYaHmuSO0gvuWD0fk=
+			k6Y70brVH3UUw2BcaQdtxoXYBFKVq/Vwqq2of+k9fGc=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TSmEDn3DDX/o9KgdQFiRMmDaavy352SxtS86NemT18U=
+			VWfeHqNGCWeuDrVSo27mSLXJH+eea9OYdJw09bEz6MI=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AjY1RpCcyDVi6iJjWA6U6Q4HA/9uY5LfdEiSAamV/7g=
+			hT6qFoLLE77Xj+NDZ3XhYfS3bgoMUiRwY+mKumIgeOM=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -164,14 +168,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AjY1RpCcyDVi6iJjWA6U6Q4HA/9uY5LfdEiSAamV/7g=
+			hT6qFoLLE77Xj+NDZ3XhYfS3bgoMUiRwY+mKumIgeOM=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YZPF77bemlwOkhKe3BlTYXwcJ3NxPqrZeZWpA9Aagxw=
+			IphXUoW9/KvZjXU16P8o4iS7CirVyAdofwqnW1hPlgw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -186,6 +190,13 @@
 			<key>hash2</key>
 			<data>
 			hRTn8c9Wma2JZ1s0ThyP9qeXenDkB9yWsnA1URY9aiY=
+			</data>
+		</dict>
+		<key>mergeDeep.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WQl2vPviBx3rYKl07Sc8bamxnMT8RbcCdOBKEeQNWJU=
 			</data>
 		</dict>
 		<key>no_internet.html</key>
