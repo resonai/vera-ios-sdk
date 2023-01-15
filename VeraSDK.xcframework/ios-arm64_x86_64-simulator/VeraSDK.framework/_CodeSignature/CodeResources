@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1DeLiu7X3y3gJwYT22AF1ygfKXQ=
+		k74+jfYzqVdmdiaO13+erOPGs54=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		woUEoxna0dlYKXrg1+KI6fKYyFY=
+		8iv2/qN7pFN5Be4fycjDD3HgL70=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1DeLiu7X3y3gJwYT22AF1ygfKXQ=
+		k74+jfYzqVdmdiaO13+erOPGs54=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Toqmi5+un8hImzTAkwMq6o4gmC0=
+		+oJBozAdpz4FfPs8XmAI87/L+xc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VWfeHqNGCWeuDrVSo27mSLXJH+eea9OYdJw09bEz6MI=
+			Uc/ih8Y/byzxqWDvcaQYJmYUkcT49pDfyxbq+VCN7Hk=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -140,14 +140,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k6Y70brVH3UUw2BcaQdtxoXYBFKVq/Vwqq2of+k9fGc=
+			0M8WwhcKGRVxrhHcQ4/j/gvinbY3GK7jCxK1pnG084c=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VWfeHqNGCWeuDrVSo27mSLXJH+eea9OYdJw09bEz6MI=
+			Uc/ih8Y/byzxqWDvcaQYJmYUkcT49pDfyxbq+VCN7Hk=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -175,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IphXUoW9/KvZjXU16P8o4iS7CirVyAdofwqnW1hPlgw=
+			el0fSxmCjr3s3685MrIyzWU4Qw2Tk9niBWVo8p6+TIQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
