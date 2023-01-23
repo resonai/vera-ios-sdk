@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios13.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeraSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -224,9 +224,11 @@ extension VeraSDK.Vera {
   }
 }
 extension VeraSDK.Vera.Configuration {
-  public struct RegistrationEndpoint {
+  public struct RegistrationEndpoint : Swift.Codable {
     public init(url: Foundation.URL, port: Swift.Int)
     public static let `default`: VeraSDK.Vera.Configuration.RegistrationEndpoint
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct Authentication : Swift.Equatable {
     public let username: Swift.String?
