@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeraSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -175,7 +175,7 @@ public protocol OutputNode : AnyObject {
   typealias Updater = (Self.Output) -> Self.Output
   typealias FilterUpdater = (Self.Output) -> (Swift.Bool, Self.Output)
   func push(_ value: Self.Output)
-  func update(_ with: @escaping (Self.Output) -> Self.Output)
+  func update(_ with: @escaping Self.Updater)
   func maybeUpdate(_ with: @escaping Self.FilterUpdater)
 }
 extension Combine.CurrentValueSubject : VeraSDK.OutputNode {
@@ -325,7 +325,7 @@ public enum KeychainSwiftAccessOptions {
     get
   }
 }
-public typealias MaybeUpdater<T> = (T) -> (Swift.Bool, T)
+public typealias FilterUpdater<T> = (T) -> (Swift.Bool, T)
 infix operator ??= : NilCoalescingPrecedence
 public struct VeraLoggers : VeraSDK.Logger {
   public let loggers: [VeraSDK.Logger]
