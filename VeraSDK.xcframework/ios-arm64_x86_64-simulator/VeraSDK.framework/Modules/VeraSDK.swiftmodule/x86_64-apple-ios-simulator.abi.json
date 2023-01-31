@@ -27868,567 +27868,567 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "Array",
-      "offset": 2127,
+      "offset": 2173,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "Array",
-      "offset": 2225,
+      "offset": 2271,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "Array",
-      "offset": 2299,
+      "offset": 2345,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "Array",
-      "offset": 2391,
+      "offset": 2437,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "Array",
-      "offset": 2474,
+      "offset": 2520,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "Array",
-      "offset": 2563,
+      "offset": 2609,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "Array",
-      "offset": 2675,
+      "offset": 2721,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16228,
+      "offset": 16318,
       "length": 18,
       "value": "\"ywz.registration\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16449,
+      "offset": 16539,
       "length": 14,
       "value": "\".Loc6PathsPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16527,
+      "offset": 16617,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16547,
+      "offset": 16637,
       "length": 18,
       "value": "\"path_final_poses\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16572,
+      "offset": 16662,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16592,
-      "length": 24,
-      "value": "\"path_last_solver_poses\""
+      "offset": 16682,
+      "length": 29,
+      "value": "\"path_last_solver_dits_poses\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16623,
+      "offset": 16718,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16643,
+      "offset": 16738,
       "length": 19,
       "value": "\"path_frame_counts\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16669,
+      "offset": 16764,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16689,
+      "offset": 16784,
       "length": 20,
       "value": "\"path_solver_counts\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16716,
+      "offset": 16811,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16736,
+      "offset": 16831,
       "length": 13,
       "value": "\"path_scores\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16756,
+      "offset": 16851,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16776,
+      "offset": 16871,
       "length": 14,
       "value": "\"path_spreads\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16797,
+      "offset": 16892,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16817,
+      "offset": 16912,
       "length": 19,
       "value": "\"path_dits_spreads\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16843,
+      "offset": 16938,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16863,
+      "offset": 16958,
       "length": 21,
       "value": "\"path_parent_indices\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 16891,
+      "offset": 16986,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 16911,
+      "offset": 17006,
       "length": 21,
       "value": "\"path_solver_indices\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 20780,
+      "offset": 20891,
       "length": 18,
       "value": "\".Loc6PathsParams\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 20862,
+      "offset": 20973,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 20882,
+      "offset": 20993,
       "length": 25,
       "value": "\"spatial_drift_per_meter\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 20914,
+      "offset": 21025,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 20934,
+      "offset": 21045,
       "length": 26,
       "value": "\"angular_drift_per_radian\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 20967,
+      "offset": 21078,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 20987,
+      "offset": 21098,
       "length": 23,
       "value": "\"time_drift_per_second\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21017,
+      "offset": 21128,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21037,
+      "offset": 21148,
       "length": 18,
       "value": "\"fade_score_coeff\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21062,
+      "offset": 21173,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21082,
+      "offset": 21193,
       "length": 20,
       "value": "\"nms_max_path_count\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21109,
+      "offset": 21220,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21129,
+      "offset": 21240,
       "length": 20,
       "value": "\"nms_spatial_radius\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21156,
+      "offset": 21267,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21176,
+      "offset": 21287,
       "length": 20,
       "value": "\"nms_angular_radius\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21203,
+      "offset": 21314,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21223,
+      "offset": 21334,
       "length": 18,
       "value": "\"min_solver_score\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21248,
+      "offset": 21359,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21268,
+      "offset": 21379,
       "length": 33,
       "value": "\"solver_count_wgt_in_total_score\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21308,
+      "offset": 21419,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21329,
+      "offset": 21440,
       "length": 27,
       "value": "\"late_comer_penalty_factor\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21363,
+      "offset": 21474,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21384,
+      "offset": 21495,
       "length": 24,
       "value": "\"no_move_spatial_radius\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21415,
+      "offset": 21526,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21436,
+      "offset": 21547,
       "length": 24,
       "value": "\"no_move_angular_radius\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21467,
+      "offset": 21578,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21488,
+      "offset": 21599,
       "length": 23,
       "value": "\"min_looking_cos_angle\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21518,
+      "offset": 21629,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21539,
+      "offset": 21650,
       "length": 21,
       "value": "\"jump_spatial_radius\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21567,
+      "offset": 21678,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21588,
+      "offset": 21699,
       "length": 21,
       "value": "\"jump_angular_radius\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21616,
+      "offset": 21727,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21637,
+      "offset": 21748,
       "length": 23,
       "value": "\"max_ok_quality_spread\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 21667,
+      "offset": 21778,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 21688,
+      "offset": 21799,
       "length": 22,
       "value": "\"use_nms_on_solutions\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31119,
+      "offset": 31230,
       "length": 22,
       "value": "\".Loc6PathDebugInfoPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31205,
+      "offset": 31316,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31225,
+      "offset": 31336,
       "length": 12,
       "value": "\"final_pose\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31244,
+      "offset": 31355,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31264,
-      "length": 18,
-      "value": "\"last_solver_pose\""
+      "offset": 31375,
+      "length": 23,
+      "value": "\"last_solver_dits_pose\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31289,
+      "offset": 31405,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31309,
+      "offset": 31425,
       "length": 13,
       "value": "\"frame_count\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31329,
+      "offset": 31445,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31349,
+      "offset": 31465,
       "length": 14,
       "value": "\"solver_count\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31370,
+      "offset": 31486,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31386,
+      "offset": 31502,
       "length": 7,
       "value": "\"score\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31400,
+      "offset": 31516,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31416,
+      "offset": 31532,
       "length": 8,
       "value": "\"spread\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31431,
+      "offset": 31547,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31451,
+      "offset": 31567,
       "length": 13,
       "value": "\"dits_spread\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31471,
+      "offset": 31587,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31491,
+      "offset": 31607,
       "length": 14,
       "value": "\"parent_index\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 31512,
+      "offset": 31628,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/registration\/loc6_paths\/loc6_paths.pb.swift",
       "kind": "StringLiteral",
-      "offset": 31532,
+      "offset": 31648,
       "length": 14,
       "value": "\"solver_index\""
     },

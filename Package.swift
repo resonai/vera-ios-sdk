@@ -2,7 +2,7 @@
 import PackageDescription
 
 let name = "VeraSDK"
-let version = "0.1.9"
+let version = "0.1.11"
 
 let package = Package(
     name: name,
