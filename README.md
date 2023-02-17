@@ -119,6 +119,8 @@ Vera.useEventHandler { event in
 ### Firebase Auth
 Vera SDK prefers Firebase tokens for authentication. If you have Firebase Auth set up in your app, next step is to communicate it to Vera. Check the example app to see an implementation.
 
+The SDK will ask for the token several times using the `.refreshToken` event.
+
 1. Handle `.login`, `.logout` and `.refreshToken` events from the SDK:
 ```swift
 Vera.useEventHandler { [weak self] event in
