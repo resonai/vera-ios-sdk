@@ -9,7 +9,7 @@ import UIKit
 import VeraSDK
 
 final class TestSizeViewController: UIViewController {
-    private var vera: VeraViewController!
+    private let vera = VeraService()
 
     private lazy var fullscreenButton: UIButton = {
         let button = UIButton()
@@ -36,6 +36,8 @@ final class TestSizeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        vera.configure()
+
         view.backgroundColor = .white
 
         view.addSubview(partialButton)
@@ -53,13 +55,13 @@ final class TestSizeViewController: UIViewController {
 
     @objc func fullscreenButtonTapped() {
         removeVera()
-        guard let vc = buildVera() else { return }
+        guard let vc = vera.build() else { return }
         navigationController?.pushViewController(vc, animated: true)
     }
 
     @objc func partialButtonTapped() {
         removeVera()
-        guard let vc = buildVera() else { return }
+        guard let vc = vera.build() else { return }
 
         vc.willMove(toParent: self)
         view.addSubview(vc.view)
@@ -76,53 +78,12 @@ final class TestSizeViewController: UIViewController {
     }
 
     private func removeVera() {
-        guard let vera = vera else { return }
-        if let parent = vera.parent, parent === self {
-            vera.willMove(toParent: nil)
-            vera.view.removeFromSuperview()
-            vera.didMove(toParent: nil)
+        guard let veraVC = vera.viewController else { return }
+        if let parent = veraVC.parent, parent === self {
+            veraVC.willMove(toParent: nil)
+            veraVC.view.removeFromSuperview()
+            veraVC.didMove(toParent: nil)
         }
-        self.vera = nil
-    }
-
-    private func buildVera() -> VeraViewController? {
-        Vera.useConfig(
-            .init(
-                domain: URL(string: "https://beta-vera.resonai.com")!,
-                registration: .init(
-                    url: URL(string: "registration.resonai.com")!,
-                    port: 443
-                ),
-                app: .init(
-                    clientID: "test",
-                    siteIDs: ["azrieli-hashalom-tlv"],
-                    shouldShowCloseButton: true,
-                    hideHeader: false
-                ),
-                auth: .init(username: nil),
-                language: .he
-            )
-        )
-
-        Vera.useEventHandler { event in
-            switch event {
-            case let .handleMessage(sender: sender, data: data):
-                print("Sender: \(sender) -> \(data)")
-            case .login:
-                print("login")
-            case .logout:
-                print("logout")
-            case .refreshToken:
-                print("refresh token")
-            @unknown default:
-                fatalError()
-            }
-        }
-
-
-        let vc = Vera.getController()
-        self.vera = vc
-
-        return vc
+        vera.remove()
     }
 }

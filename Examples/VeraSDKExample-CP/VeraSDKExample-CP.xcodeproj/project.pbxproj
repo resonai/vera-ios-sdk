@@ -14,12 +14,13 @@
 		69D4CC7A27E63DC1008FFC6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CC7827E63DC1008FFC6C /* Main.storyboard */; };
 		69D4CC7C27E63DC3008FFC6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CC7B27E63DC3008FFC6C /* Assets.xcassets */; };
 		69D4CC7F27E63DC3008FFC6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CC7D27E63DC3008FFC6C /* LaunchScreen.storyboard */; };
-		CA332D08BD6BF67BECE2F094 /* Pods_VeraSDKExample_CP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B12F3F683047807B1BDCBC /* Pods_VeraSDKExample_CP.framework */; };
+		69F0C8CD299E8E1500AEA18A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69F0C8CC299E8E1500AEA18A /* GoogleService-Info.plist */; };
+		69F0C8CF299EC8D100AEA18A /* VeraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0C8CE299EC8D100AEA18A /* VeraService.swift */; };
+		B3EA8462B2A6BE85BB549E03 /* Pods_VeraSDKExample_CP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DA938A1150D48B936943F3 /* Pods_VeraSDKExample_CP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05656952CED9DDF1BF9C5F8C /* Pods-VeraSDKExample-CP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeraSDKExample-CP.debug.xcconfig"; path = "Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP.debug.xcconfig"; sourceTree = "<group>"; };
-		5F89236C03B48E1ED68ADFBD /* Pods-VeraSDKExample-CP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeraSDKExample-CP.release.xcconfig"; path = "Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP.release.xcconfig"; sourceTree = "<group>"; };
+		14FC234E753C58F8048BEA8E /* Pods-VeraSDKExample-CP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeraSDKExample-CP.release.xcconfig"; path = "Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP.release.xcconfig"; sourceTree = "<group>"; };
 		6946730F2938D68400B650DE /* TestSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSizeViewController.swift; sourceTree = "<group>"; };
 		69D4CC6F27E63DC1008FFC6C /* VeraSDKExample-CP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VeraSDKExample-CP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CC7227E63DC1008FFC6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +30,10 @@
 		69D4CC7B27E63DC3008FFC6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D4CC7E27E63DC3008FFC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69D4CC8027E63DC3008FFC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5B12F3F683047807B1BDCBC /* Pods_VeraSDKExample_CP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeraSDKExample_CP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F0C8CC299E8E1500AEA18A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69F0C8CE299EC8D100AEA18A /* VeraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeraService.swift; sourceTree = "<group>"; };
+		D4DA938A1150D48B936943F3 /* Pods_VeraSDKExample_CP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeraSDKExample_CP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB41115394237C254A206BF2 /* Pods-VeraSDKExample-CP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeraSDKExample-CP.debug.xcconfig"; path = "Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA332D08BD6BF67BECE2F094 /* Pods_VeraSDKExample_CP.framework in Frameworks */,
+				B3EA8462B2A6BE85BB549E03 /* Pods_VeraSDKExample_CP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +51,8 @@
 		0A83CE7ED7761C17218C27FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05656952CED9DDF1BF9C5F8C /* Pods-VeraSDKExample-CP.debug.xcconfig */,
-				5F89236C03B48E1ED68ADFBD /* Pods-VeraSDKExample-CP.release.xcconfig */,
+				FB41115394237C254A206BF2 /* Pods-VeraSDKExample-CP.debug.xcconfig */,
+				14FC234E753C58F8048BEA8E /* Pods-VeraSDKExample-CP.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -59,7 +63,7 @@
 				69D4CC7127E63DC1008FFC6C /* VeraSDKExample-CP */,
 				69D4CC7027E63DC1008FFC6C /* Products */,
 				0A83CE7ED7761C17218C27FA /* Pods */,
-				AD5BC9DF4C488727740AA80F /* Frameworks */,
+				E5737ADAED55307D6473A506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,18 +82,20 @@
 				69D4CC7427E63DC1008FFC6C /* SceneDelegate.swift */,
 				69D4CC7627E63DC1008FFC6C /* ViewController.swift */,
 				6946730F2938D68400B650DE /* TestSizeViewController.swift */,
+				69F0C8CE299EC8D100AEA18A /* VeraService.swift */,
 				69D4CC7827E63DC1008FFC6C /* Main.storyboard */,
 				69D4CC7B27E63DC3008FFC6C /* Assets.xcassets */,
 				69D4CC7D27E63DC3008FFC6C /* LaunchScreen.storyboard */,
 				69D4CC8027E63DC3008FFC6C /* Info.plist */,
+				69F0C8CC299E8E1500AEA18A /* GoogleService-Info.plist */,
 			);
 			path = "VeraSDKExample-CP";
 			sourceTree = "<group>";
 		};
-		AD5BC9DF4C488727740AA80F /* Frameworks */ = {
+		E5737ADAED55307D6473A506 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5B12F3F683047807B1BDCBC /* Pods_VeraSDKExample_CP.framework */,
+				D4DA938A1150D48B936943F3 /* Pods_VeraSDKExample_CP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,11 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69D4CC8327E63DC3008FFC6C /* Build configuration list for PBXNativeTarget "VeraSDKExample-CP" */;
 			buildPhases = (
-				DEA080A871A99AF96CCF2CC0 /* [CP] Check Pods Manifest.lock */,
+				B9A1F0BA8A8930E9AE04737B /* [CP] Check Pods Manifest.lock */,
 				69D4CC6B27E63DC1008FFC6C /* Sources */,
 				69D4CC6C27E63DC1008FFC6C /* Frameworks */,
 				69D4CC6D27E63DC1008FFC6C /* Resources */,
-				CE6BB82E67CF5294E5D75D6C /* [CP] Embed Pods Frameworks */,
+				D7D5FC2AA826538C3CBF709A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,30 +163,14 @@
 				69D4CC7F27E63DC3008FFC6C /* LaunchScreen.storyboard in Resources */,
 				69D4CC7C27E63DC3008FFC6C /* Assets.xcassets in Resources */,
 				69D4CC7A27E63DC1008FFC6C /* Main.storyboard in Resources */,
+				69F0C8CD299E8E1500AEA18A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CE6BB82E67CF5294E5D75D6C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEA080A871A99AF96CCF2CC0 /* [CP] Check Pods Manifest.lock */ = {
+		B9A1F0BA8A8930E9AE04737B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,6 +192,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D7D5FC2AA826538C3CBF709A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VeraSDKExample-CP/Pods-VeraSDKExample-CP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,6 +219,7 @@
 				69D4CC7727E63DC1008FFC6C /* ViewController.swift in Sources */,
 				694673102938D68400B650DE /* TestSizeViewController.swift in Sources */,
 				69D4CC7327E63DC1008FFC6C /* AppDelegate.swift in Sources */,
+				69F0C8CF299EC8D100AEA18A /* VeraService.swift in Sources */,
 				69D4CC7527E63DC1008FFC6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +364,7 @@
 		};
 		69D4CC8427E63DC3008FFC6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05656952CED9DDF1BF9C5F8C /* Pods-VeraSDKExample-CP.debug.xcconfig */;
+			baseConfigurationReference = FB41115394237C254A206BF2 /* Pods-VeraSDKExample-CP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,7 +385,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.resonai.VeraSDKExample-CP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonai.vera.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -387,7 +395,7 @@
 		};
 		69D4CC8527E63DC3008FFC6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F89236C03B48E1ED68ADFBD /* Pods-VeraSDKExample-CP.release.xcconfig */;
+			baseConfigurationReference = 14FC234E753C58F8048BEA8E /* Pods-VeraSDKExample-CP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -408,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.resonai.VeraSDKExample-CP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonai.vera.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

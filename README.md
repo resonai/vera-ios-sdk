@@ -116,6 +116,63 @@ Vera.useEventHandler { event in
 }
 ```
 
+### Firebase Auth
+Vera SDK prefers Firebase tokens for authentication. If you have Firebase Auth set up in your app, next step is to communicate it to Vera. Check the example app to see an implementation.
+
+1. Handle `.login`, `.logout` and `.refreshToken` events from the SDK:
+```swift
+Vera.useEventHandler { [weak self] event in
+    switch event {
+    case .login:
+        self?.login()
+    case .logout:
+        self?.logout()
+    case .refreshToken:
+        self?.renewAuthToken(forcingRefresh: true)
+    case let .handleMessage(sender: sender, data: data):
+        print("Sender: \(sender) -> \(data)")
+    @unknown default:
+        fatalError()
+    }
+}
+```
+
+2. Implement the methods:
+```swift
+private func renewAuthToken(forcingRefresh: Bool) {
+    Auth.auth().currentUser?.getIDTokenForcingRefresh(forcingRefresh) { idToken, error in
+        if let error = error {
+            print(error.localizedDescription)
+            if AuthErrorCode(_nsError: error as NSError).code == .networkError {
+
+                // we let the SDK know we're offline when a network error occurs
+                Vera.handleEvent(.updateToken(.offline))
+            }
+            return
+        }
+        let currentUserId = Auth.auth().currentUser?.uid ?? ""
+
+        // There either is a token or there isn't, in any case we let the SDK know
+        Vera.handleEvent(.updateToken(idToken.map { .loggedIn(token: $0, userID: currentUserId) } ?? .anonymous))
+    }
+}
+
+private func login() {
+    // Show default Firebase auth controller on top of the Vera screen
+    guard let viewController, let authUI = FUIAuth.defaultAuthUI() else { return }
+    authUI.delegate = self
+    viewController.present(authUI.veraAuthController(), animated: true, completion: nil)
+}
+
+private func logout() {
+    do {
+        try FUIAuth.defaultAuthUI()?.signOut()
+    } catch {
+        print("ERROR: \(error)")
+    }
+}
+```
+
 ## Info.plist Keys
 
 * `NSCameraUsageDescription` - VeraSDK needs access to the camera in order to support AR.

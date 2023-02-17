@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>345454492227-arss1ed6sf31b4d174d0qmjhdkbh1bvl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.345454492227-arss1ed6sf31b4d174d0qmjhdkbh1bvl</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>345454492227-0p2lbv2adtk8n9ebcjgltuebcgh51vgt.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAIg9tthuryOiuS76Cgk9gOYpPVQg-Z7Bk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>345454492227</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.resonai.vera.demo</string>
+	<key>PROJECT_ID</key>
+	<string>yowza3d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yowza3d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:345454492227:ios:d3de8041293d8722ea32f6</string>
+	<key>DATABASE_URL</key>
+	<string>https://yowza3d.firebaseio.com</string>
+</dict>
+</plist>
