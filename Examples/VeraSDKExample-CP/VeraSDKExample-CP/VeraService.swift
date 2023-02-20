@@ -36,7 +36,7 @@ final class VeraService: NSObject {
                 ),
                 app: .init(
                     clientID: FirebaseApp.app()?.options.clientID ?? "",
-                    siteIDs: ["azrieli-hashalom-tlv"],
+                    siteIDs: [],
                     shouldShowCloseButton: true,
                     hideHeader: false
                 ),
@@ -62,7 +62,10 @@ final class VeraService: NSObject {
     }
 
     private func renewAuthToken(forcingRefresh: Bool) {
-        Auth.auth().currentUser?.getIDTokenForcingRefresh(forcingRefresh) { idToken, error in
+        guard let user = Auth.auth().currentUser else {
+            return login()
+        }
+        user.getIDTokenForcingRefresh(forcingRefresh) { idToken, error in
             if let error = error {
                 print(error.localizedDescription)
                 if AuthErrorCode(_nsError: error as NSError).code == .networkError {
