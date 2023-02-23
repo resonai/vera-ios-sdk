@@ -121,7 +121,28 @@ Vera SDK prefers Firebase tokens for authentication. If you have Firebase Auth s
 
 The SDK will ask for the token several times using the `.refreshToken` event.
 
-1. Handle `.login`, `.logout` and `.refreshToken` events from the SDK:
+1. Make sure you have Firebase set up and we support your project:
+* You should have an iOS project set up in the Firebase Console.
+* The Vera backend should support your Firebase service account.
+* Your project should be set up in Google Cloud console.
+* You should have Firebase Authentication enabled in the console.
+
+2. Send the Firebase client id when setting up Vera configuration:
+```swift
+Vera.useConfig(
+    .init(
+        ...,
+        app: .init(
+            clientID: FirebaseApp.app()?.options.clientID ?? "<custom_client_id>",
+            ...
+        ),
+        ...
+    )
+)
+```
+
+
+3. Handle `.login`, `.logout` and `.refreshToken` events from the SDK:
 ```swift
 Vera.useEventHandler { [weak self] event in
     switch event {
@@ -139,7 +160,7 @@ Vera.useEventHandler { [weak self] event in
 }
 ```
 
-2. Implement the methods:
+4. Implement the methods:
 ```swift
 private func renewAuthToken(forcingRefresh: Bool) {
     Auth.auth().currentUser?.getIDTokenForcingRefresh(forcingRefresh) { idToken, error in
