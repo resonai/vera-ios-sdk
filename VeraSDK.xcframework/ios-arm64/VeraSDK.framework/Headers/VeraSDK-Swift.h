@@ -259,13 +259,6 @@ using UInt = size_t;
 
 
 
-@class NSTimer;
-@class UITapGestureRecognizer;
-
-@interface UIView (SWIFT_EXTENSION(VeraSDK))
-- (void)toastTimerDidFinish:(NSTimer * _Nonnull)timer;
-- (void)handleToastTapped:(UITapGestureRecognizer * _Nonnull)recognizer;
-@end
 
 @class NSCoder;
 @class UIEvent;

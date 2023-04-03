@@ -276,42 +276,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "HRToastConfig",
-        "printedName": "HRToastConfig",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7VeraSDK13HRToastConfigVACycfc",
-            "mangledName": "$s7VeraSDK13HRToastConfigVACycfc",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:7VeraSDK13HRToastConfigV",
-        "mangledName": "$s7VeraSDK13HRToastConfigV",
-        "moduleName": "VeraSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -6730,6 +6694,7 @@
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -10568,783 +10533,6 @@
             ],
             "usr": "s:10Accelerate0A6BufferP",
             "mangledName": "$s10Accelerate0A6BufferP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UIView",
-        "printedName": "UIView",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "hr_setToastThemeColor",
-            "printedName": "hr_setToastThemeColor(color:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE21hr_setToastThemeColor5colorySo7UIColorC_tFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE21hr_setToastThemeColor5colorySo7UIColorC_tFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hr_toastThemeColor",
-            "printedName": "hr_toastThemeColor()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE18hr_toastThemeColorSo7UIColorCyFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE18hr_toastThemeColorSo7UIColorCyFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hr_setToastTitleFontName",
-            "printedName": "hr_setToastTitleFontName(fontName:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE24hr_setToastTitleFontName04fontI0ySS_tFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE24hr_setToastTitleFontName04fontI0ySS_tFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hr_toastTitleFontName",
-            "printedName": "hr_toastTitleFontName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE21hr_toastTitleFontNameSSyFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE21hr_toastTitleFontNameSSyFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hr_setToastFontName",
-            "printedName": "hr_setToastFontName(fontName:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE19hr_setToastFontName04fontH0ySS_tFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE19hr_setToastFontName04fontH0ySS_tFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hr_toastFontName",
-            "printedName": "hr_toastFontName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE16hr_toastFontNameSSyFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE16hr_toastFontNameSSyFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hr_setToastFontColor",
-            "printedName": "hr_setToastFontColor(color:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE20hr_setToastFontColor5colorySo7UIColorC_tFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE20hr_setToastFontColor5colorySo7UIColorC_tFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hr_toastFontColor",
-            "printedName": "hr_toastFontColor()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE17hr_toastFontColorSo7UIColorCyFZ",
-            "mangledName": "$sSo6UIViewC7VeraSDKE17hr_toastFontColorSo7UIColorCyFZ",
-            "moduleName": "VeraSDK",
-            "static": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeToast",
-            "printedName": "makeToast(message:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message17withConfigurationySS_AC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message17withConfigurationySS_AC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeToast",
-            "printedName": "makeToast(message:duration:position:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "AnyObject"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position17withConfigurationySS_SdyXlAC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position17withConfigurationySS_SdyXlAC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeToast",
-            "printedName": "makeToast(message:duration:position:title:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "AnyObject"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position5title17withConfigurationySS_SdyXlSSAC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position5title17withConfigurationySS_SdyXlSSAC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeToast",
-            "printedName": "makeToast(message:duration:position:image:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "AnyObject"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position5image17withConfigurationySS_SdyXlSo7UIImageCAC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position5image17withConfigurationySS_SdyXlSo7UIImageCAC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeToast",
-            "printedName": "makeToast(message:duration:position:title:image:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "AnyObject"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position5title5image17withConfigurationySS_SdyXlSSSo7UIImageCAC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position5title5image17withConfigurationySS_SdyXlSSSo7UIImageCAC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showToast",
-            "printedName": "showToast(toast:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9showToast5toast17withConfigurationyAB_AC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9showToast5toast17withConfigurationyAB_AC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeToastActivity",
-            "printedName": "makeToastActivity(withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE17makeToastActivity17withConfigurationyAC13HRToastConfigV_tF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE17makeToastActivity17withConfigurationyAC13HRToastConfigV_tF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "makeToastActivity",
-            "printedName": "makeToastActivity(message:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE17makeToastActivity7message17withConfigurationySS_AC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE17makeToastActivity7message17withConfigurationySS_AC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hideToastActivity",
-            "printedName": "hideToastActivity(withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "hasDefaultArg": true,
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE17hideToastActivity17withConfigurationyAC13HRToastConfigV_tF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE17hideToastActivity17withConfigurationyAC13HRToastConfigV_tF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hideToast",
-            "printedName": "hideToast(toast:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9hideToast5toastyAB_tF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9hideToast5toastyAB_tF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hideToast",
-            "printedName": "hideToast(toast:force:withConfiguration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HRToastConfig",
-                "printedName": "VeraSDK.HRToastConfig",
-                "usr": "s:7VeraSDK13HRToastConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC7VeraSDKE9hideToast5toast5force17withConfigurationyAB_SbAC13HRToastConfigVtF",
-            "mangledName": "$sSo6UIViewC7VeraSDKE9hideToast5toast5force17withConfigurationyAB_SbAC13HRToastConfigVtF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "toastTimerDidFinish",
-            "printedName": "toastTimerDidFinish(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Timer",
-                "printedName": "Foundation.Timer",
-                "usr": "c:objc(cs)NSTimer"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@VeraSDK@@objc(cs)UIView(im)toastTimerDidFinish:",
-            "mangledName": "$sSo6UIViewC7VeraSDKE19toastTimerDidFinishyySo7NSTimerCF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "handleToastTapped",
-            "printedName": "handleToastTapped(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UITapGestureRecognizer",
-                "printedName": "UIKit.UITapGestureRecognizer",
-                "usr": "c:objc(cs)UITapGestureRecognizer"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@VeraSDK@@objc(cs)UIView(im)handleToastTapped:",
-            "mangledName": "$sSo6UIViewC7VeraSDKE17handleToastTappedyySo22UITapGestureRecognizerCF",
-            "moduleName": "VeraSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIView",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIView",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIResponder",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
           }
         ]
       },
@@ -17836,196 +17024,196 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 394,
+      "offset": 387,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 434,
+      "offset": 427,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 485,
+      "offset": 478,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 537,
+      "offset": 530,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 593,
+      "offset": 586,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 721,
+      "offset": 714,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 786,
+      "offset": 779,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 836,
+      "offset": 829,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 886,
+      "offset": 879,
       "length": 8,
       "value": "\"center\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 958,
+      "offset": 951,
       "length": 4,
       "value": "80.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1007,
+      "offset": 1000,
       "length": 4,
       "value": "80.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1078,
+      "offset": 1071,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1160,
+      "offset": 1153,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1209,
+      "offset": 1202,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1258,
+      "offset": 1251,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1304,
+      "offset": 1297,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1376,
+      "offset": 1369,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1424,
+      "offset": 1417,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1494,
+      "offset": 1487,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1516,
+      "offset": 1509,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1567,
+      "offset": 1560,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1615,
+      "offset": 1608,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 1694,
+      "offset": 1687,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 1735,
+      "offset": 1728,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 1797,
+      "offset": 1783,
       "length": 8,
       "value": "\"bottom\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 1838,
+      "offset": 1824,
       "length": 5,
       "value": "\"top\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 1876,
+      "offset": 1862,
       "length": 8,
       "value": "\"center\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 9114,
+      "offset": 9093,
       "length": 2,
       "value": "\"\""
     },

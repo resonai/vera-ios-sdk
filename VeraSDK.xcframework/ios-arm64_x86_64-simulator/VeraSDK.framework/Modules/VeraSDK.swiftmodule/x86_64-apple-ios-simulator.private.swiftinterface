@@ -26,36 +26,9 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-import libwebp
 import os
 import simd
 postfix operator >!
-public struct HRToastConfig {
-  public init()
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public class func hr_setToastThemeColor(color: UIKit.UIColor)
-  @_Concurrency.MainActor(unsafe) public class func hr_toastThemeColor() -> UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) public class func hr_setToastTitleFontName(fontName: Swift.String)
-  @_Concurrency.MainActor(unsafe) public class func hr_toastTitleFontName() -> Swift.String
-  @_Concurrency.MainActor(unsafe) public class func hr_setToastFontName(fontName: Swift.String)
-  @_Concurrency.MainActor(unsafe) public class func hr_toastFontName() -> Swift.String
-  @_Concurrency.MainActor(unsafe) public class func hr_setToastFontColor(color: UIKit.UIColor)
-  @_Concurrency.MainActor(unsafe) public class func hr_toastFontColor() -> UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, title: Swift.String, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, image: UIKit.UIImage, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, title: Swift.String, image: UIKit.UIImage, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func showToast(toast: UIKit.UIView, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func makeToastActivity(withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func makeToastActivity(message msg: Swift.String, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func hideToastActivity(withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
-  @_Concurrency.MainActor(unsafe) public func hideToast(toast: UIKit.UIView)
-  @_Concurrency.MainActor(unsafe) public func hideToast(toast: UIKit.UIView, force: Swift.Bool, withConfiguration config: VeraSDK.HRToastConfig)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func toastTimerDidFinish(_ timer: Foundation.Timer)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func handleToastTapped(_ recognizer: UIKit.UITapGestureRecognizer)
-}
 public struct Memory {
   public static var formattedFootprint: Swift.String? {
     get
