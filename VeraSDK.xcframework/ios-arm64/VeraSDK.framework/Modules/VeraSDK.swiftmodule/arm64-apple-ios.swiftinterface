@@ -19,7 +19,6 @@ import Metal
 import MetalKit
 import NetworkExtension
 import ScanditBarcodeCapture
-import ScanditCaptureCore
 import Security
 import Swift
 import SystemConfiguration
@@ -28,7 +27,6 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-import cmbSDK
 import libwebp
 import os
 import simd

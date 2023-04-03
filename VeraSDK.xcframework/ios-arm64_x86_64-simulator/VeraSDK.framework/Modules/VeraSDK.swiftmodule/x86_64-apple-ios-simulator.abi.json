@@ -6418,6 +6418,7 @@
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -6426,7 +6427,10 @@
         "name": "ScanditCaptureCore",
         "printedName": "ScanditCaptureCore",
         "declKind": "Import",
-        "moduleName": "VeraSDK"
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -6892,6 +6896,7 @@
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -23981,42 +23986,42 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 314,
+      "offset": 356,
       "length": 826,
       "value": "\"AZeCqQ9VLFDHIofZlxfs5Xg7yF3mLmYtllr1Xz9ncfzOaEM\/oEIuyOs2OpJVaH1EgwdPyuxR\/1IRW4\/v4SjXzqVkd8sRUPbHjhnQOKhBFdzeRQmEb0Zbo4JColD3JZekJRZUzzQtxDWhti4x0Ga3D0qzNAAWk3CpKqR3lFmlJEvSbXwyNIbOd4W5g5uvw+nZeM10oAZbrByhmHZph+1vii0oeO1vjwc+Pkds5h6IEY9X0l0oWN6kRGKR1qRw+q9LCctttEmHFOmSQn\/Tv6fTfMEospllDH+0QUcKPdLHN9O0T9PenQ83QI4FlgZ1jvZEY7slzGKP++K9N0c+jQO4Tib9Egj4eXBB1K1lJOIJlfMsQasRFoY+xJfjabRyU5PFgINt0LFQW6MwlXn24pSA+pT0FaELvBo\/qZIwTdDFbC0iHF+ZkQCdHFTpXANNXWB8D9AoI6MOfLkQkdpATPs3rHSkV3z1i\/jH3IZzt2SFOLaRtzHbnH5C\/xl5QPHixb7JQYFmwOM1Me15w5loGpvT034rKtgr1aVekam8QRvrLNVgINk1sRWrY0GH31+ssOn5\/KX9bzGbnSa0WypVaen48UAlWPF8aFiOS2YKjecYO0B3CiFkRWf7fZU5iTN\/3+KmelBTux5c\/PuWLYl2jVbClUi4WY+bjAC0xAcESSC\/TeqKAc2733YDuiRun1rqX8F+4kAmvs9TnNK2eUqjCudYwrBGQHy0zwSStE6YQm406yco3uhO4PgpZf3UlMuapGP4\/kfRzRaqD4q5CnvRNjOA1xeTrK8VMI\/Rxu596oYjv94i2sO9ZHIsTQ==\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1354,
+      "offset": 1396,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1388,
+      "offset": 1430,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1405,
+      "offset": 1447,
       "length": 21,
       "value": "\"max_codes_per_frame\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1627,
+      "offset": 1669,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1656,
+      "offset": 1698,
       "length": 4,
       "value": "true"
     },
@@ -26501,189 +26506,189 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 291,
+      "offset": 312,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "Array",
-      "offset": 442,
+      "offset": 463,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 511,
+      "offset": 532,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 552,
+      "offset": 573,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 655,
+      "offset": 676,
       "length": 22,
       "value": "\"Cognex not available\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 815,
+      "offset": 836,
       "length": 56,
       "value": "\"Cognex connection error: \""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 870,
+      "offset": 891,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 955,
+      "offset": 976,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 1062,
       "length": 64,
       "value": "\"Cognex failed enabling symbology \""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1125,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1198,
+      "offset": 1219,
       "length": 22,
       "value": "\"SET DECODER.EFFORT 5\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1273,
+      "offset": 1294,
       "length": 42,
       "value": "\"SET DECODER.CENTERING-WINDOW 0 0 100 100\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1368,
+      "offset": 1389,
       "length": 19,
       "value": "\"SET BEEP.GOOD OFF\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1527,
+      "offset": 1548,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1736,
+      "offset": 1757,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1948,
+      "offset": 1969,
       "length": 37,
       "value": "\"SET MULTICODE.NUM-CODES \""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
+      "offset": 2005,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2011,
+      "offset": 2032,
       "length": 41,
       "value": "\"SET MULTICODE.PARTIAL-RESULTS \""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2051,
+      "offset": 2072,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2078,
+      "offset": 2099,
       "length": 43,
       "value": "\"SET MULTICODE.MAX-NUM-CODES 2 \""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2120,
+      "offset": 2141,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1765,
+      "offset": 1786,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2263,
+      "offset": 2284,
       "length": 52,
       "value": "\"SET VIBRATION.GOOD \""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2301,
+      "offset": 2322,
       "length": 4,
       "value": "\"ON\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2308,
+      "offset": 2329,
       "length": 5,
       "value": "\"OFF\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 2314,
+      "offset": 2335,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 2163,
+      "offset": 2184,
       "length": 4,
       "value": "true"
     },
