@@ -18,7 +18,6 @@ import LocalAuthentication
 import Metal
 import MetalKit
 import NetworkExtension
-import ScanditBarcodeCapture
 import Security
 import Swift
 import SystemConfiguration

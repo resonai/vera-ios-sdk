@@ -697,7 +697,10 @@
         "name": "ScanditBarcodeCapture",
         "printedName": "ScanditBarcodeCapture",
         "declKind": "Import",
-        "moduleName": "VeraSDK"
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -18589,77 +18592,77 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 859,
+      "offset": 880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1037,
+      "offset": 1058,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
+      "offset": 1113,
       "length": 8,
       "value": "\"button\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1370,
+      "offset": 1391,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1425,
+      "offset": 1446,
       "length": 14,
       "value": "\"close_button\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1706,
+      "offset": 1727,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1803,
+      "offset": 1824,
       "length": 4,
       "value": "25.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1907,
+      "offset": 1928,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2194,
+      "offset": 2215,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2307,
+      "offset": 2328,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 400,
+      "offset": 421,
       "length": 18,
       "value": "\"VeraSDK.VeraViewController\""
     },
