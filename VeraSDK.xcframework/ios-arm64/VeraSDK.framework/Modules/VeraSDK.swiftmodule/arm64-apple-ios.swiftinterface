@@ -7,6 +7,7 @@ import AVFoundation
 import Accelerate
 import SystemConfiguration.CaptiveNetwork
 import Combine
+import CoreGraphics
 import CoreImage
 import CoreLocation
 import CoreMotion
@@ -17,6 +18,8 @@ import LocalAuthentication
 import Metal
 import MetalKit
 import NetworkExtension
+import ScanditBarcodeCapture
+import ScanditCaptureCore
 import Security
 import Swift
 import SystemConfiguration
@@ -25,15 +28,46 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import cmbSDK
+import libwebp
 import os
 import simd
 postfix operator >!
+public struct HRToastConfig {
+  public init()
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public class func hr_setToastThemeColor(color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public class func hr_toastThemeColor() -> UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public class func hr_setToastTitleFontName(fontName: Swift.String)
+  @_Concurrency.MainActor(unsafe) public class func hr_toastTitleFontName() -> Swift.String
+  @_Concurrency.MainActor(unsafe) public class func hr_setToastFontName(fontName: Swift.String)
+  @_Concurrency.MainActor(unsafe) public class func hr_toastFontName() -> Swift.String
+  @_Concurrency.MainActor(unsafe) public class func hr_setToastFontColor(color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public class func hr_toastFontColor() -> UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, title: Swift.String, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, image: UIKit.UIImage, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func makeToast(message msg: Swift.String, duration: Swift.Double, position: Swift.AnyObject, title: Swift.String, image: UIKit.UIImage, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func showToast(toast: UIKit.UIView, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func makeToastActivity(withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func makeToastActivity(message msg: Swift.String, withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func hideToastActivity(withConfiguration config: VeraSDK.HRToastConfig = HRToastConfig())
+  @_Concurrency.MainActor(unsafe) public func hideToast(toast: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func hideToast(toast: UIKit.UIView, force: Swift.Bool, withConfiguration config: VeraSDK.HRToastConfig)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func toastTimerDidFinish(_ timer: Foundation.Timer)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func handleToastTapped(_ recognizer: UIKit.UITapGestureRecognizer)
+}
 public struct Memory {
   public static var formattedFootprint: Swift.String? {
     get
   }
 }
-extension Swift.Result : Swift.Decodable where Success : Swift.Decodable, Failure == Swift.Error {
+public struct DecodingError : Swift.Error, Swift.Equatable {
+  public static func == (lhs: VeraSDK.DecodingError, rhs: VeraSDK.DecodingError) -> Swift.Bool
+}
+extension Swift.Result : Swift.Decodable where Success : Swift.Decodable, Failure == VeraSDK.DecodingError {
   public init(from decoder: Swift.Decoder) throws
 }
 @objc @_hasMissingDesignatedInitializers @available(iOS 13.5, *)
@@ -55,14 +89,6 @@ extension Swift.Result : Swift.Decodable where Success : Swift.Decodable, Failur
 extension VeraSDK.VeraViewController : MetalKit.MTKViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
   @_Concurrency.MainActor(unsafe) @objc final public func draw(in view: MetalKit.MTKView)
-}
-extension VeraSDK.VeraViewController : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc final public func webViewWebContentProcessDidTerminate(_ webView: WebKit.WKWebView)
 }
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
