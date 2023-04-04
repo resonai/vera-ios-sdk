@@ -18,4 +18,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '13.5'
   s.frameworks       = 'UIKit', 'ARKit', 'CoreLocation', 'JavaScriptCore', 'WebKit', 'LocalAuthentication', 'Combine', 'SystemConfiguration'
   s.vendored_frameworks = 'VeraSDK.xcframework'
+  s.dependency 'libwebp', '1.2.4'
+  s.dependency 'Cognex.cmbSDK', '2.7.1'
+  s.dependency 'ScanditBarcodeCapture'
 end
