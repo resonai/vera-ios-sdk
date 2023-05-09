@@ -29431,14 +29431,14 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 980,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
+      "offset": 916,
+      "length": 8,
+      "value": "\"0.1.18\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1078,
+      "offset": 1092,
       "length": 18,
       "value": "\"com.resonai.vera\""
     },

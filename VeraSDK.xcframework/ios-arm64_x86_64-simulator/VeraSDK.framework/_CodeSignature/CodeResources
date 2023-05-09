@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/IpOtOjb3KwVYozKckc87cf+1+8=
+		6c1IS43NxwEHpzn0jvrcal9OZKA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		EI5Za36dqOAbfcsuFMqw085mL6o=
+		I+Ev1rHotBUAkLijqn2n9POjugs=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7Wg9ObB7602dYQu3AijzoayItXA=
+		CH8fWeHb/i4Nyxz5pJwU4hr/820=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		EI5Za36dqOAbfcsuFMqw085mL6o=
+		I+Ev1rHotBUAkLijqn2n9POjugs=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jPeDu3gCcZShO2ORKihpHGspyLE=
+		gupLqAxM9bWiRPhj7pahloNkoAU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zgVXbn5OXKMyEJ3NG2eFWzjm6TwhyaqHhU5WRfm13zE=
+			JQZn2UkpbKfN+0caZOR6uUbsjcUsCaoVO6VT+PWckwA=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -140,14 +140,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ntMjwwlKVVd/L/gSeHZoRBlA+hFh/CsQWBiMNyNH+k0=
+			GQ8XM4UZ9w+6Vm6PMo6OFpS8CXQx49ptPfnEBJ96eZo=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zgVXbn5OXKMyEJ3NG2eFWzjm6TwhyaqHhU5WRfm13zE=
+			JQZn2UkpbKfN+0caZOR6uUbsjcUsCaoVO6VT+PWckwA=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -175,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ULxo6tPNy53T76OS6rCM1tuoq1xKzO9xW/0DKoOIQEU=
+			JlbAd40BeTvXzrTwPdVAadMTWwVtJJ7NtvjzRf64u8g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
