@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/VeraSDK-Swift.h</key>
 		<data>
-		mkNio4HGKO3+S/idGlPJnhpEILw=
+		VzLOg1zERA7PalKBTqnW4+YjJsg=
 		</data>
 		<key>Headers/VeraSDK.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7f7c8LyK8S7I2RzfDJmLdJLg3NA=
+		/IpOtOjb3KwVYozKckc87cf+1+8=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		F5wR2sAm/VlK5GbNDGqV2Ac/w+Y=
+		EI5Za36dqOAbfcsuFMqw085mL6o=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6uK/ClV9jsdPOfQZ2OratrLV81k=
+		Zx7By1sRgQWEnxu1lc5X7Y1FnwA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6uK/ClV9jsdPOfQZ2OratrLV81k=
+		Zx7By1sRgQWEnxu1lc5X7Y1FnwA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uFVOSuF+SmplPcNWJVd/4IlrVQc=
+		7Wg9ObB7602dYQu3AijzoayItXA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		F5wR2sAm/VlK5GbNDGqV2Ac/w+Y=
+		EI5Za36dqOAbfcsuFMqw085mL6o=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/Z3CWD456cf2dl13Xh0yo4V+2ik=
+		HYdFFTpNU3sArIT11/cjRK86l10=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/Z3CWD456cf2dl13Xh0yo4V+2ik=
+		HYdFFTpNU3sArIT11/cjRK86l10=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ndY7RAkOFMXP1dSnarrIOWR1YgY=
+		jPeDu3gCcZShO2ORKihpHGspyLE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jlty7Y723I1hy2Q9tph+58Mz6SiAUiyA1ZlqOTKw18k=
+			GfohdWh0P2HWSUsvzOSUiCtPRFpfp6k5pRM+bho/+Eg=
 			</data>
 		</dict>
 		<key>Headers/VeraSDK.h</key>
@@ -112,14 +112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			otoQvXcvkEa1ktMTHK/q/7U7k3QnMowHyipWo1mq3zI=
+			zgVXbn5OXKMyEJ3NG2eFWzjm6TwhyaqHhU5WRfm13zE=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6WV4Fl5XJ9eP3tAOn7mzahcXQw3cCVlGJRkHdWqxnZ0=
+			On6af1lsVy+/D2Pfmv3kMN/0HiFgShvfz6GzhAvnshU=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -133,28 +133,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6WV4Fl5XJ9eP3tAOn7mzahcXQw3cCVlGJRkHdWqxnZ0=
+			On6af1lsVy+/D2Pfmv3kMN/0HiFgShvfz6GzhAvnshU=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qLJDmCLqy+xEtJL+ZAw8f2KNQ1EnfyE+2H2QmFIObu4=
+			ntMjwwlKVVd/L/gSeHZoRBlA+hFh/CsQWBiMNyNH+k0=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			otoQvXcvkEa1ktMTHK/q/7U7k3QnMowHyipWo1mq3zI=
+			zgVXbn5OXKMyEJ3NG2eFWzjm6TwhyaqHhU5WRfm13zE=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u79tLI0CIQcsYZlIlANV1EOaTZPDj6aRWw71WFlXmc0=
+			LL6ngcjynfzRbj83DVUVRLupsRi2knBXf7s9WXmsR4I=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -168,14 +168,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u79tLI0CIQcsYZlIlANV1EOaTZPDj6aRWw71WFlXmc0=
+			LL6ngcjynfzRbj83DVUVRLupsRi2knBXf7s9WXmsR4I=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uwGU8nT6vOmcjokj6K6EbyA64SlKGgmIFisxlIKmMX8=
+			ULxo6tPNy53T76OS6rCM1tuoq1xKzO9xW/0DKoOIQEU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

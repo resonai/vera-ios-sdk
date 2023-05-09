@@ -276,6 +276,42 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "HRToastConfig",
+        "printedName": "HRToastConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7VeraSDK13HRToastConfigVACycfc",
+            "mangledName": "$s7VeraSDK13HRToastConfigVACycfc",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7VeraSDK13HRToastConfigV",
+        "mangledName": "$s7VeraSDK13HRToastConfigV",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -661,10 +697,7 @@
         "name": "ScanditBarcodeCapture",
         "printedName": "ScanditBarcodeCapture",
         "declKind": "Import",
-        "moduleName": "VeraSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "VeraSDK"
       },
       {
         "kind": "Import",
@@ -3554,6 +3587,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Accelerate",
         "printedName": "Accelerate",
         "declKind": "Import",
@@ -6385,7 +6438,6 @@
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
-          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -6394,10 +6446,7 @@
         "name": "ScanditCaptureCore",
         "printedName": "ScanditCaptureCore",
         "declKind": "Import",
-        "moduleName": "VeraSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "VeraSDK"
       },
       {
         "kind": "Import",
@@ -6694,7 +6743,6 @@
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
-          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -6859,31 +6907,6 @@
       },
       {
         "kind": "Import",
-        "name": "cmbSDK",
-        "printedName": "cmbSDK",
-        "declKind": "Import",
-        "moduleName": "VeraSDK",
-        "declAttributes": [
-          "ImplementationOnly",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "VeraSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreImage",
-        "printedName": "CoreImage",
-        "declKind": "Import",
-        "moduleName": "VeraSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7066,16 +7089,6 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "VeraSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "VeraSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -8784,23 +8797,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "VeraSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreImage",
-        "printedName": "CoreImage",
-        "declKind": "Import",
-        "moduleName": "VeraSDK"
       },
       {
         "kind": "Import",
@@ -10533,6 +10529,783 @@
             ],
             "usr": "s:10Accelerate0A6BufferP",
             "mangledName": "$s10Accelerate0A6BufferP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIView",
+        "printedName": "UIView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "hr_setToastThemeColor",
+            "printedName": "hr_setToastThemeColor(color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE21hr_setToastThemeColor5colorySo7UIColorC_tFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE21hr_setToastThemeColor5colorySo7UIColorC_tFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hr_toastThemeColor",
+            "printedName": "hr_toastThemeColor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE18hr_toastThemeColorSo7UIColorCyFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE18hr_toastThemeColorSo7UIColorCyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hr_setToastTitleFontName",
+            "printedName": "hr_setToastTitleFontName(fontName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE24hr_setToastTitleFontName04fontI0ySS_tFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE24hr_setToastTitleFontName04fontI0ySS_tFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hr_toastTitleFontName",
+            "printedName": "hr_toastTitleFontName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE21hr_toastTitleFontNameSSyFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE21hr_toastTitleFontNameSSyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hr_setToastFontName",
+            "printedName": "hr_setToastFontName(fontName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE19hr_setToastFontName04fontH0ySS_tFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE19hr_setToastFontName04fontH0ySS_tFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hr_toastFontName",
+            "printedName": "hr_toastFontName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE16hr_toastFontNameSSyFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE16hr_toastFontNameSSyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hr_setToastFontColor",
+            "printedName": "hr_setToastFontColor(color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE20hr_setToastFontColor5colorySo7UIColorC_tFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE20hr_setToastFontColor5colorySo7UIColorC_tFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hr_toastFontColor",
+            "printedName": "hr_toastFontColor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE17hr_toastFontColorSo7UIColorCyFZ",
+            "mangledName": "$sSo6UIViewC7VeraSDKE17hr_toastFontColorSo7UIColorCyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeToast",
+            "printedName": "makeToast(message:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message17withConfigurationySS_AC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message17withConfigurationySS_AC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeToast",
+            "printedName": "makeToast(message:duration:position:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position17withConfigurationySS_SdyXlAC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position17withConfigurationySS_SdyXlAC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeToast",
+            "printedName": "makeToast(message:duration:position:title:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position5title17withConfigurationySS_SdyXlSSAC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position5title17withConfigurationySS_SdyXlSSAC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeToast",
+            "printedName": "makeToast(message:duration:position:image:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position5image17withConfigurationySS_SdyXlSo7UIImageCAC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position5image17withConfigurationySS_SdyXlSo7UIImageCAC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeToast",
+            "printedName": "makeToast(message:duration:position:title:image:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9makeToast7message8duration8position5title5image17withConfigurationySS_SdyXlSSSo7UIImageCAC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9makeToast7message8duration8position5title5image17withConfigurationySS_SdyXlSSSo7UIImageCAC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showToast",
+            "printedName": "showToast(toast:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9showToast5toast17withConfigurationyAB_AC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9showToast5toast17withConfigurationyAB_AC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeToastActivity",
+            "printedName": "makeToastActivity(withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE17makeToastActivity17withConfigurationyAC13HRToastConfigV_tF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE17makeToastActivity17withConfigurationyAC13HRToastConfigV_tF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeToastActivity",
+            "printedName": "makeToastActivity(message:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE17makeToastActivity7message17withConfigurationySS_AC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE17makeToastActivity7message17withConfigurationySS_AC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideToastActivity",
+            "printedName": "hideToastActivity(withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE17hideToastActivity17withConfigurationyAC13HRToastConfigV_tF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE17hideToastActivity17withConfigurationyAC13HRToastConfigV_tF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideToast",
+            "printedName": "hideToast(toast:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9hideToast5toastyAB_tF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9hideToast5toastyAB_tF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideToast",
+            "printedName": "hideToast(toast:force:withConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HRToastConfig",
+                "printedName": "VeraSDK.HRToastConfig",
+                "usr": "s:7VeraSDK13HRToastConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC7VeraSDKE9hideToast5toast5force17withConfigurationyAB_SbAC13HRToastConfigVtF",
+            "mangledName": "$sSo6UIViewC7VeraSDKE9hideToast5toast5force17withConfigurationyAB_SbAC13HRToastConfigVtF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toastTimerDidFinish",
+            "printedName": "toastTimerDidFinish(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Timer",
+                "printedName": "Foundation.Timer",
+                "usr": "c:objc(cs)NSTimer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@VeraSDK@@objc(cs)UIView(im)toastTimerDidFinish:",
+            "mangledName": "$sSo6UIViewC7VeraSDKE19toastTimerDidFinishyySo7NSTimerCF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Dynamic",
+              "Custom",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleToastTapped",
+            "printedName": "handleToastTapped(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITapGestureRecognizer",
+                "printedName": "UIKit.UITapGestureRecognizer",
+                "usr": "c:objc(cs)UITapGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@VeraSDK@@objc(cs)UIView(im)handleToastTapped:",
+            "mangledName": "$sSo6UIViewC7VeraSDKE17handleToastTappedyySo22UITapGestureRecognizerCF",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Dynamic",
+              "Custom",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIView",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIView",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
           }
         ]
       },
@@ -14098,133 +14871,140 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "Array",
-      "offset": 3103,
+      "offset": 3104,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
+      "kind": "Array",
+      "offset": 3219,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3509,
+      "offset": 3663,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3560,
+      "offset": 3739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3608,
+      "offset": 3787,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 3674,
+      "offset": 3853,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "IntegerLiteral",
-      "offset": 3833,
+      "offset": 4012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 4622,
+      "offset": 4801,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 4740,
+      "offset": 4919,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 5968,
+      "offset": 6147,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "StringLiteral",
-      "offset": 6341,
+      "offset": 6520,
       "length": 13,
       "value": "\"usernetwork\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6771,
+      "offset": 6950,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6825,
+      "offset": 7004,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 6999,
+      "offset": 7178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 7057,
+      "offset": 7236,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "Array",
-      "offset": 7169,
+      "offset": 7348,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 7551,
+      "offset": 7730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 7775,
+      "offset": 7954,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 7834,
+      "offset": 8013,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationMall\/RegistrationMall.swift",
       "kind": "BooleanLiteral",
-      "offset": 7925,
+      "offset": 8104,
       "length": 5,
       "value": "false"
     },
@@ -16933,35 +17713,35 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+InternalState.swift",
       "kind": "IntegerLiteral",
-      "offset": 680,
+      "offset": 794,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+InternalState.swift",
       "kind": "IntegerLiteral",
-      "offset": 913,
+      "offset": 1027,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+InternalState.swift",
       "kind": "StringLiteral",
-      "offset": 1013,
+      "offset": 1127,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+InternalState.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 1155,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+InternalState.swift",
       "kind": "IntegerLiteral",
-      "offset": 1156,
+      "offset": 1296,
       "length": 1,
       "value": "0"
     },
@@ -17024,196 +17804,196 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 387,
+      "offset": 394,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 427,
+      "offset": 434,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 478,
+      "offset": 485,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 530,
+      "offset": 537,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 586,
+      "offset": 593,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 714,
+      "offset": 721,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 779,
+      "offset": 786,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 829,
+      "offset": 836,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 879,
+      "offset": 886,
       "length": 8,
       "value": "\"center\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 951,
+      "offset": 958,
       "length": 4,
       "value": "80.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1000,
+      "offset": 1007,
       "length": 4,
       "value": "80.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1071,
+      "offset": 1078,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1153,
+      "offset": 1160,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1202,
+      "offset": 1209,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1251,
+      "offset": 1258,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1297,
+      "offset": 1304,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1369,
+      "offset": 1376,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1417,
+      "offset": 1424,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1487,
+      "offset": 1494,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1509,
+      "offset": 1516,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1560,
+      "offset": 1567,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1608,
+      "offset": 1615,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 1687,
+      "offset": 1694,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 1728,
+      "offset": 1735,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 1783,
+      "offset": 1797,
       "length": 8,
       "value": "\"bottom\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 1838,
       "length": 5,
       "value": "\"top\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 1862,
+      "offset": 1876,
       "length": 8,
       "value": "\"center\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "StringLiteral",
-      "offset": 9093,
+      "offset": 9114,
       "length": 2,
       "value": "\"\""
     },
@@ -17479,49 +18259,35 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/SiteConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 269,
+      "offset": 272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/SiteConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 300,
+      "offset": 304,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/SiteConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 327,
+      "offset": 339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/SiteConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 359,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/SiteConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 394,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/SiteConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 426,
+      "offset": 371,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/SiteConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 1827,
+      "offset": 1527,
       "length": 3,
       "value": "0.6"
     },
@@ -17780,77 +18546,77 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 880,
+      "offset": 859,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1058,
+      "offset": 1037,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1113,
+      "offset": 1092,
       "length": 8,
       "value": "\"button\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1391,
+      "offset": 1370,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1446,
+      "offset": 1425,
       "length": 14,
       "value": "\"close_button\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1727,
+      "offset": 1706,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1824,
+      "offset": 1803,
       "length": 4,
       "value": "25.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1928,
+      "offset": 1907,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2215,
+      "offset": 2194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2328,
+      "offset": 2307,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 421,
+      "offset": 400,
       "length": 18,
       "value": "\"VeraSDK.VeraViewController\""
     },
@@ -23037,58 +23803,296 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 1987,
+      "offset": 2053,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "StringLiteral",
-      "offset": 2003,
+      "offset": 2069,
       "length": 9,
       "value": "\"ANDROID\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 2019,
+      "offset": 2085,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "StringLiteral",
-      "offset": 2035,
+      "offset": 2101,
       "length": 5,
       "value": "\"IOS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 2047,
+      "offset": 2113,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "StringLiteral",
-      "offset": 2063,
+      "offset": 2129,
       "length": 5,
       "value": "\"YWZ\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 2075,
+      "offset": 2141,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
       "kind": "StringLiteral",
-      "offset": 2091,
+      "offset": 2157,
       "length": 18,
       "value": "\"IOS_HEADING_INFO\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2182,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_client_type.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 2198,
+      "length": 5,
+      "value": "\"OGL\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 7570,
+      "length": 5,
+      "value": "\"ywz\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 7760,
+      "length": 9,
+      "value": "\".CamCal\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7833,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 7853,
+      "length": 9,
+      "value": "\"x_shift\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7869,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 7889,
+      "length": 9,
+      "value": "\"y_shift\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7905,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 7925,
+      "length": 11,
+      "value": "\"x_stretch\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7943,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 7963,
+      "length": 11,
+      "value": "\"y_stretch\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 10186,
+      "length": 17,
+      "value": "\".SnapshotParams\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10267,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 10287,
+      "length": 10,
+      "value": "\"im_width\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10304,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 10324,
+      "length": 11,
+      "value": "\"im_height\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10342,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 10362,
+      "length": 9,
+      "value": "\"cam_cal\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10378,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 10398,
+      "length": 11,
+      "value": "\"min_depth\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10416,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 10436,
+      "length": 13,
+      "value": "\"depth_bound\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 12934,
+      "length": 10,
+      "value": "\".ProjMat\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13008,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 13028,
+      "length": 9,
+      "value": "\"x_shift\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13044,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 13064,
+      "length": 9,
+      "value": "\"y_shift\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13080,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 13100,
+      "length": 11,
+      "value": "\"x_stretch\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13118,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 13138,
+      "length": 11,
+      "value": "\"y_stretch\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13156,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/image_tools\/camera_params.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 13176,
+      "length": 9,
+      "value": "\"z_shift\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/registration\/GrpcLiveCallWrapper.swift",
@@ -23142,7 +24146,7 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/SmoothingEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 597,
+      "offset": 581,
       "length": 5,
       "value": "false"
     },
@@ -23177,44 +24181,30 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 356,
+      "offset": 298,
       "length": 826,
       "value": "\"AZeCqQ9VLFDHIofZlxfs5Xg7yF3mLmYtllr1Xz9ncfzOaEM\/oEIuyOs2OpJVaH1EgwdPyuxR\/1IRW4\/v4SjXzqVkd8sRUPbHjhnQOKhBFdzeRQmEb0Zbo4JColD3JZekJRZUzzQtxDWhti4x0Ga3D0qzNAAWk3CpKqR3lFmlJEvSbXwyNIbOd4W5g5uvw+nZeM10oAZbrByhmHZph+1vii0oeO1vjwc+Pkds5h6IEY9X0l0oWN6kRGKR1qRw+q9LCctttEmHFOmSQn\/Tv6fTfMEospllDH+0QUcKPdLHN9O0T9PenQ83QI4FlgZ1jvZEY7slzGKP++K9N0c+jQO4Tib9Egj4eXBB1K1lJOIJlfMsQasRFoY+xJfjabRyU5PFgINt0LFQW6MwlXn24pSA+pT0FaELvBo\/qZIwTdDFbC0iHF+ZkQCdHFTpXANNXWB8D9AoI6MOfLkQkdpATPs3rHSkV3z1i\/jH3IZzt2SFOLaRtzHbnH5C\/xl5QPHixb7JQYFmwOM1Me15w5loGpvT034rKtgr1aVekam8QRvrLNVgINk1sRWrY0GH31+ssOn5\/KX9bzGbnSa0WypVaen48UAlWPF8aFiOS2YKjecYO0B3CiFkRWf7fZU5iTN\/3+KmelBTux5c\/PuWLYl2jVbClUi4WY+bjAC0xAcESSC\/TeqKAc2733YDuiRun1rqX8F+4kAmvs9TnNK2eUqjCudYwrBGQHy0zwSStE6YQm406yco3uhO4PgpZf3UlMuapGP4\/kfRzRaqD4q5CnvRNjOA1xeTrK8VMI\/Rxu596oYjv94i2sO9ZHIsTQ==\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1396,
+      "offset": 1338,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1430,
+      "offset": 1372,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1447,
+      "offset": 1389,
       "length": 21,
       "value": "\"max_codes_per_frame\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1669,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanditBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1698,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/ymath\/ymath_types.pb.swift",
@@ -25695,195 +26685,6 @@
       "value": "\"AUTHORIZED\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 312,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "Array",
-      "offset": 463,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 532,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 573,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 676,
-      "length": 22,
-      "value": "\"Cognex not available\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 836,
-      "length": 56,
-      "value": "\"Cognex connection error: \""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 891,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 976,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1062,
-      "length": 64,
-      "value": "\"Cognex failed enabling symbology \""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1125,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1219,
-      "length": 22,
-      "value": "\"SET DECODER.EFFORT 5\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1294,
-      "length": 42,
-      "value": "\"SET DECODER.CENTERING-WINDOW 0 0 100 100\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1389,
-      "length": 19,
-      "value": "\"SET BEEP.GOOD OFF\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1548,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1757,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1969,
-      "length": 37,
-      "value": "\"SET MULTICODE.NUM-CODES \""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2005,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2032,
-      "length": 41,
-      "value": "\"SET MULTICODE.PARTIAL-RESULTS \""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2072,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2099,
-      "length": 43,
-      "value": "\"SET MULTICODE.MAX-NUM-CODES 2 \""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2141,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1786,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2284,
-      "length": 52,
-      "value": "\"SET VIBRATION.GOOD \""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2322,
-      "length": 4,
-      "value": "\"ON\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2329,
-      "length": 5,
-      "value": "\"OFF\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2335,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexBarcodeScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2184,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1124,
@@ -26670,28 +27471,28 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 636,
+      "offset": 841,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 924,
+      "offset": 1129,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1528,
+      "offset": 1733,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/PoseUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1707,
+      "offset": 1912,
       "length": 1,
       "value": "4"
     },
@@ -27138,267 +27939,288 @@
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
+      "kind": "Array",
+      "offset": 3181,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 4690,
+      "offset": 4846,
       "length": 12,
       "value": "\"ywz.labels\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 4830,
+      "offset": 4986,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 4846,
+      "offset": 5002,
       "length": 5,
       "value": "\"OCR\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 4858,
+      "offset": 5014,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 4874,
+      "offset": 5030,
       "length": 4,
       "value": "\"QR\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 5086,
+      "offset": 5242,
       "length": 17,
       "value": "\".LabelBoxesDbPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5167,
+      "offset": 5323,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 5183,
+      "offset": 5339,
       "length": 5,
       "value": "\"ids\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5195,
+      "offset": 5351,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 5215,
+      "offset": 5371,
       "length": 19,
       "value": "\"eight_corners_xyz\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5241,
+      "offset": 5397,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 5261,
+      "offset": 5417,
       "length": 23,
       "value": "\"max_angle_with_normal\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5291,
+      "offset": 5447,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 5311,
+      "offset": 5467,
       "length": 18,
       "value": "\"max_viewing_dist\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5336,
+      "offset": 5492,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 5356,
+      "offset": 5512,
       "length": 20,
       "value": "\"visibility_regions\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5383,
+      "offset": 5539,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 5399,
+      "offset": 5555,
       "length": 7,
       "value": "\"types\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 7992,
+      "offset": 8148,
       "length": 16,
       "value": "\".ImageLabelsPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8072,
+      "offset": 8228,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 8092,
+      "offset": 8248,
       "length": 8,
       "value": "\"img_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8107,
+      "offset": 8263,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 8127,
+      "offset": 8283,
       "length": 11,
       "value": "\"labels_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8145,
+      "offset": 8301,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 8165,
+      "offset": 8321,
       "length": 17,
       "value": "\"labels_coverage\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10206,
+      "offset": 10362,
       "length": 22,
       "value": "\".LabelBoxesInQueryPB\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10292,
+      "offset": 10448,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10308,
+      "offset": 10464,
       "length": 5,
       "value": "\"ids\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10320,
+      "offset": 10476,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10340,
+      "offset": 10496,
       "length": 17,
       "value": "\"four_corners_uv\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10364,
+      "offset": 10520,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10380,
+      "offset": 10536,
       "length": 13,
       "value": "\"confidences\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10400,
+      "offset": 10556,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10416,
+      "offset": 10572,
       "length": 7,
       "value": "\"types\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10430,
+      "offset": 10586,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 10606,
+      "length": 17,
+      "value": "\"dits_timestamps\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10630,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10450,
+      "offset": 10650,
       "length": 29,
       "value": "\"dits_pose_in_detection_time\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10486,
+      "offset": 10686,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/labels\/labels.pb.swift",
       "kind": "StringLiteral",
-      "offset": 10506,
+      "offset": 10706,
       "length": 16,
       "value": "\"dits_timestamp\""
     },
@@ -27436,13 +28258,6 @@
       "offset": 817,
       "length": 10,
       "value": "\"deviceid\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/CognexSVGResultParser.swift",
-      "kind": "Dictionary",
-      "offset": 1461,
-      "length": 3,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/data_structure\/base_types.pb.swift",
@@ -28659,27 +29474,6 @@
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/DevTools\/RegistrationEventsLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 519,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanSession.swift",
-      "kind": "StringLiteral",
-      "offset": 333,
-      "length": 16,
-      "value": "\"scanning_queue\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 532,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/qr\/ScanSession.swift",
-      "kind": "IntegerLiteral",
-      "offset": 628,
       "length": 1,
       "value": "0"
     },
@@ -31955,1113 +32749,973 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "Array",
-      "offset": 33365,
+      "offset": 29248,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 35325,
+      "offset": 31117,
       "length": 5,
       "value": "\"ywz\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 35456,
+      "offset": 31248,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 35472,
+      "offset": 31264,
       "length": 31,
       "value": "\"DENSE_PREDICTION_TRANSFORMERS\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 35696,
-      "length": 9,
-      "value": "\".CamCal\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 35769,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 35789,
-      "length": 9,
-      "value": "\"x_shift\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 35805,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 35825,
-      "length": 9,
-      "value": "\"y_shift\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 35841,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 35861,
-      "length": 11,
-      "value": "\"x_stretch\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 35879,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 35899,
-      "length": 11,
-      "value": "\"y_stretch\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 38115,
-      "length": 10,
-      "value": "\".ProjMat\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 38189,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 38209,
-      "length": 9,
-      "value": "\"x_shift\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 38225,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 38245,
-      "length": 9,
-      "value": "\"y_shift\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 38261,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 38281,
-      "length": 11,
-      "value": "\"x_stretch\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 38299,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 38319,
-      "length": 11,
-      "value": "\"y_stretch\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 38337,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 38357,
-      "length": 9,
-      "value": "\"z_shift\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 40823,
+      "offset": 31491,
       "length": 12,
       "value": "\".IcpParams\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 40899,
+      "offset": 31567,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 40919,
+      "offset": 31587,
       "length": 10,
       "value": "\"use_aabb\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 40936,
+      "offset": 31604,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 40956,
+      "offset": 31624,
       "length": 11,
       "value": "\"num_iters\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 40974,
+      "offset": 31642,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 40994,
+      "offset": 31662,
       "length": 20,
       "value": "\"data_point_filters\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 41021,
+      "offset": 31689,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 41041,
+      "offset": 31709,
       "length": 26,
       "value": "\"overlap_filter_max_iters\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 41074,
+      "offset": 31742,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 41094,
+      "offset": 31762,
       "length": 25,
       "value": "\"overlap_filter_bb_slack\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 41126,
+      "offset": 31794,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 41146,
+      "offset": 31814,
       "length": 15,
       "value": "\"match_filters\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 41168,
+      "offset": 31836,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 41188,
+      "offset": 31856,
       "length": 16,
       "value": "\"min_normal_dot\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 41211,
+      "offset": 31879,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 41231,
+      "offset": 31899,
       "length": 15,
       "value": "\"max_gray_diff\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44661,
+      "offset": 35329,
       "length": 16,
       "value": "\".Rgbd2PcParams\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44741,
+      "offset": 35409,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44761,
+      "offset": 35429,
       "length": 9,
       "value": "\"cam_cal\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44777,
+      "offset": 35445,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44793,
+      "offset": 35461,
       "length": 5,
       "value": "\"icp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44805,
+      "offset": 35473,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44825,
+      "offset": 35493,
       "length": 10,
       "value": "\"im_width\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44842,
+      "offset": 35510,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44862,
+      "offset": 35530,
       "length": 11,
       "value": "\"im_height\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44880,
+      "offset": 35548,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44900,
+      "offset": 35568,
       "length": 7,
       "value": "\"max_l\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44914,
+      "offset": 35582,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44934,
+      "offset": 35602,
       "length": 7,
       "value": "\"max_d\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44948,
+      "offset": 35616,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44968,
+      "offset": 35636,
       "length": 8,
       "value": "\"r_bins\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44983,
+      "offset": 35651,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45003,
+      "offset": 35671,
       "length": 13,
       "value": "\"depth_bound\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45023,
+      "offset": 35691,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45043,
+      "offset": 35711,
       "length": 19,
       "value": "\"max_pts_per_frame\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45069,
+      "offset": 35737,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45090,
+      "offset": 35758,
       "length": 20,
       "value": "\"pix_neighbor_steps\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45117,
+      "offset": 35785,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45138,
+      "offset": 35806,
       "length": 32,
       "value": "\"obsolete_snapshot_radii_factor\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45177,
+      "offset": 35845,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45198,
+      "offset": 35866,
       "length": 13,
       "value": "\"merge_scale\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45218,
+      "offset": 35886,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45239,
+      "offset": 35907,
       "length": 24,
       "value": "\"max_sin_half_rot_angle\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45270,
+      "offset": 35938,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45291,
+      "offset": 35959,
       "length": 30,
       "value": "\"virtual_snapshots_for_frames\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45328,
+      "offset": 35996,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45349,
+      "offset": 36017,
       "length": 34,
       "value": "\"max_3to2dim_proj_shift_in_meters\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45390,
+      "offset": 36058,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45411,
+      "offset": 36079,
       "length": 19,
       "value": "\"obsolete_proj_mat\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45437,
+      "offset": 36105,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45458,
+      "offset": 36126,
       "length": 28,
       "value": "\"max_tangent_plane_slope_sq\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45493,
+      "offset": 36161,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45514,
+      "offset": 36182,
       "length": 20,
       "value": "\"use_pc_information\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45541,
+      "offset": 36209,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45562,
+      "offset": 36230,
       "length": 24,
       "value": "\"pc_information_s2_bins\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45593,
+      "offset": 36261,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45614,
+      "offset": 36282,
       "length": 25,
       "value": "\"pc_information_rgb_bins\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45646,
+      "offset": 36314,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45663,
+      "offset": 36331,
       "length": 10,
       "value": "\"boundary\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45680,
+      "offset": 36348,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45701,
+      "offset": 36369,
       "length": 22,
       "value": "\"cos_visibility_slope\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45730,
+      "offset": 36398,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45751,
+      "offset": 36419,
       "length": 11,
       "value": "\"min_depth\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45769,
+      "offset": 36437,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45790,
+      "offset": 36458,
       "length": 27,
       "value": "\"obsolete_trans_sig_corner\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45824,
+      "offset": 36492,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45845,
+      "offset": 36513,
       "length": 30,
       "value": "\"obsolete_trans_sig_pre_trans\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45882,
+      "offset": 36550,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45903,
+      "offset": 36571,
       "length": 26,
       "value": "\"point_cloud_max_diameter\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45936,
+      "offset": 36604,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45957,
+      "offset": 36625,
       "length": 21,
       "value": "\"use_rot_dp_soft_dec\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45985,
+      "offset": 36653,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46006,
+      "offset": 36674,
       "length": 20,
       "value": "\"icp_non_registered\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46033,
+      "offset": 36701,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46054,
+      "offset": 36722,
       "length": 16,
       "value": "\"icp_registered\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46077,
+      "offset": 36745,
       "length": 2,
       "value": "37"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46098,
+      "offset": 36766,
       "length": 24,
       "value": "\"r3_corr_compress_ratio\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46129,
+      "offset": 36797,
       "length": 2,
       "value": "38"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46150,
+      "offset": 36818,
       "length": 13,
       "value": "\"r3_corr_bpv\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46170,
+      "offset": 36838,
       "length": 2,
       "value": "42"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46191,
+      "offset": 36859,
       "length": 28,
       "value": "\"r3_corr_compress_sample_sz\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46226,
+      "offset": 36894,
       "length": 2,
       "value": "39"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46247,
+      "offset": 36915,
       "length": 8,
       "value": "\"use_dp\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46262,
+      "offset": 36930,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46283,
+      "offset": 36951,
       "length": 22,
       "value": "\"rot_dp_num_look_back\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46312,
+      "offset": 36980,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46333,
+      "offset": 37001,
       "length": 21,
       "value": "\"r3_dp_num_look_back\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46361,
+      "offset": 37029,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46382,
+      "offset": 37050,
       "length": 11,
       "value": "\"code_size\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46400,
+      "offset": 37068,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46421,
+      "offset": 37089,
       "length": 12,
       "value": "\"block_size\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46440,
+      "offset": 37108,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46461,
+      "offset": 37129,
       "length": 20,
       "value": "\"block_ratio_thresh\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46488,
+      "offset": 37156,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46509,
+      "offset": 37177,
       "length": 10,
       "value": "\"gop_size\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46526,
+      "offset": 37194,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46543,
+      "offset": 37211,
       "length": 5,
       "value": "\"fps\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46555,
+      "offset": 37223,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46572,
+      "offset": 37240,
       "length": 3,
       "value": "\"h\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46582,
+      "offset": 37250,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46599,
+      "offset": 37267,
       "length": 3,
       "value": "\"w\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 65190,
+      "offset": 55858,
       "length": 17,
       "value": "\".DPTDepthParams\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 65271,
+      "offset": 55939,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 65291,
+      "offset": 55959,
       "length": 18,
       "value": "\"depth_model_type\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 66751,
+      "offset": 57419,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 66767,
+      "offset": 57435,
       "length": 16,
       "value": "\"DPT_HYBRID_NYU\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 66790,
+      "offset": 57458,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 66806,
+      "offset": 57474,
       "length": 18,
       "value": "\"DPT_HYBRID_KITTI\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 66831,
+      "offset": 57499,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 66847,
+      "offset": 57515,
       "length": 11,
       "value": "\"DPT_LARGE\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 66865,
+      "offset": 57533,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 66881,
+      "offset": 57549,
       "length": 12,
       "value": "\"DPT_HYBRID\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 66900,
+      "offset": 57568,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 66916,
+      "offset": 57584,
       "length": 11,
       "value": "\"MIDAS_V21\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 67132,
+      "offset": 57800,
       "length": 21,
       "value": "\".DepthModelMetadata\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 67217,
+      "offset": 57885,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 67237,
+      "offset": 57905,
       "length": 12,
       "value": "\"depth_type\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 67256,
+      "offset": 57924,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 67272,
+      "offset": 57940,
       "length": 6,
       "value": "\"path\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 67285,
+      "offset": 57953,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 67305,
+      "offset": 57973,
       "length": 12,
       "value": "\"dpt_params\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69655,
+      "offset": 60323,
       "length": 23,
       "value": "\".DepthPredictionFrame\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 69742,
+      "offset": 60410,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69762,
+      "offset": 60430,
       "length": 8,
       "value": "\"img_id\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 69777,
+      "offset": 60445,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69793,
+      "offset": 60461,
       "length": 7,
       "value": "\"depth\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 69807,
+      "offset": 60475,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69827,
+      "offset": 60495,
       "length": 13,
       "value": "\"depth_array\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 69847,
+      "offset": 60515,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69867,
+      "offset": 60535,
       "length": 13,
       "value": "\"depth_scale\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 69887,
+      "offset": 60555,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69903,
+      "offset": 60571,
       "length": 3,
       "value": "\"h\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 69913,
+      "offset": 60581,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/movies_to_pointcloud\/rgbd2pc.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69929,
+      "offset": 60597,
       "length": 3,
       "value": "\"w\""
     }
