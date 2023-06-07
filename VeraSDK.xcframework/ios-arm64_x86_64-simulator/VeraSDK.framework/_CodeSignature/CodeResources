@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/VeraSDK-Swift.h</key>
 		<data>
-		VzLOg1zERA7PalKBTqnW4+YjJsg=
+		NicLfBj9Y+QUWW1CLJUSnXCjW1Q=
 		</data>
 		<key>Headers/VeraSDK.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6c1IS43NxwEHpzn0jvrcal9OZKA=
+		wB0Qn9DrZ/LP2N1iV29vo637UtA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		I+Ev1rHotBUAkLijqn2n9POjugs=
+		ZK1wnWSun83P0FXYFo0hdWROiaw=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Zx7By1sRgQWEnxu1lc5X7Y1FnwA=
+		wNE55cr+gHaspUBUk+kYkfN2ENY=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Zx7By1sRgQWEnxu1lc5X7Y1FnwA=
+		wNE55cr+gHaspUBUk+kYkfN2ENY=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CH8fWeHb/i4Nyxz5pJwU4hr/820=
+		7d8USPzKSOcDZ+ybmcJryy8XlAM=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		I+Ev1rHotBUAkLijqn2n9POjugs=
+		ZK1wnWSun83P0FXYFo0hdWROiaw=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HYdFFTpNU3sArIT11/cjRK86l10=
+		WpozEXHCmgv2UwMFKIAhib6gCKw=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HYdFFTpNU3sArIT11/cjRK86l10=
+		WpozEXHCmgv2UwMFKIAhib6gCKw=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gupLqAxM9bWiRPhj7pahloNkoAU=
+		QeT3MNrQ0STTYBvdJITq6gHmXX0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GfohdWh0P2HWSUsvzOSUiCtPRFpfp6k5pRM+bho/+Eg=
+			Do43XLgCsTHurW0e/CPWL58TOOBhueW2uGEBzvEBVi0=
 			</data>
 		</dict>
 		<key>Headers/VeraSDK.h</key>
@@ -112,14 +112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JQZn2UkpbKfN+0caZOR6uUbsjcUsCaoVO6VT+PWckwA=
+			tfcSbxRBu8qbcFdxjWO55rYMKlQOEaMiOp4rOSmnHbI=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			On6af1lsVy+/D2Pfmv3kMN/0HiFgShvfz6GzhAvnshU=
+			w+pjUbcs9jpd52XMSQ1IRMFc1MuKb21VcrmZlHyYuag=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -133,28 +133,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			On6af1lsVy+/D2Pfmv3kMN/0HiFgShvfz6GzhAvnshU=
+			w+pjUbcs9jpd52XMSQ1IRMFc1MuKb21VcrmZlHyYuag=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GQ8XM4UZ9w+6Vm6PMo6OFpS8CXQx49ptPfnEBJ96eZo=
+			oe9PG47EnMSR+xO3fHnwqapGqcCLo0O1a9zmo4G3eEY=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JQZn2UkpbKfN+0caZOR6uUbsjcUsCaoVO6VT+PWckwA=
+			tfcSbxRBu8qbcFdxjWO55rYMKlQOEaMiOp4rOSmnHbI=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LL6ngcjynfzRbj83DVUVRLupsRi2knBXf7s9WXmsR4I=
+			EGKW0yHZtfov+FbuFfnG/hzhLPyINYl5LhpUbR/Ow0A=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -168,14 +168,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LL6ngcjynfzRbj83DVUVRLupsRi2knBXf7s9WXmsR4I=
+			EGKW0yHZtfov+FbuFfnG/hzhLPyINYl5LhpUbR/Ow0A=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JlbAd40BeTvXzrTwPdVAadMTWwVtJJ7NtvjzRf64u8g=
+			VP4LU2JqowGW/AQTE99nuGUyI8fT0acTaVL6/S1fASI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

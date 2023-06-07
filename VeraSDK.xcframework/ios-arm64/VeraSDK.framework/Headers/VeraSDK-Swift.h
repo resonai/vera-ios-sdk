@@ -233,6 +233,7 @@ using UInt = size_t;
 @import ARKit;
 @import CoreFoundation;
 @import MetalKit;
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -259,12 +260,19 @@ using UInt = size_t;
 
 
 
+
 @class NSTimer;
 @class UITapGestureRecognizer;
 
 @interface UIView (SWIFT_EXTENSION(VeraSDK))
 - (void)toastTimerDidFinish:(NSTimer * _Nonnull)timer;
 - (void)handleToastTapped:(UITapGestureRecognizer * _Nonnull)recognizer;
+@end
+
+
+SWIFT_CLASS("_TtC7VeraSDK11VeraSDKObjC")
+@interface VeraSDKObjC : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSCoder;
