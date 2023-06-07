@@ -3229,52 +3229,53 @@
             "moduleName": "VeraSDK"
           },
           {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Optional",
+                "printedName": "VeraSDK.LogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "VeraSDK.LogLevel",
+                    "usr": "s:7VeraSDK8LogLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LogLevel",
-                "printedName": "VeraSDK.LogLevel",
-                "usr": "s:7VeraSDK8LogLevelO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LogLevel",
-                "printedName": "VeraSDK.LogLevel",
-                "usr": "s:7VeraSDK8LogLevelO"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:7VeraSDK8LogLevelO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s7VeraSDK8LogLevelO2eeoiySbAC_ACtFZ",
+            "declKind": "Constructor",
+            "usr": "s:7VeraSDK8LogLevelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7VeraSDK8LogLevelO8rawValueACSgSS_tcfc",
             "moduleName": "VeraSDK",
-            "static": true,
             "implicit": true,
-            "funcSelfKind": "NonMutating"
+            "init_kind": "Designated"
           },
           {
             "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
+            "name": "rawValue",
+            "printedName": "rawValue",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7VeraSDK8LogLevelO9hashValueSivp",
-            "mangledName": "$s7VeraSDK8LogLevelO9hashValueSivp",
+            "usr": "s:7VeraSDK8LogLevelO8rawValueSSvp",
+            "mangledName": "$s7VeraSDK8LogLevelO8rawValueSSvp",
             "moduleName": "VeraSDK",
             "implicit": true,
             "accessors": [
@@ -3285,44 +3286,19 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7VeraSDK8LogLevelO9hashValueSivg",
-                "mangledName": "$s7VeraSDK8LogLevelO9hashValueSivg",
+                "usr": "s:7VeraSDK8LogLevelO8rawValueSSvg",
+                "mangledName": "$s7VeraSDK8LogLevelO8rawValueSSvg",
                 "moduleName": "VeraSDK",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7VeraSDK8LogLevelO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s7VeraSDK8LogLevelO4hash4intoys6HasherVz_tF",
-            "moduleName": "VeraSDK",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
@@ -3332,6 +3308,7 @@
         "declAttributes": [
           "AccessControl"
         ],
+        "enumRawTypeName": "String",
         "conformances": [
           {
             "kind": "Conformance",
@@ -3346,6 +3323,28 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },

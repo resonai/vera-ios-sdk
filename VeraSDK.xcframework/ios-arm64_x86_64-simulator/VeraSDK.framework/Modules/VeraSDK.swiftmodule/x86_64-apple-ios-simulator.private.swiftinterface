@@ -170,14 +170,14 @@ extension VeraSDK.Reachability {
     get
   }
 }
-public enum LogLevel {
+public enum LogLevel : Swift.String {
   case info
   case debug
   case error
   case warn
-  public static func == (a: VeraSDK.LogLevel, b: VeraSDK.LogLevel) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -382,6 +382,7 @@ extension VeraSDK.Reachability.Connection : Swift.Equatable {}
 extension VeraSDK.Reachability.Connection : Swift.Hashable {}
 extension VeraSDK.LogLevel : Swift.Equatable {}
 extension VeraSDK.LogLevel : Swift.Hashable {}
+extension VeraSDK.LogLevel : Swift.RawRepresentable {}
 extension VeraSDK.Vera.Configuration.Language : Swift.Equatable {}
 extension VeraSDK.Vera.Configuration.Language : Swift.Hashable {}
 extension VeraSDK.Vera.Configuration.Language : Swift.RawRepresentable {}
