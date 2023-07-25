@@ -193,9 +193,6 @@ extension VeraSDK.Logger {
   public func debug(_ message: Swift.String, _ source: Swift.StaticString = #function)
   public func exception(_ message: Swift.String)
 }
-public protocol Mall {
-  func prepareDataOpsGraph()
-}
 public struct ConsoleLogger : VeraSDK.Logger {
   public init()
   public func log(_ message: Swift.String, level: VeraSDK.LogLevel)

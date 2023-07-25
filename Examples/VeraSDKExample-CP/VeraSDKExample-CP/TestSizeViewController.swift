@@ -88,19 +88,19 @@ final class TestSizeViewController: UIViewController {
     private func buildVera() -> VeraViewController? {
         Vera.useConfig(
             .init(
-                domain: URL(string: "https://beta-vera.resonai.com")!,
+                domain: URL(string: "https://vera.resonai.com")!,
                 registration: .init(
                     url: URL(string: "registration.resonai.com")!,
                     port: 443
                 ),
                 app: .init(
-                    clientID: "test",
+                    clientID: "",
                     siteIDs: ["azrieli-hashalom-tlv"],
                     shouldShowCloseButton: true,
                     hideHeader: false
                 ),
                 auth: .init(username: nil),
-                language: .he
+                language: .en
             )
         )
 
