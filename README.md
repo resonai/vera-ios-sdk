@@ -1,8 +1,9 @@
 <p align="center">
     <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="./Vera.png">
 </p>
-
+<p align="center">
 A computer vision enterprise platform that transforms buildings into intelligent environments.
+</p>
 
 <p align="center">
     <a href="https://developer.apple.com/swift/"><img alt="Swift 5.7" src="https://img.shields.io/badge/swift-5.7-orange.svg?style=flat"></a>
