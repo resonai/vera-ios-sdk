@@ -53,7 +53,7 @@ import VeraSDK
 
 2. Add the required [Info.plist keys](#infoplist-keys) if your app doesn't already.
 
-2. Create a configuration object. Most fields are optional, check the [example integration](https://github.com/resonai/vera-ios-sdk/blob/main/Examples/VeraSDKExample-CP/VeraSDKExample-CP/TestSizeViewController.swift) for more parameters.
+3. Create a configuration object. Most fields are optional, check the [example integration](https://github.com/resonai/vera-ios-sdk/blob/main/Examples/VeraSDKExample-CP/VeraSDKExample-CP/TestSizeViewController.swift) for more parameters.
 
 ```swift
 Vera.useConfig(
@@ -65,7 +65,7 @@ Vera.useConfig(
 )
 ```
 
-3. Build an instance of `VeraViewController` and present it.
+4. Build an instance of `VeraViewController` and present it.
 
 ```swift
 let vera = Vera.getController()
