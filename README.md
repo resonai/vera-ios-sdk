@@ -51,6 +51,8 @@ easiest way to integrate VeraSDK with an existing `xcodeproj`.
 import VeraSDK
 ```
 
+2. Add the required [Info.plist keys](#info.plist-keys) if your app doesn't already.
+
 2. Create a configuration object. Most fields are optional, check the [example integration](https://github.com/resonai/vera-ios-sdk/blob/main/Examples/VeraSDKExample-CP/VeraSDKExample-CP/TestSizeViewController.swift) for more parameters.
 
 ```swift
@@ -72,7 +74,7 @@ present(vera, animated: true)
 
 ## Bi-directional Communication
 
-The SDK implements bi-directional communication between the Vera platform and the client application. Communication is done using events. Vera supports default events like `.pause`, `.resume`, `.sendDeeplink(String)`, etc.
+The SDK implements bi-directional communication between the Vera platform and the client application. Communication is done using events. Vera supports default events like `.pause`, `.resume`, `.sendDeeplink`. Check `Vera.ClientEvent` for the whole list.
 
 ### Sending Events
 
