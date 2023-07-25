@@ -1,5 +1,7 @@
-# Vera iOS SDK
-Official repo for Vera iOS SDK.
+![Vera: A computer vision enterprise platform that transforms buildings into intelligent environments](./Vera.png)
+
+# Vera
+A computer vision enterprise platform that transforms buildings into intelligent environments.
 
 ## Installation
 
@@ -46,9 +48,9 @@ import VeraSDK
 
 ```swift
 Vera.useConfig(
-    .init(
+    Vera.Configuration(
         app: .init(
-            clientID: "vera_client_id"
+            clientID: "app_client_id"
         )
     )
 )
@@ -63,11 +65,11 @@ present(vera, animated: true)
 
 ## Bi-directional Communication
 
-The SDK implements bi-directional communication between the Vera platform and the client application. Communication is done using events.
+The SDK implements bi-directional communication between the Vera platform and the client application. Communication is done using events. Vera supports default events like `.pause`, `.resume`, `.sendDeeplink(String)`, etc.
 
 ### Sending Events
 
-In order to send an event to the SDK, call the `Vera.handleEvent(_:)` method.
+In order to send an event to the SDK, call the `Vera.handleEvent(_:)` method. 
 
 #### Pause / Resume
 
@@ -94,7 +96,7 @@ func application(
 For an example check [this implementation](https://github.com/resonai/vera-ios-sdk/blob/e3f62fd94a051ee49ffbfec6460efee6ee15a7bc/Examples/VeraSDKExample-CP/VeraSDKExample-CP/AppDelegate.swift#L35).
 
 #### Custom event
-The client app can send events to any of our public your custom AR Experiences:
+In order to add custom events pertaining to your own use-case, use the `sendMessage`. You can then handle this event in your own ARX app:
 ```swift
 Vera.handleEvent(
     .sendMessage(receiver: "custom_arx_name", data: "custom_data")
