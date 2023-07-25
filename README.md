@@ -3,6 +3,11 @@
 # Vera
 A computer vision enterprise platform that transforms buildings into intelligent environments.
 
+<p align="center">
+    <a href="https://developer.apple.com/swift/"><img alt="Swift 5.7" src="https://img.shields.io/badge/swift-5.7-orange.svg?style=flat"></a>
+    <a href="https://github.com/resonai/vera-ios-sdk/releases"><img alt="Vera Release" src="https://img.shields.io/github/v/release/resonai/vera-ios-sdk"></a>
+</p>
+
 ## Installation
 
 ### CocoaPods
