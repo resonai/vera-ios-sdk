@@ -1,6 +1,7 @@
-![Vera: A computer vision enterprise platform that transforms buildings into intelligent environments](./Vera.png)
+<picture>
+    <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="./Vera.png">
+</picture>
 
-# Vera
 A computer vision enterprise platform that transforms buildings into intelligent environments.
 
 <p align="center">
