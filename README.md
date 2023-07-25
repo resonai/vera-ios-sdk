@@ -51,7 +51,7 @@ easiest way to integrate VeraSDK with an existing `xcodeproj`.
 import VeraSDK
 ```
 
-2. Add the required [Info.plist keys](#info.plist-keys) if your app doesn't already.
+2. Add the required [Info.plist keys](#infoplist-keys) if your app doesn't already.
 
 2. Create a configuration object. Most fields are optional, check the [example integration](https://github.com/resonai/vera-ios-sdk/blob/main/Examples/VeraSDKExample-CP/VeraSDKExample-CP/TestSizeViewController.swift) for more parameters.
 
