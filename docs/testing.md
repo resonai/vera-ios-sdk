@@ -45,3 +45,6 @@ When you have registration, opening Vera's side menu should show a list of AR ap
 
 > [!NOTE]  
 > On some sites, the navigation ARX can be called _Virtual Concierge_.
+
+After you are done testing the integration, proceed to the [bi-directional communication page](./bidirectional-communication.md) to learn how to communicate with the SDK from the client app.
+
