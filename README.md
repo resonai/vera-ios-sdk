@@ -44,6 +44,10 @@ easiest way to integrate VeraSDK with an existing `xcodeproj`.
 
 ## Integration
 
+VeraSDK provides access to the Vera platform to any Native application. When the user finds himself in any of the Vera supported **sites** (buildings), he can open Vera and it will localize him inside the building with a very accurate precision. When he's localized, he can access any AR Experiences (**ARXs**) set up for that specific site. 
+
+Some examples of ARXs include Navigation, 3D objects & animations, Interactions with the environment, etc.
+
 1. Import VeraSDK into your project.
 
 ```swift
@@ -72,7 +76,7 @@ let vera = Vera.getController()
 present(vera, animated: true)
 ```
 
-5. Please refer to the [Integration](./docs/integration.md) to learn how to test if the integration was successful.
+5. Please refer to the [testing docs](./docs/integration.md) to learn how to test if the integration was successful.
 
 ## Bi-directional Communication
 
