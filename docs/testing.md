@@ -41,10 +41,7 @@ As soon as you get registration, you should see 3D objects around you.
 
 ## Navigation & ARXs
 
-When you have registration, you can open Vera's side menu and you should see a list of AR applications available for that site. We call those applications AR Experiences, or simply **ARX**s. One of those experiences is **Navigation**. You can open it, select a POI (point of interest) on the map (i.e. Kitchen), and navigate there.
+When you have registration, opening Vera's side menu should show a list of AR applications available for that site. We call these applications AR Experiences, or simply **ARX**s. One of those experiences is **Navigation**. You can open it, select a POI (point of interest) on the map (i.e. Kitchen), and navigate there.
 
 > [!NOTE]  
 > On some sites, the navigation ARX can be called _Virtual Concierge_.
-
-After you are done testing the integration, proceed to the [bi-directional communication page](./bidirectional-communication.md) to learn how to communicate with ARXs from the client app.
-

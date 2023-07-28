@@ -110,14 +110,6 @@ func application(
 ```
 For an example check [this implementation](https://github.com/resonai/vera-ios-sdk/blob/e3f62fd94a051ee49ffbfec6460efee6ee15a7bc/Examples/VeraSDKExample-CP/VeraSDKExample-CP/AppDelegate.swift#L35).
 
-#### Custom event
-In order to add custom events pertaining to your own use-case, use the `sendMessage`. You can then handle this event in your own ARX app:
-```swift
-Vera.handleEvent(
-    .sendMessage(receiver: "custom_arx_name", data: "custom_data")
-)
-```
-
 ### Receiving Events
 In the same manner, the SDK will send you events to ask you for additional information or deliver a message from an ARX. You should be prepared to handle them:
 ```swift
@@ -129,7 +121,42 @@ public enum Vera.Event {
 }
 
 Vera.useEventHandler { event in
-   // handle event here
+    switch event {
+    case .login:
+        ...
+    case .logout:
+        ...
+    }
+}
+```
+
+### Communicating to ARXs
+
+Since Vera is the platform where multiple Native apps can use different ARXs on the same site, we implemented a generic way to communicate between these apps through the SDK.
+
+#### Sending
+In order to send custom events to ARXs use the `sendMessage` event. You can then handle this event in your own ARX app:
+```swift
+Vera.handleEvent(
+    .sendMessage(receiver: "custom_arx_name", data: "custom_data")
+)
+```
+
+> [!NOTE]
+> The `Vera.sendDeeplink` is mostly a shortcut for communicating with the Navigation ARX.
+
+#### Receiving
+The same way you send events to ARXs, you can receive events from ARXs.
+
+> [!WARNING]
+> Only handle events from ARXs if you know what you are doing, and your use-case requires it.
+
+```swift
+Vera.useEventHandler { event in
+    switch event {
+    case let .handleMessage(sender, data):
+        print("ARX \(sender): \(data)")
+    }
 }
 ```
 
