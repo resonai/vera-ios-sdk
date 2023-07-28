@@ -1,10 +1,12 @@
 # Bi-directional Communication
 
-The SDK implements bi-directional communication between the Vera platform and the client application. Communication is done using events. Vera supports default events like `.pause`, `.resume`, `.sendDeeplink`. Check `Vera.ClientEvent` for the whole list.
+The SDK implements bi-directional communication between the Vera platform and the client application. 
+
+Communication is done using events. Vera supports default events like `.pause`, `.resume`, `.sendDeeplink`. 
 
 ## Events
 
-In order to send an event to the SDK, call the `Vera.handleEvent(_:)` method. 
+In order to send an event to the SDK, call the `Vera.handleEvent(_:)` method. Check `Vera.ClientEvent` for the whole list.
 
 ### Pause / Resume
 
@@ -59,7 +61,7 @@ Vera.handleEvent(
 ```
 
 > [!NOTE]
-> The `Vera.sendDeeplink` is mostly a shortcut for communicating with the Navigation ARX.
+> The `Vera.sendDeeplink` method is mostly a shortcut for communicating with the Navigation ARX.
 
 ### Receiving Messages
 The same way you send events to ARXs, you can receive events from ARXs.
