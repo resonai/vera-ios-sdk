@@ -42,7 +42,7 @@ From Xcode 11 it is possible to [add Swift Package dependencies to Xcode
 projects][xcode-spm] and link targets to products of those packages; this is the
 easiest way to integrate VeraSDK with an existing `xcodeproj`.
 
-## Usage
+## Integration
 
 1. Import VeraSDK into your project.
 
@@ -59,7 +59,7 @@ import VeraSDK
 Vera.useConfig(
     Vera.Configuration(
         app: .init(
-            clientID: "app_client_id"
+            clientID: "<app_client_id>"
         )
     )
 )
@@ -71,6 +71,8 @@ Vera.useConfig(
 let vera = Vera.getController()
 present(vera, animated: true)
 ```
+
+5. Please refer to the [Integration](./docs/integration.md) to learn how to test if the integration was successful.
 
 ## Bi-directional Communication
 

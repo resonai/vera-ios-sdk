@@ -95,7 +95,7 @@ final class TestSizeViewController: UIViewController {
                 ),
                 app: .init(
                     clientID: "",
-                    siteIDs: ["azrieli-hashalom-tlv"],
+                    siteIDs: ["hataasia-9-2"],
                     shouldShowCloseButton: true,
                     hideHeader: false
                 ),
@@ -115,7 +115,7 @@ final class TestSizeViewController: UIViewController {
             case .refreshToken:
                 print("refresh token")
             @unknown default:
-                fatalError()
+                print("Got unknown event \(event)")
             }
         }
 
