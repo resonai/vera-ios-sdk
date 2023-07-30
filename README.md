@@ -76,7 +76,7 @@ let vera = Vera.getController()
 present(vera, animated: true)
 ```
 
-5. Please refer to the [testing docs](./docs/integration.md) to learn how to test if the integration was successful.
+5. Please refer to the [testing docs](./docs/testing.md) to learn how to test if the integration was successful.
 
 ## Bi-directional Communication
 
