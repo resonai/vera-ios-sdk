@@ -6,15 +6,28 @@
 //
 
 import UIKit
+import VeraSDK
 
 class ViewController: UIViewController {
+    var vera: VeraViewController?
 
-    private lazy var testSizeButton: UIButton = {
+    private lazy var fullscreenButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Test Size", for: .normal)
-        button.backgroundColor = .blue
-        button.addTarget(self, action: #selector(testSizeButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Test Fullscren", for: .normal)
+        button.backgroundColor = .blue
+        button.addTarget(self, action: #selector(fullscreenButtonTapped), for: .touchUpInside)
+        button.layer.cornerRadius = 4
+
+        return button
+    }()
+
+    private lazy var partialButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Test Part of Screen", for: .normal)
+        button.backgroundColor = .purple
+        button.addTarget(self, action: #selector(partialButtonTapped), for: .touchUpInside)
         button.layer.cornerRadius = 4
 
         return button
@@ -23,17 +36,142 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(testSizeButton)
         view.backgroundColor = .white
+        navigationController?.navigationBar.backgroundColor = .gray
+        navigationController?.delegate = self
+        title = "Vera Example"
+
+        view.addSubview(partialButton)
+        view.addSubview(fullscreenButton)
 
         NSLayoutConstraint.activate([
-            testSizeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            testSizeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            testSizeButton.widthAnchor.constraint(equalToConstant: 96)
+            partialButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -12),
+            partialButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            partialButton.widthAnchor.constraint(equalToConstant: 196),
+            fullscreenButton.bottomAnchor.constraint(equalTo: partialButton.topAnchor, constant: -12),
+            fullscreenButton.centerXAnchor.constraint(equalTo: partialButton.centerXAnchor),
+            partialButton.widthAnchor.constraint(equalTo: fullscreenButton.widthAnchor)
         ])
     }
 
-    @objc func testSizeButtonTapped() {
-        navigationController?.pushViewController(TestSizeViewController(), animated: true)
+    @objc func fullscreenButtonTapped() {
+        removeVera()
+        guard let vera = buildVera() else { return }
+
+        let container = containerVC()
+        container.title = "Fullscreen"
+
+        vera.willMove(toParent: container)
+        container.view.addSubview(vera.view)
+        vera.view.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            vera.view.leadingAnchor.constraint(equalTo: container.view.leadingAnchor),
+            vera.view.trailingAnchor.constraint(equalTo: container.view.trailingAnchor),
+            vera.view.heightAnchor.constraint(equalTo: container.view.heightAnchor),
+            vera.view.topAnchor.constraint(equalTo: container.view.topAnchor)
+        ])
+
+        vera.didMove(toParent: container)
+
+        navigationController?.pushViewController(container, animated: true)
+    }
+
+    @objc func partialButtonTapped() {
+        removeVera()
+        guard let vera = buildVera() else { return }
+
+        let container = containerVC()
+        container.title = "Partial"
+
+        vera.willMove(toParent: container)
+        container.view.addSubview(vera.view)
+        vera.view.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            vera.view.leadingAnchor.constraint(equalTo: container.view.leadingAnchor),
+            vera.view.trailingAnchor.constraint(equalTo: container.view.trailingAnchor),
+            vera.view.heightAnchor.constraint(equalToConstant: 240),
+            vera.view.topAnchor.constraint(equalTo: container.view.safeAreaLayoutGuide.topAnchor, constant: 24)
+        ])
+
+        vera.didMove(toParent: container)
+
+        navigationController?.pushViewController(container, animated: true)
+    }
+
+    @objc func sendDeepLink() {
+        let deepLink = "https://vera.resonai.com/#/play/hataasia-9-2/explorer/%7B%22key%22%3A%22b6a041e0-0bf1-11ec-b13f-c2d81cac16c6%22%7D"
+        Vera.handleEvent(.sendDeeplink(deepLink))
+    }
+
+    private func containerVC() -> UIViewController {
+        let vc = UIViewController()
+        vc.navigationItem.rightBarButtonItem = .init(title: "Deeplink", style: .plain, target: self, action: #selector(sendDeepLink))
+        vc.view.backgroundColor = .white
+
+        return vc
+    }
+
+    private func removeVera() {
+        guard let vera = vera else { return }
+        if let parent = vera.parent, parent === self {
+            vera.willMove(toParent: nil)
+            vera.view.removeFromSuperview()
+            vera.didMove(toParent: nil)
+        }
+        self.vera = nil
+    }
+
+    private func buildVera() -> VeraViewController? {
+        /// Most of these configuration parameters are unnecessary and have default values.
+        /// They are added here to inform about their existence.
+        Vera.useConfig(
+            .init(
+                domain: URL(string: "https://vera.resonai.com")!,
+                registration: .init(
+                    url: URL(string: "registration.resonai.com")!,
+                    port: 443
+                ),
+                app: .init(
+                    clientID: "",
+                    siteIDs: ["hataasia-9-2"],
+                    shouldShowCloseButton: false,
+                    hideHeader: true
+                ),
+                auth: .init(username: nil),
+                language: .en
+            )
+        )
+
+        /// Make sure to configure the global event handler before starting Vera
+        /// to avoid losing any necessary events.
+        Vera.useEventHandler { event in
+            switch event {
+            case let .handleMessage(sender: sender, data: data):
+                print("Sender: \(sender) -> \(data)")
+            case .login:
+                print("login")
+            case .logout:
+                print("logout")
+            case .refreshToken:
+                print("refresh token")
+            @unknown default:
+                print("Got unknown event \(event)")
+            }
+        }
+
+
+        let vc = Vera.getController()
+        self.vera = vc
+
+        return vc
+    }
+}
+
+extension ViewController: UINavigationControllerDelegate {
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard viewController === self else { return }
+        vera = nil
     }
 }
