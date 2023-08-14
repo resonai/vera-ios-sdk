@@ -44,7 +44,7 @@ easiest way to integrate VeraSDK with an existing `xcodeproj`.
 
 ## Integration
 
-VeraSDK provides access to the Vera platform to any Native application. When the user finds himself in any of the Vera supported **sites** (buildings), he can open Vera and it will localize him inside the building with a very accurate precision. When he's localized, he can access any AR Experiences (**ARXs**) set up for that specific site. 
+VeraSDK provides access to the Vera platform to any Native application. When the user finds themselves in any of the Vera supported **sites** (buildings), they can open Vera and it will localize them inside the building with a very accurate precision. Once localized, the user can access any AR Experiences (**ARXs**) set up for that specific site. 
 
 Some examples of ARXs include Navigation, 3D objects & animations, Interactions with the environment, etc.
 
@@ -86,6 +86,9 @@ Check the [bi-directional communication docs](./docs/bidirectional-communication
 
 * `NSCameraUsageDescription` - VeraSDK needs access to the camera in order to support AR.
 * `NSLocationWhenInUseUsageDescription` - VeraSDK needs access to location to provide accurate AR experiences.
+
+> [!NOTE]  
+> Vera doesn't need location permission if you configure it with a single site ID.
 
 If your app doesn't already access the camera, we recommend using something like:
 

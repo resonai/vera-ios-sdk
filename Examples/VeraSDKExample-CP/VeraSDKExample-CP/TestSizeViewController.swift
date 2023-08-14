@@ -86,6 +86,8 @@ final class TestSizeViewController: UIViewController {
     }
 
     private func buildVera() -> VeraViewController? {
+        /// Most of these configuration parameters are unnecessary and have default values.
+        /// They are added here to inform about their existence.
         Vera.useConfig(
             .init(
                 domain: URL(string: "https://vera.resonai.com")!,
@@ -104,6 +106,8 @@ final class TestSizeViewController: UIViewController {
             )
         )
 
+        /// Make sure to configure the global event handler before starting Vera
+        /// to avoid losing any necessary events.
         Vera.useEventHandler { event in
             switch event {
             case let .handleMessage(sender: sender, data: data):

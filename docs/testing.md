@@ -35,6 +35,9 @@ When you are located in the physical site, just raising the phone and looking ar
 ### Off-site
 Otherwise you should trick Vera into thinking it is there. To do that, you can use a photo, or an image taken at that site. Below is an image you can use to test our sample site. Open the image full-screen on your monitor and point your phone to the image.
 
+> [!NOTE]  
+> If you are off-site make sure Vera doesn't have location access. Either deny it the first time it asks, or disable it in Settings.
+
 ![Sample Registration](./registration.png)
 
 As soon as you get registration, you should see 3D objects around you.
@@ -42,9 +45,6 @@ As soon as you get registration, you should see 3D objects around you.
 ## Navigation & ARXs
 
 When you have registration, opening Vera's side menu should show a list of AR applications available for that site. We call these applications AR Experiences, or simply **ARX**s. One of those experiences is **Navigation**. You can open it, select a POI (point of interest) on the map (i.e. Kitchen), and navigate there.
-
-> [!NOTE]  
-> On some sites, the navigation ARX can be called _Virtual Concierge_.
 
 After you are done testing the integration, proceed to the [bi-directional communication page](./bidirectional-communication.md) to learn how to communicate with the SDK from the client app.
 
