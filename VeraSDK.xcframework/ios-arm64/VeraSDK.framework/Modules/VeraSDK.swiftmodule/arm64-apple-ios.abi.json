@@ -19992,245 +19992,252 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2651,
+      "offset": 2680,
       "length": 15,
       "value": "\"clearDeviceId\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 2750,
       "length": 11,
       "value": "\"closeVera\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 2812,
       "length": 24,
       "value": "\"frameFinishedRendering\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2871,
+      "offset": 2900,
       "length": 22,
       "value": "\"getFingerprintStatus\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2942,
+      "offset": 2971,
       "length": 10,
       "value": "\"getToken\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3002,
+      "offset": 3031,
       "length": 13,
       "value": "\"handleError\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3068,
+      "offset": 3097,
       "length": 16,
       "value": "\"hapticFeedback\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3140,
+      "offset": 3169,
       "length": 12,
       "value": "\"hintRegion\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3204,
+      "offset": 3233,
       "length": 14,
       "value": "\"identifyUser\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3259,
+      "offset": 3288,
       "length": 7,
       "value": "\"login\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3300,
+      "offset": 3329,
       "length": 8,
       "value": "\"logout\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3343,
+      "offset": 3372,
       "length": 17,
       "value": "\"onTagsAvailable\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3404,
+      "offset": 3433,
       "length": 14,
       "value": "\"openSettings\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3459,
+      "offset": 3488,
       "length": 9,
       "value": "\"openURL\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3517,
+      "offset": 3546,
       "length": 16,
       "value": "\"pauseARSession\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3576,
+      "offset": 3605,
+      "length": 11,
+      "value": "\"recording\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 3667,
       "length": 19,
       "value": "\"registrationToken\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3654,
+      "offset": 3745,
       "length": 21,
       "value": "\"requestCameraAccess\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3723,
+      "offset": 3814,
       "length": 23,
       "value": "\"requestLocationAccess\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3796,
+      "offset": 3887,
       "length": 15,
       "value": "\"restartWebUrl\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3866,
+      "offset": 3957,
       "length": 17,
       "value": "\"resumeARSession\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3940,
+      "offset": 4031,
       "length": 12,
       "value": "\"sendNative\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4004,
+      "offset": 4095,
       "length": 11,
       "value": "\"setBIData\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4099,
+      "offset": 4190,
       "length": 23,
       "value": "\"setCompressionQuality\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4185,
+      "offset": 4276,
       "length": 22,
       "value": "\"setSiteConfiguration\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4269,
+      "offset": 4360,
       "length": 21,
       "value": "\"setGrayscaleEnabled\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4351,
+      "offset": 4442,
       "length": 16,
       "value": "\"setWebPEnabled\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4423,
+      "offset": 4514,
       "length": 35,
       "value": "\"setVariableRateRegistrationUpload\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4533,
+      "offset": 4624,
       "length": 16,
       "value": "\"startARSession\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4592,
+      "offset": 4683,
       "length": 22,
       "value": "\"startLocationUpdates\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4663,
+      "offset": 4754,
       "length": 21,
       "value": "\"stopLocationUpdates\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4732,
+      "offset": 4823,
       "length": 20,
       "value": "\"takePhotoImmediate\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4799,
+      "offset": 4890,
       "length": 11,
       "value": "\"takePhoto\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4861,
+      "offset": 4952,
       "length": 12,
       "value": "\"takeQrCode\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4925,
+      "offset": 5016,
       "length": 10,
       "value": "\"vetoPose\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/JS\/JS+IncomingEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4972,
+      "offset": 5063,
       "length": 9,
       "value": "\"vibrate\""
     },
