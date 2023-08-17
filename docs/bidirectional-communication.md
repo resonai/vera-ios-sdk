@@ -61,7 +61,7 @@ Vera.handleEvent(
 ```
 
 > [!NOTE]
-> The `Vera.sendDeeplink` method is mostly a shortcut for communicating with the Navigation ARX.
+> The `Vera.sendDeeplink` method is mostly a shortcut for communicating with the Navigation ARX. Check [example code](https://github.com/resonai/vera-ios-sdk/blob/6dbfe36e7eea6cecdf850160aa17b4f154459f5f/Examples/VeraSDKExample-CP/VeraSDKExample-CP/ViewController.swift#L105).
 
 ### Receiving Messages
 The same way you send events to ARXs, you can receive events from ARXs.
