@@ -101,7 +101,7 @@ class ViewController: UIViewController {
     }
 
     @objc func sendDeepLink() {
-        let deepLink = "https://vera.resonai.com/#/play/hataasia-9-2/explorer/%7B%22key%22%3A%22b6a041e0-0bf1-11ec-b13f-c2d81cac16c6%22%7D"
+        let deepLink = "https://vera.resonai.com/#/play/sdk-sample-site/com.resonai.navigation/%7B%22key%22%3A%228207e1fe-3c5a-11ee-9750-12f3c6ba63d8%22%7D"
         Vera.handleEvent(.sendDeeplink(deepLink))
     }
 
