@@ -135,7 +135,7 @@ class ViewController: UIViewController {
                 ),
                 app: .init(
                     clientID: "",
-                    siteIDs: ["hataasia-9-2"],
+                    siteIDs: ["sdk-sample-site"],
                     shouldShowCloseButton: false,
                     hideHeader: true
                 ),
