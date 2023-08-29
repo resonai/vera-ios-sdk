@@ -2,6 +2,9 @@ window.resonai = window.resonai || {};
 window.resonai.internal = window.resonai.internal || {};
 window.resonai.internal.reactive = window.resonai.internal.reactive || {};
 
+// THIS FILE IS DEPRECATED
+// WE NEED TO USE deepMerge FROM PLAY FE
+
 /**
  Shamelessly copied from https://thewebdev.info/2021/03/06/how-to-deep-merge-javascript-objects/
  */
