@@ -12,7 +12,7 @@ PODS:
   - ScanditBarcodeCapture (6.18.2):
     - ScanditCaptureCore (= 6.18.2)
   - ScanditCaptureCore (6.18.2)
-  - VeraSDK (1.0.2):
+  - VeraSDK (1.0.5):
     - Cognex.cmbSDK (= 2.7.1)
     - libwebp (= 1.2.4)
     - ScanditBarcodeCapture
@@ -36,7 +36,7 @@ SPEC CHECKSUMS:
   libwebp: f62cb61d0a484ba548448a4bd52aabf150ff6eef
   ScanditBarcodeCapture: a5805098b642fbe9c51c6b323206d770d4f41440
   ScanditCaptureCore: a9aa3e5ae9f46b15b51cf42b309938da0adc4a9b
-  VeraSDK: 0abe452472b05d4c26d7ec006d6869763c05a558
+  VeraSDK: e98cb648e631b2eacc03c97380d05a731cd78f2d
 
 PODFILE CHECKSUM: f748bc024f0292b72d12fb1c2a67eef6dd1454a0
 
