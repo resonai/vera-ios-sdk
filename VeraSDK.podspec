@@ -7,18 +7,22 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'VeraSDK'
-  s.version          = '1.0.5'
-  s.summary          = 'Transform commercial buildings into intelligent environments using just your phone.'
-  s.homepage         = 'https://github.com/resonai/vera-ios-sdk'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { "ResonAI" => "support@resonai.com" }
-  s.source           = { :http => "https://github.com/resonai/vera-ios-sdk/releases/download/v#{s.version.to_s}/VeraSDK.xcframework.zip" }
+  s.name                = 'VeraSDK'
+  s.version             = '1.0.6'
+  s.summary             = 'Transform commercial buildings into intelligent environments using just your phone.'
+  s.homepage            = 'https://github.com/resonai/vera-ios-sdk'
+  s.license             = { :type => 'MIT', :file => 'LICENSE' }
+  s.author              = { "ResonAI" => "support@resonai.com", "Alex Culeva" => 'alexc@resonaixr.com' }
+  s.source              = { :git => "https://github.com/resonai/vera-ios-sdk.git", :tag => "v#{s.version}" }
+  s.swift_version       = "5.8"
+  s.ios.deployment_target = "13.5"
 
-  s.platform         = :ios, '13.5'
-  s.frameworks       = 'UIKit', 'ARKit', 'CoreLocation', 'JavaScriptCore', 'WebKit', 'LocalAuthentication', 'Combine', 'SystemConfiguration'
+  s.platform            = :ios, '13.5'
+  s.frameworks          = 'UIKit', 'ARKit', 'CoreLocation', 'JavaScriptCore', 'WebKit', 'LocalAuthentication', 'Combine', 'SystemConfiguration'
+
+  s.dependency            'libwebp', '1.2.4'
+  s.dependency            'Cognex.cmbSDK', '2.7.1'
+  s.dependency            'ScanditBarcodeCapture'
+
   s.vendored_frameworks = 'VeraSDK.xcframework'
-  s.dependency 'libwebp', '1.2.4'
-  s.dependency 'Cognex.cmbSDK', '2.7.1'
-  s.dependency 'ScanditBarcodeCapture'
 end
