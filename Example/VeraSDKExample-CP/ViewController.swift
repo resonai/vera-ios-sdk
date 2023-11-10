@@ -9,7 +9,7 @@ import UIKit
 import VeraSDK
 
 class ViewController: UIViewController {
-    var vera: VeraViewController?
+    var vera: UIViewController?
 
     private lazy var fullscreenButton: UIButton = {
         let button = UIButton()
@@ -123,33 +123,39 @@ class ViewController: UIViewController {
         self.vera = nil
     }
 
-    private func buildVera() -> VeraViewController? {
-        /// Most of these configuration parameters are unnecessary and have default values.
-        /// They are added here to inform about their existence.
-        Vera.useConfig(
-            .init(
-                domain: URL(string: "https://vera.resonai.com")!,
-                registration: .init(
-                    url: URL(string: "registration.resonai.com")!,
-                    port: 443
-                ),
-                app: .init(
-                    clientID: "",
-                    siteIDs: ["sdk-sample-site"],
-                    shouldShowCloseButton: false,
-                    hideHeader: true
-                ),
-                auth: .init(username: nil),
-                language: .en
+    private func buildVera() -> UIViewController? {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            /// Most of these configuration parameters are unnecessary and have default values.
+            /// They are added here to inform about their existence.
+            Vera.useConfig(
+                .init(
+                    domain: URL(string: "https://vera.resonai.com")!,
+                    registration: .init(
+                        url: URL(string: "registration.resonai.com")!,
+                        port: 443
+                    ),
+                    app: .init(
+                        clientID: "",
+                        siteIDs: ["sdk-sample-site"],
+                        shouldShowCloseButton: false,
+                        hideHeader: true
+                    ),
+                    auth: .init(username: nil),
+                    language: .en
+                )
             )
-        )
+        }
 
         /// Make sure to configure the global event handler before starting Vera
         /// to avoid losing any necessary events.
-        Vera.useEventHandler { event in
+        Vera.useEventHandler { [weak self] event in
             switch event {
             case let .handleMessage(sender: sender, data: data):
-                print("Sender: \(sender) -> \(data)")
+                let alert = UIAlertController()
+                alert.title = sender
+                alert.message = data
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self?.present(alert, animated: true)
             case .login:
                 print("login")
             case .logout:
