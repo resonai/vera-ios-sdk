@@ -70,26 +70,6 @@ public struct DecodingError : Swift.Error, Swift.Equatable {
 extension Swift.Result : Swift.Decodable where Success : Swift.Decodable, Failure == VeraSDK.DecodingError {
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @available(iOS 13.5, *)
-@_Concurrency.MainActor(unsafe) final public class VeraViewController : UIKit.UIViewController, ARKit.ARSessionDelegate, WebKit.WKUIDelegate {
-  @_Concurrency.MainActor(unsafe) @objc override final public var prefersStatusBarHidden: Swift.Bool {
-    @objc get
-  }
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override final public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewSafeAreaInsetsDidChange()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
-}
-extension VeraSDK.VeraViewController : MetalKit.MTKViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func mtkView(_ view: MetalKit.MTKView, drawableSizeWillChange size: CoreFoundation.CGSize)
-  @_Concurrency.MainActor(unsafe) @objc final public func draw(in view: MetalKit.MTKView)
-}
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
   case failedToCreateWithHostname(Swift.String, Swift.Int32)
@@ -194,6 +174,49 @@ extension VeraSDK.Logger {
   public func debug(_ message: Swift.String, _ source: Swift.StaticString = #function)
   public func exception(_ message: Swift.String)
 }
+@objc @objcMembers public class VeraAppObjC : ObjectiveC.NSObject {
+  @objc final public let clientId: Swift.String
+  @objc final public let siteIds: [Swift.String]?
+  final public let shouldShowCloseButton: Swift.Bool?
+  final public let hideHeader: Swift.Bool?
+  final public let implementsAuthentication: Swift.Bool?
+  @objc final public let deepLinkPrefix: Swift.String?
+  @objc public init(clientId: Swift.String, siteIds: [Swift.String]?, shouldShowCloseButton: Swift.Bool = true, hideHeader: Swift.Bool = false, implementsAuthentication: Swift.Bool = true, deepLinkPrefix: Swift.String?)
+  @objc deinit
+}
+@objc @objcMembers public class VeraConfigurationObjC : ObjectiveC.NSObject {
+  @objc final public let domain: Foundation.URL?
+  @objc final public let username: Swift.String?
+  @objc final public let app: VeraSDK.VeraAppObjC
+  @objc final public let language: Swift.String?
+  @objc public init(domain: Foundation.URL?, username: Swift.String?, app: VeraSDK.VeraAppObjC, language: Swift.String?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VeraObjC : ObjectiveC.NSObject {
+  @objc public static var controller: UIKit.UIViewController {
+    @objc get
+  }
+  @objc public static var view: UIKit.UIView {
+    @objc get
+  }
+  @objc public static func useConfiguration(_ config: VeraSDK.VeraConfigurationObjC)
+  @objc public static func useDelegate(_ delegate: any VeraSDK.VeraDelegateObjC)
+  @objc public static func updateTokenAnonymous()
+  @objc public static func updateTokenOffline()
+  @objc public static func updateToken(token: Swift.String, userId: Swift.String)
+  @objc public static func pause()
+  @objc public static func resume()
+  @objc public static func sendDeeplink(_ link: Swift.String)
+  @objc public static func sendMessage(receiver: Swift.String, data: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol VeraDelegateObjC {
+  @objc func veraNeedsToLogin()
+  @objc func veraNeedsToLogout()
+  @objc func veraShouldRefreshToken()
+  @objc func handleVeraMessage(sender: Swift.String, data: Swift.String)
+}
 public struct ConsoleLogger : VeraSDK.Logger {
   public init()
   public func log(_ message: Swift.String, level: VeraSDK.LogLevel)
@@ -203,7 +226,8 @@ public enum Vera {
   public static func useEventHandler(_ eventHandler: @escaping VeraSDK.VeraEventHandler)
   public static func handleEvent(_ event: VeraSDK.Vera.ClientEvent)
   public static func configureDeeplink(_ deeplink: Swift.String)
-  public static func getController() -> VeraSDK.VeraViewController?
+  public static func getController() -> UIKit.UIViewController
+  public static func getView() -> UIKit.UIView
 }
 public protocol OutputNode : AnyObject {
   associatedtype Output
@@ -255,12 +279,18 @@ extension VeraSDK.Vera {
 }
 extension VeraSDK.Vera {
   public struct Configuration {
-    public let domain: Foundation.URL
-    public let registration: VeraSDK.Vera.Configuration.RegistrationEndpoint
+    public var domain: Foundation.URL {
+      get
+    }
+    public var registration: VeraSDK.Vera.Configuration.RegistrationEndpoint {
+      get
+    }
     public var auth: VeraSDK.Vera.Configuration.Authentication {
       get
     }
-    public let app: VeraSDK.Vera.Configuration.App
+    public var app: VeraSDK.Vera.Configuration.App {
+      get
+    }
     public let logger: any VeraSDK.Logger
     public var language: VeraSDK.Vera.Configuration.Language {
       get
@@ -269,25 +299,40 @@ extension VeraSDK.Vera {
   }
 }
 extension VeraSDK.Vera.Configuration {
-  public struct RegistrationEndpoint : Swift.Codable {
+  public struct RegistrationEndpoint : Swift.Equatable, Swift.Codable {
     public init(url: Foundation.URL, port: Swift.Int)
     public static let `default`: VeraSDK.Vera.Configuration.RegistrationEndpoint
+    public static func == (a: VeraSDK.Vera.Configuration.RegistrationEndpoint, b: VeraSDK.Vera.Configuration.RegistrationEndpoint) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct Authentication : Swift.Equatable {
-    public let username: Swift.String?
+    public var username: Swift.String? {
+      get
+    }
     public init(username: Swift.String?)
     public static let anonymous: VeraSDK.Vera.Configuration.Authentication
     public static func == (a: VeraSDK.Vera.Configuration.Authentication, b: VeraSDK.Vera.Configuration.Authentication) -> Swift.Bool
   }
   public struct App {
-    public let clientID: Swift.String
-    public let siteIDs: [Swift.String]
-    public let shouldShowCloseButton: Swift.Bool
-    public let hideHeader: Swift.Bool
-    public let implementsAuthentication: Swift.Bool
-    public let deepLinkPrefix: Swift.String?
+    public var clientID: Swift.String {
+      get
+    }
+    public var siteIDs: [Swift.String] {
+      get
+    }
+    public var shouldShowCloseButton: Swift.Bool {
+      get
+    }
+    public var hideHeader: Swift.Bool {
+      get
+    }
+    public var implementsAuthentication: Swift.Bool {
+      get
+    }
+    public var deepLinkPrefix: Swift.String? {
+      get
+    }
     public init(clientID: Swift.String, siteIDs: [Swift.String] = [], implementsAuthentication: Swift.Bool = true, shouldShowCloseButton: Swift.Bool = true, hideHeader: Swift.Bool = false, deepLinkPrefix: Swift.String? = nil)
   }
   public enum Language : Swift.String {

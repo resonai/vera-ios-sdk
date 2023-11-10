@@ -277,13 +277,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import ARKit;
-@import CoreFoundation;
 @import Foundation;
-@import MetalKit;
 @import ObjectiveC;
 @import UIKit;
-@import WebKit;
 #endif
 
 #import <VeraSDK/VeraSDK.h>
@@ -312,6 +308,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 @class NSTimer;
 @class UITapGestureRecognizer;
 
@@ -320,40 +317,65 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 - (void)handleToastTapped:(UITapGestureRecognizer * _Nonnull)recognizer;
 @end
 
+@class NSString;
+
+SWIFT_CLASS("_TtC7VeraSDK11VeraAppObjC")
+@interface VeraAppObjC : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull clientId;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable siteIds;
+@property (nonatomic, readonly, copy) NSString * _Nullable deepLinkPrefix;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId siteIds:(NSArray<NSString *> * _Nullable)siteIds shouldShowCloseButton:(BOOL)shouldShowCloseButton hideHeader:(BOOL)hideHeader implementsAuthentication:(BOOL)implementsAuthentication deepLinkPrefix:(NSString * _Nullable)deepLinkPrefix OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURL;
+
+SWIFT_CLASS("_TtC7VeraSDK21VeraConfigurationObjC")
+@interface VeraConfigurationObjC : NSObject
+@property (nonatomic, readonly, copy) NSURL * _Nullable domain;
+@property (nonatomic, readonly, copy) NSString * _Nullable username;
+@property (nonatomic, readonly, strong) VeraAppObjC * _Nonnull app;
+@property (nonatomic, readonly, copy) NSString * _Nullable language;
+- (nonnull instancetype)initWithDomain:(NSURL * _Nullable)domain username:(NSString * _Nullable)username app:(VeraAppObjC * _Nonnull)app language:(NSString * _Nullable)language OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP7VeraSDK16VeraDelegateObjC_")
+@protocol VeraDelegateObjC
+- (void)veraNeedsToLogin;
+- (void)veraNeedsToLogout;
+- (void)veraShouldRefreshToken;
+- (void)handleVeraMessageWithSender:(NSString * _Nonnull)sender data:(NSString * _Nonnull)data;
+@end
+
+@class UIViewController;
+
+SWIFT_CLASS("_TtC7VeraSDK8VeraObjC")
+@interface VeraObjC : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIViewController * _Nonnull controller;)
++ (UIViewController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIView * _Nonnull view;)
++ (UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
++ (void)useConfiguration:(VeraConfigurationObjC * _Nonnull)config;
++ (void)useDelegate:(id <VeraDelegateObjC> _Nonnull)delegate;
++ (void)updateTokenAnonymous;
++ (void)updateTokenOffline;
++ (void)updateTokenWithToken:(NSString * _Nonnull)token userId:(NSString * _Nonnull)userId;
++ (void)pause;
++ (void)resume;
++ (void)sendDeeplink:(NSString * _Nonnull)link;
++ (void)sendMessageWithReceiver:(NSString * _Nonnull)receiver data:(NSString * _Nonnull)data;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7VeraSDK11VeraSDKObjC")
 @interface VeraSDKObjC : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-@class NSCoder;
-@class UIEvent;
-@class NSString;
-@class NSBundle;
-
-SWIFT_CLASS("_TtC7VeraSDK18VeraViewController") SWIFT_AVAILABILITY(ios,introduced=13.5)
-@interface VeraViewController : UIViewController <ARSessionDelegate, WKUIDelegate>
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
-- (void)viewDidLoad;
-- (void)viewSafeAreaInsetsDidChange;
-- (void)viewDidLayoutSubviews;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent * _Nullable)event;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
-
-@class MTKView;
-
-@interface VeraViewController (SWIFT_EXTENSION(VeraSDK)) <MTKViewDelegate>
-- (void)mtkView:(MTKView * _Nonnull)view drawableSizeWillChange:(CGSize)size;
-- (void)drawInMTKView:(MTKView * _Nonnull)view;
-@end
-
-
 
 
 SWIFT_CLASS("_TtC7VeraSDK15WatchdogService")
@@ -650,13 +672,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import ARKit;
-@import CoreFoundation;
 @import Foundation;
-@import MetalKit;
 @import ObjectiveC;
 @import UIKit;
-@import WebKit;
 #endif
 
 #import <VeraSDK/VeraSDK.h>
@@ -685,6 +703,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 @class NSTimer;
 @class UITapGestureRecognizer;
 
@@ -693,40 +712,65 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 - (void)handleToastTapped:(UITapGestureRecognizer * _Nonnull)recognizer;
 @end
 
+@class NSString;
+
+SWIFT_CLASS("_TtC7VeraSDK11VeraAppObjC")
+@interface VeraAppObjC : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull clientId;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable siteIds;
+@property (nonatomic, readonly, copy) NSString * _Nullable deepLinkPrefix;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId siteIds:(NSArray<NSString *> * _Nullable)siteIds shouldShowCloseButton:(BOOL)shouldShowCloseButton hideHeader:(BOOL)hideHeader implementsAuthentication:(BOOL)implementsAuthentication deepLinkPrefix:(NSString * _Nullable)deepLinkPrefix OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURL;
+
+SWIFT_CLASS("_TtC7VeraSDK21VeraConfigurationObjC")
+@interface VeraConfigurationObjC : NSObject
+@property (nonatomic, readonly, copy) NSURL * _Nullable domain;
+@property (nonatomic, readonly, copy) NSString * _Nullable username;
+@property (nonatomic, readonly, strong) VeraAppObjC * _Nonnull app;
+@property (nonatomic, readonly, copy) NSString * _Nullable language;
+- (nonnull instancetype)initWithDomain:(NSURL * _Nullable)domain username:(NSString * _Nullable)username app:(VeraAppObjC * _Nonnull)app language:(NSString * _Nullable)language OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP7VeraSDK16VeraDelegateObjC_")
+@protocol VeraDelegateObjC
+- (void)veraNeedsToLogin;
+- (void)veraNeedsToLogout;
+- (void)veraShouldRefreshToken;
+- (void)handleVeraMessageWithSender:(NSString * _Nonnull)sender data:(NSString * _Nonnull)data;
+@end
+
+@class UIViewController;
+
+SWIFT_CLASS("_TtC7VeraSDK8VeraObjC")
+@interface VeraObjC : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIViewController * _Nonnull controller;)
++ (UIViewController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIView * _Nonnull view;)
++ (UIView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
++ (void)useConfiguration:(VeraConfigurationObjC * _Nonnull)config;
++ (void)useDelegate:(id <VeraDelegateObjC> _Nonnull)delegate;
++ (void)updateTokenAnonymous;
++ (void)updateTokenOffline;
++ (void)updateTokenWithToken:(NSString * _Nonnull)token userId:(NSString * _Nonnull)userId;
++ (void)pause;
++ (void)resume;
++ (void)sendDeeplink:(NSString * _Nonnull)link;
++ (void)sendMessageWithReceiver:(NSString * _Nonnull)receiver data:(NSString * _Nonnull)data;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7VeraSDK11VeraSDKObjC")
 @interface VeraSDKObjC : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-@class NSCoder;
-@class UIEvent;
-@class NSString;
-@class NSBundle;
-
-SWIFT_CLASS("_TtC7VeraSDK18VeraViewController") SWIFT_AVAILABILITY(ios,introduced=13.5)
-@interface VeraViewController : UIViewController <ARSessionDelegate, WKUIDelegate>
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
-- (void)viewDidLoad;
-- (void)viewSafeAreaInsetsDidChange;
-- (void)viewDidLayoutSubviews;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent * _Nullable)event;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
-
-@class MTKView;
-
-@interface VeraViewController (SWIFT_EXTENSION(VeraSDK)) <MTKViewDelegate>
-- (void)mtkView:(MTKView * _Nonnull)view drawableSizeWillChange:(CGSize)size;
-- (void)drawInMTKView:(MTKView * _Nonnull)view;
-@end
-
-
 
 
 SWIFT_CLASS("_TtC7VeraSDK15WatchdogService")

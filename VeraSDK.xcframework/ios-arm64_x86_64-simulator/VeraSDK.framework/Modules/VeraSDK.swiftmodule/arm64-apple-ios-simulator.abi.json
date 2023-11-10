@@ -317,6 +317,89 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Metal",
+        "printedName": "Metal",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MetalKit",
+        "printedName": "MetalKit",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ARKit",
+        "printedName": "ARKit",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "JavaScriptCore",
+        "printedName": "JavaScriptCore",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ScanditBarcodeCapture",
+        "printedName": "ScanditBarcodeCapture",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "GRPC",
+        "printedName": "GRPC",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -797,513 +880,6 @@
         "moduleName": "VeraSDK",
         "declAttributes": [
           "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "VeraViewController",
-        "printedName": "VeraViewController",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "prefersStatusBarHidden",
-            "printedName": "prefersStatusBarHidden",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(py)prefersStatusBarHidden",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC22prefersStatusBarHiddenSbvp",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "prefersStatusBarHidden",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)prefersStatusBarHidden",
-                "mangledName": "$s7VeraSDK0A14ViewControllerC22prefersStatusBarHiddenSbvg",
-                "moduleName": "VeraSDK",
-                "overriding": true,
-                "objc_name": "prefersStatusBarHidden",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "supportedInterfaceOrientations",
-            "printedName": "supportedInterfaceOrientations",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(py)supportedInterfaceOrientations",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "supportedInterfaceOrientations",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)supportedInterfaceOrientations",
-                "mangledName": "$s7VeraSDK0A14ViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
-                "moduleName": "VeraSDK",
-                "overriding": true,
-                "objc_name": "supportedInterfaceOrientations",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)viewDidLoad",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC11viewDidLoadyyF",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewSafeAreaInsetsDidChange",
-            "printedName": "viewSafeAreaInsetsDidChange()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)viewSafeAreaInsetsDidChange",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC27viewSafeAreaInsetsDidChangeyyF",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "viewSafeAreaInsetsDidChange",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewDidLayoutSubviews",
-            "printedName": "viewDidLayoutSubviews()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)viewDidLayoutSubviews",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC21viewDidLayoutSubviewsyyF",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "viewDidLayoutSubviews",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewWillAppear",
-            "printedName": "viewWillAppear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)viewWillAppear:",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC14viewWillAppearyySbF",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "viewWillAppear:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewWillDisappear",
-            "printedName": "viewWillDisappear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)viewWillDisappear:",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC17viewWillDisappearyySbF",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "viewWillDisappear:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "motionEnded",
-            "printedName": "motionEnded(_:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EventSubtype",
-                "printedName": "UIKit.UIEvent.EventSubtype",
-                "usr": "c:@E@UIEventSubtype"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIEvent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEvent",
-                    "printedName": "UIKit.UIEvent",
-                    "usr": "c:objc(cs)UIEvent"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)motionEnded:withEvent:",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC11motionEnded_4withySo14UIEventSubtypeV_So0H0CSgtF",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "objc_name": "motionEnded:withEvent:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nibName:bundle:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "VeraViewController",
-                "printedName": "VeraSDK.VeraViewController",
-                "usr": "c:@M@VeraSDK@objc(cs)VeraViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Bundle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@VeraSDK@objc(cs)VeraViewController(im)initWithNibName:bundle:",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-            "moduleName": "VeraSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithNibName:bundle:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "mtkView",
-            "printedName": "mtkView(_:drawableSizeWillChange:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MTKView",
-                "printedName": "MetalKit.MTKView",
-                "usr": "c:objc(cs)MTKView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@VeraSDK@objc(cs)VeraViewController(im)mtkView:drawableSizeWillChange:",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC03mtkC0_22drawableSizeWillChangeySo7MTKViewC_So6CGSizeVtF",
-            "moduleName": "VeraSDK",
-            "objc_name": "mtkView:drawableSizeWillChange:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "draw",
-            "printedName": "draw(in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MTKView",
-                "printedName": "MetalKit.MTKView",
-                "usr": "c:objc(cs)MTKView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@VeraSDK@objc(cs)VeraViewController(im)drawInMTKView:",
-            "mangledName": "$s7VeraSDK0A14ViewControllerC4draw2inySo7MTKViewC_tF",
-            "moduleName": "VeraSDK",
-            "objc_name": "drawInMTKView:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@VeraSDK@objc(cs)VeraViewController",
-        "mangledName": "$s7VeraSDK0A14ViewControllerC",
-        "moduleName": "VeraSDK",
-        "intro_iOS": "13.5",
-        "declAttributes": [
-          "Custom",
-          "Final",
-          "AccessControl",
-          "Available",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UIViewController",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          }
         ]
       },
       {
@@ -3867,6 +3443,1572 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VeraAppObjC",
+        "printedName": "VeraAppObjC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "clientId",
+            "printedName": "clientId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(py)clientId",
+            "mangledName": "$s7VeraSDK0A7AppObjCC8clientIdSSvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(im)clientId",
+                "mangledName": "$s7VeraSDK0A7AppObjCC8clientIdSSvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "siteIds",
+            "printedName": "siteIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(py)siteIds",
+            "mangledName": "$s7VeraSDK0A7AppObjCC7siteIdsSaySSGSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(im)siteIds",
+                "mangledName": "$s7VeraSDK0A7AppObjCC7siteIdsSaySSGSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldShowCloseButton",
+            "printedName": "shouldShowCloseButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7VeraSDK0A7AppObjCC21shouldShowCloseButtonSbSgvp",
+            "mangledName": "$s7VeraSDK0A7AppObjCC21shouldShowCloseButtonSbSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7VeraSDK0A7AppObjCC21shouldShowCloseButtonSbSgvg",
+                "mangledName": "$s7VeraSDK0A7AppObjCC21shouldShowCloseButtonSbSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hideHeader",
+            "printedName": "hideHeader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7VeraSDK0A7AppObjCC10hideHeaderSbSgvp",
+            "mangledName": "$s7VeraSDK0A7AppObjCC10hideHeaderSbSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7VeraSDK0A7AppObjCC10hideHeaderSbSgvg",
+                "mangledName": "$s7VeraSDK0A7AppObjCC10hideHeaderSbSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "implementsAuthentication",
+            "printedName": "implementsAuthentication",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7VeraSDK0A7AppObjCC24implementsAuthenticationSbSgvp",
+            "mangledName": "$s7VeraSDK0A7AppObjCC24implementsAuthenticationSbSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7VeraSDK0A7AppObjCC24implementsAuthenticationSbSgvg",
+                "mangledName": "$s7VeraSDK0A7AppObjCC24implementsAuthenticationSbSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deepLinkPrefix",
+            "printedName": "deepLinkPrefix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(py)deepLinkPrefix",
+            "mangledName": "$s7VeraSDK0A7AppObjCC14deepLinkPrefixSSSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(im)deepLinkPrefix",
+                "mangledName": "$s7VeraSDK0A7AppObjCC14deepLinkPrefixSSSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(clientId:siteIds:shouldShowCloseButton:hideHeader:implementsAuthentication:deepLinkPrefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VeraAppObjC",
+                "printedName": "VeraSDK.VeraAppObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(im)initWithClientId:siteIds:shouldShowCloseButton:hideHeader:implementsAuthentication:deepLinkPrefix:",
+            "mangledName": "$s7VeraSDK0A7AppObjCC8clientId7siteIds21shouldShowCloseButton10hideHeader24implementsAuthentication14deepLinkPrefixACSS_SaySSGSgS3bSSSgtcfc",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VeraAppObjC",
+                "printedName": "VeraSDK.VeraAppObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC(im)init",
+            "mangledName": "$s7VeraSDK0A7AppObjCCACycfc",
+            "moduleName": "VeraSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC",
+        "mangledName": "$s7VeraSDK0A7AppObjCC",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VeraConfigurationObjC",
+        "printedName": "VeraConfigurationObjC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "domain",
+            "printedName": "domain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(py)domain",
+            "mangledName": "$s7VeraSDK0A17ConfigurationObjCC6domain10Foundation3URLVSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(im)domain",
+                "mangledName": "$s7VeraSDK0A17ConfigurationObjCC6domain10Foundation3URLVSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "username",
+            "printedName": "username",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(py)username",
+            "mangledName": "$s7VeraSDK0A17ConfigurationObjCC8usernameSSSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(im)username",
+                "mangledName": "$s7VeraSDK0A17ConfigurationObjCC8usernameSSSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app",
+            "printedName": "app",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VeraAppObjC",
+                "printedName": "VeraSDK.VeraAppObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(py)app",
+            "mangledName": "$s7VeraSDK0A17ConfigurationObjCC3appAA0a3AppD1CCvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VeraAppObjC",
+                    "printedName": "VeraSDK.VeraAppObjC",
+                    "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(im)app",
+                "mangledName": "$s7VeraSDK0A17ConfigurationObjCC3appAA0a3AppD1CCvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "language",
+            "printedName": "language",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(py)language",
+            "mangledName": "$s7VeraSDK0A17ConfigurationObjCC8languageSSSgvp",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(im)language",
+                "mangledName": "$s7VeraSDK0A17ConfigurationObjCC8languageSSSgvg",
+                "moduleName": "VeraSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(domain:username:app:language:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VeraConfigurationObjC",
+                "printedName": "VeraSDK.VeraConfigurationObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VeraAppObjC",
+                "printedName": "VeraSDK.VeraAppObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraAppObjC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(im)initWithDomain:username:app:language:",
+            "mangledName": "$s7VeraSDK0A17ConfigurationObjCC6domain8username3app8languageAC10Foundation3URLVSg_SSSgAA0a3AppD1CCALtcfc",
+            "moduleName": "VeraSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VeraConfigurationObjC",
+                "printedName": "VeraSDK.VeraConfigurationObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC(im)init",
+            "mangledName": "$s7VeraSDK0A17ConfigurationObjCCACycfc",
+            "moduleName": "VeraSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC",
+        "mangledName": "$s7VeraSDK0A17ConfigurationObjCC",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VeraObjC",
+        "printedName": "VeraObjC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "controller",
+            "printedName": "controller",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cpy)controller",
+            "mangledName": "$s7VeraSDK0A4ObjCC10controllerSo16UIViewControllerCvpZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)controller",
+                "mangledName": "$s7VeraSDK0A4ObjCC10controllerSo16UIViewControllerCvgZ",
+                "moduleName": "VeraSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cpy)view",
+            "mangledName": "$s7VeraSDK0A4ObjCC4viewSo6UIViewCvpZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)view",
+                "mangledName": "$s7VeraSDK0A4ObjCC4viewSo6UIViewCvgZ",
+                "moduleName": "VeraSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "useConfiguration",
+            "printedName": "useConfiguration(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VeraConfigurationObjC",
+                "printedName": "VeraSDK.VeraConfigurationObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraConfigurationObjC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)useConfiguration:",
+            "mangledName": "$s7VeraSDK0A4ObjCC16useConfigurationyyAA0aeC1CCFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "useDelegate",
+            "printedName": "useDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VeraDelegateObjC",
+                "printedName": "VeraSDK.VeraDelegateObjC",
+                "usr": "c:@M@VeraSDK@objc(pl)VeraDelegateObjC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)useDelegate:",
+            "mangledName": "$s7VeraSDK0A4ObjCC11useDelegateyyAA0aeC1C_pFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateTokenAnonymous",
+            "printedName": "updateTokenAnonymous()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)updateTokenAnonymous",
+            "mangledName": "$s7VeraSDK0A4ObjCC20updateTokenAnonymousyyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateTokenOffline",
+            "printedName": "updateTokenOffline()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)updateTokenOffline",
+            "mangledName": "$s7VeraSDK0A4ObjCC18updateTokenOfflineyyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateToken",
+            "printedName": "updateToken(token:userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)updateTokenWithToken:userId:",
+            "mangledName": "$s7VeraSDK0A4ObjCC11updateToken5token6userIdySS_SStFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)pause",
+            "mangledName": "$s7VeraSDK0A4ObjCC5pauseyyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resume",
+            "printedName": "resume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)resume",
+            "mangledName": "$s7VeraSDK0A4ObjCC6resumeyyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendDeeplink",
+            "printedName": "sendDeeplink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)sendDeeplink:",
+            "mangledName": "$s7VeraSDK0A4ObjCC12sendDeeplinkyySSFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendMessage",
+            "printedName": "sendMessage(receiver:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(cm)sendMessageWithReceiver:data:",
+            "mangledName": "$s7VeraSDK0A4ObjCC11sendMessage8receiver4dataySS_SStFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VeraObjC",
+                "printedName": "VeraSDK.VeraObjC",
+                "usr": "c:@M@VeraSDK@objc(cs)VeraObjC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@VeraSDK@objc(cs)VeraObjC(im)init",
+            "mangledName": "$s7VeraSDK0A4ObjCCACycfc",
+            "moduleName": "VeraSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@VeraSDK@objc(cs)VeraObjC",
+        "mangledName": "$s7VeraSDK0A4ObjCC",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VeraDelegateObjC",
+        "printedName": "VeraDelegateObjC",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "veraNeedsToLogin",
+            "printedName": "veraNeedsToLogin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(pl)VeraDelegateObjC(im)veraNeedsToLogin",
+            "mangledName": "$s7VeraSDK0A12DelegateObjCP16veraNeedsToLoginyyF",
+            "moduleName": "VeraSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VeraSDK.VeraDelegateObjC>",
+            "sugared_genericSig": "<Self where Self : VeraSDK.VeraDelegateObjC>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "veraNeedsToLogout",
+            "printedName": "veraNeedsToLogout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(pl)VeraDelegateObjC(im)veraNeedsToLogout",
+            "mangledName": "$s7VeraSDK0A12DelegateObjCP17veraNeedsToLogoutyyF",
+            "moduleName": "VeraSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VeraSDK.VeraDelegateObjC>",
+            "sugared_genericSig": "<Self where Self : VeraSDK.VeraDelegateObjC>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "veraShouldRefreshToken",
+            "printedName": "veraShouldRefreshToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(pl)VeraDelegateObjC(im)veraShouldRefreshToken",
+            "mangledName": "$s7VeraSDK0A12DelegateObjCP22veraShouldRefreshTokenyyF",
+            "moduleName": "VeraSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VeraSDK.VeraDelegateObjC>",
+            "sugared_genericSig": "<Self where Self : VeraSDK.VeraDelegateObjC>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleVeraMessage",
+            "printedName": "handleVeraMessage(sender:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeraSDK@objc(pl)VeraDelegateObjC(im)handleVeraMessageWithSender:data:",
+            "mangledName": "$s7VeraSDK0A12DelegateObjCP06handleA7Message6sender4dataySS_SStF",
+            "moduleName": "VeraSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VeraSDK.VeraDelegateObjC>",
+            "sugared_genericSig": "<Self where Self : VeraSDK.VeraDelegateObjC>",
+            "protocolReq": true,
+            "objc_name": "handleVeraMessageWithSender:data:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@VeraSDK@objc(pl)VeraDelegateObjC",
+        "mangledName": "$s7VeraSDK0A12DelegateObjCP",
+        "moduleName": "VeraSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4222,8 +5364,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "VeraSDK",
         "declAttributes": [
@@ -4366,27 +5508,41 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "VeraSDK.VeraViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VeraViewController",
-                    "printedName": "VeraSDK.VeraViewController",
-                    "usr": "c:@M@VeraSDK@objc(cs)VeraViewController"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7VeraSDK0A0O13getControllerAA0a4ViewD0CSgyFZ",
-            "mangledName": "$s7VeraSDK0A0O13getControllerAA0a4ViewD0CSgyFZ",
+            "usr": "s:7VeraSDK0A0O13getControllerSo06UIViewD0CyFZ",
+            "mangledName": "$s7VeraSDK0A0O13getControllerSo06UIViewD0CyFZ",
             "moduleName": "VeraSDK",
             "static": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getView",
+            "printedName": "getView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7VeraSDK0A0O7getViewSo6UIViewCyFZ",
+            "mangledName": "$s7VeraSDK0A0O7getViewSo6UIViewCyFZ",
+            "moduleName": "VeraSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5065,9 +6221,9 @@
                 "moduleName": "VeraSDK",
                 "declAttributes": [
                   "HasStorage",
+                  "SetterAccess",
                   "AccessControl"
                 ],
-                "isLet": true,
                 "hasStorage": true,
                 "accessors": [
                   {
@@ -5109,9 +6265,9 @@
                 "moduleName": "VeraSDK",
                 "declAttributes": [
                   "HasStorage",
+                  "SetterAccess",
                   "AccessControl"
                 ],
-                "isLet": true,
                 "hasStorage": true,
                 "accessors": [
                   {
@@ -5197,9 +6353,9 @@
                 "moduleName": "VeraSDK",
                 "declAttributes": [
                   "HasStorage",
+                  "SetterAccess",
                   "AccessControl"
                 ],
-                "isLet": true,
                 "hasStorage": true,
                 "accessors": [
                   {
@@ -5487,6 +6643,38 @@
                   },
                   {
                     "kind": "Function",
+                    "name": "==",
+                    "printedName": "==(_:_:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegistrationEndpoint",
+                        "printedName": "VeraSDK.Vera.Configuration.RegistrationEndpoint",
+                        "usr": "s:7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RegistrationEndpoint",
+                        "printedName": "VeraSDK.Vera.Configuration.RegistrationEndpoint",
+                        "usr": "s:7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV2eeoiySbAG_AGtFZ",
+                    "mangledName": "$s7VeraSDK0A0O13ConfigurationV20RegistrationEndpointV2eeoiySbAG_AGtFZ",
+                    "moduleName": "VeraSDK",
+                    "static": true,
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
+                    "kind": "Function",
                     "name": "encode",
                     "printedName": "encode(to:)",
                     "children": [
@@ -5520,6 +6708,13 @@
                 ],
                 "isFromExtension": true,
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Decodable",
@@ -5566,10 +6761,11 @@
                     "mangledName": "$s7VeraSDK0A0O13ConfigurationV14AuthenticationV8usernameSSSgvp",
                     "moduleName": "VeraSDK",
                     "declAttributes": [
+                      "HasInitialValue",
                       "HasStorage",
+                      "SetterAccess",
                       "AccessControl"
                     ],
-                    "isLet": true,
                     "hasStorage": true,
                     "accessors": [
                       {
@@ -5758,9 +6954,9 @@
                     "moduleName": "VeraSDK",
                     "declAttributes": [
                       "HasStorage",
+                      "SetterAccess",
                       "AccessControl"
                     ],
-                    "isLet": true,
                     "hasStorage": true,
                     "accessors": [
                       {
@@ -5810,9 +7006,9 @@
                     "moduleName": "VeraSDK",
                     "declAttributes": [
                       "HasStorage",
+                      "SetterAccess",
                       "AccessControl"
                     ],
-                    "isLet": true,
                     "hasStorage": true,
                     "accessors": [
                       {
@@ -5862,9 +7058,9 @@
                     "moduleName": "VeraSDK",
                     "declAttributes": [
                       "HasStorage",
+                      "SetterAccess",
                       "AccessControl"
                     ],
-                    "isLet": true,
                     "hasStorage": true,
                     "accessors": [
                       {
@@ -5906,9 +7102,9 @@
                     "moduleName": "VeraSDK",
                     "declAttributes": [
                       "HasStorage",
+                      "SetterAccess",
                       "AccessControl"
                     ],
-                    "isLet": true,
                     "hasStorage": true,
                     "accessors": [
                       {
@@ -5950,9 +7146,9 @@
                     "moduleName": "VeraSDK",
                     "declAttributes": [
                       "HasStorage",
+                      "SetterAccess",
                       "AccessControl"
                     ],
-                    "isLet": true,
                     "hasStorage": true,
                     "accessors": [
                       {
@@ -6001,10 +7197,11 @@
                     "mangledName": "$s7VeraSDK0A0O13ConfigurationV3AppV14deepLinkPrefixSSSgvp",
                     "moduleName": "VeraSDK",
                     "declAttributes": [
+                      "HasInitialValue",
                       "HasStorage",
+                      "SetterAccess",
                       "AccessControl"
                     ],
-                    "isLet": true,
                     "hasStorage": true,
                     "accessors": [
                       {
@@ -7913,6 +9110,23 @@
         "kind": "Import",
         "name": "CoreImage",
         "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ARKit",
+        "printedName": "ARKit",
+        "declKind": "Import",
+        "moduleName": "VeraSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "VeraSDK"
       },
@@ -24931,6 +26145,293 @@
       "value": "3.0"
     },
     {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 835,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1013,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 1068,
+      "length": 8,
+      "value": "\"button\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1346,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 1401,
+      "length": 14,
+      "value": "\"close_button\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1682,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1779,
+      "length": 4,
+      "value": "25.0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1883,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2165,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2278,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 3089,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 3172,
+      "length": 23,
+      "value": "\"Vera VC deinitialized\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3830,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 8,
+      "value": "\"VeraSDK.VeraView\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5050,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5237,
+      "length": 3,
+      "value": "-30"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5330,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5668,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5683,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5946,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6176,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6518,
+      "length": 2,
+      "value": "75"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 6853,
+      "length": 4,
+      "value": "0.18"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6869,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7357,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 7887,
+      "length": 21,
+      "value": "\"Configuring WebView\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8094,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8178,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8311,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8352,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8896,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8950,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9019,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9731,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9812,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9879,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10234,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10743,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 11053,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11192,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraView.swift",
+      "kind": "StringLiteral",
+      "offset": 12122,
+      "length": 19,
+      "value": "\"VeraVC view nuked\""
+    },
+    {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/extensions\/UIView+HRToast.swift",
       "kind": "FloatLiteral",
       "offset": 394,
@@ -26074,21 +27575,21 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraClient.swift",
       "kind": "StringLiteral",
-      "offset": 348,
-      "length": 80,
+      "offset": 1089,
+      "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraClient.swift",
       "kind": "StringLiteral",
-      "offset": 380,
-      "length": 50,
+      "offset": 1114,
+      "length": 43,
       "value": "\"#\/settings?language=\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraClient.swift",
       "kind": "StringLiteral",
-      "offset": 427,
+      "offset": 1154,
       "length": 3,
       "value": "\"\""
     },
@@ -26620,77 +28121,77 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 811,
+      "offset": 759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 929,
+      "offset": 877,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 935,
+      "offset": 883,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 1192,
+      "offset": 1140,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 1406,
+      "offset": 1354,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "FloatLiteral",
-      "offset": 1441,
+      "offset": 1389,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 1834,
+      "offset": 1782,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 2085,
+      "offset": 2033,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "IntegerLiteral",
-      "offset": 2143,
+      "offset": 2091,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 2324,
+      "offset": 2272,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/operators\/WebViewContentOps.swift",
       "kind": "BooleanLiteral",
-      "offset": 2526,
+      "offset": 2474,
       "length": 4,
       "value": "true"
     },
@@ -27150,333 +28651,39 @@
       "value": "\"{}\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 859,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1037,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1092,
-      "length": 8,
-      "value": "\"button\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1370,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1425,
-      "length": 14,
-      "value": "\"close_button\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1706,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 1803,
-      "length": 4,
-      "value": "25.0"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1907,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2194,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2307,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2784,
+      "offset": 514,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2973,
+      "offset": 881,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3056,
-      "length": 23,
-      "value": "\"Vera VC deinitialized\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4063,
+      "offset": 1219,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4285,
+      "offset": 1434,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4548,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraViewController.swift",
       "kind": "StringLiteral",
-      "offset": 400,
+      "offset": 393,
       "length": 18,
       "value": "\"VeraSDK.VeraViewController\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5783,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5970,
-      "length": 3,
-      "value": "-30"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6063,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6401,
-      "length": 3,
-      "value": "0.8"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6416,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6679,
-      "length": 3,
-      "value": "0.8"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6909,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7251,
-      "length": 2,
-      "value": "75"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 7586,
-      "length": 4,
-      "value": "0.18"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7602,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8090,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 8654,
-      "length": 21,
-      "value": "\"Configuring WebView\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8866,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8950,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9083,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9129,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9678,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9732,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9801,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 10063,
-      "length": 16,
-      "value": "\"Closing VeraVC\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10141,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10241,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10802,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10888,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10955,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11320,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11807,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 12117,
-      "length": 4,
-      "value": "\"OK\""
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12234,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 13169,
-      "length": 19,
-      "value": "\"VeraVC view nuked\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/services\/KeyboardService.swift",
@@ -30811,6 +32018,27 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/logging\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 949,
+      "length": 30,
+      "value": "\"info: \""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/logging\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 965,
+      "length": 1,
+      "value": "\" - \""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Common\/logging\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 978,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Renderer.swift",
       "kind": "Array",
       "offset": 230,
@@ -31292,6 +32520,41 @@
       "offset": 1311,
       "length": 32,
       "value": "\"Shoud handle all keypath cases\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraObjC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 538,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraObjC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 571,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraObjC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 619,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraObjC.swift",
+      "kind": "StringLiteral",
+      "offset": 175,
+      "length": 11,
+      "value": "\"VeraSDK.VeraAppObjC\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraObjC.swift",
+      "kind": "StringLiteral",
+      "offset": 970,
+      "length": 21,
+      "value": "\"VeraSDK.VeraConfigurationObjC\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/build\/xcode\/ybtproto\/irocket\/service\/registration_service.pb.swift",
@@ -44694,16 +45957,23 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Vera.swift",
       "kind": "StringLiteral",
-      "offset": 2518,
-      "length": 68,
-      "value": "\"Please provide a configuration object by calling Vera.use(config:)\""
+      "offset": 2837,
+      "length": 19,
+      "value": "\"Building VeraView\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Vera.swift",
       "kind": "StringLiteral",
-      "offset": 2639,
+      "offset": 3114,
       "length": 17,
       "value": "\"Building VeraVC\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Vera.swift",
+      "kind": "StringLiteral",
+      "offset": 3476,
+      "length": 64,
+      "value": "\"Don't forget to configure Vera by calling `Vera.useConfig(_:)`\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/stores\/RegistrationConnectionStore.swift",
@@ -51531,429 +52801,450 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "FloatLiteral",
       "offset": 522,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
+      "kind": "StringLiteral",
+      "offset": 1175,
+      "length": 56,
+      "value": "\"Retroactively configured with config: \""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
+      "kind": "StringLiteral",
+      "offset": 1230,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
+      "kind": "StringLiteral",
+      "offset": 1962,
+      "length": 33,
+      "value": "\"Retroactively set event handler\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 14,
       "value": "\"VeraSDK.VeraInteractor\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1179,
+      "offset": 2348,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1290,
+      "offset": 2459,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 1379,
+      "offset": 2548,
       "length": 13,
       "value": "\"deeplinkURL\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 1527,
+      "offset": 2696,
       "length": 13,
       "value": "\"packageName\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 1568,
+      "offset": 2737,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 3632,
+      "offset": 4801,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4209,
+      "offset": 5378,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4337,
+      "offset": 5506,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4411,
+      "offset": 5580,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4587,
+      "offset": 5756,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 4968,
+      "offset": 6137,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 5340,
+      "offset": 6509,
       "length": 32,
       "value": "\"Unknown event: \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 5371,
+      "offset": 6540,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 5627,
+      "offset": 6796,
       "length": 43,
       "value": "\"Couldn't decode event \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 5658,
+      "offset": 6827,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 5669,
+      "offset": 6838,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 5752,
+      "offset": 6921,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 6103,
+      "offset": 7272,
       "length": 21,
       "value": "\"JS ERROR - \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 6123,
+      "offset": 7292,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 6595,
+      "offset": 7764,
       "length": 66,
       "value": "\"Failed to parse JSON at hintRegion \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 6660,
+      "offset": 7829,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 6948,
+      "offset": 8117,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 7028,
+      "offset": 8197,
       "length": 71,
       "value": "\"Failed to parse JSON at resumeARSession \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 7098,
+      "offset": 8267,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 7132,
+      "offset": 8301,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 7207,
+      "offset": 8376,
       "length": 7,
       "value": "\"login\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 7333,
+      "offset": 8502,
       "length": 8,
       "value": "\"logout\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 7443,
+      "offset": 8612,
       "length": 51,
       "value": "\"onTagsAvailable called, it is no longer required.\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 7731,
+      "offset": 8900,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 7784,
+      "offset": 8953,
       "length": 31,
       "value": "\"recording no longer supported\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 8200,
+      "offset": 9369,
       "length": 18,
       "value": "\"Invalid Vera URL\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 8288,
+      "offset": 9457,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 8318,
+      "offset": 9487,
       "length": 30,
       "value": "\"Setting new URLs: \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 8347,
+      "offset": 9516,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 8795,
+      "offset": 9964,
       "length": 15,
       "value": "\"ResonaiIosApi\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 8812,
+      "offset": 9981,
       "length": 8,
       "value": "\"loaded\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 8865,
+      "offset": 10034,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 8912,
+      "offset": 10081,
       "length": 19,
       "value": "\"arActivityManager\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 8933,
+      "offset": 10102,
       "length": 7,
       "value": "\"ready\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 8992,
+      "offset": 10161,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 9039,
+      "offset": 10208,
       "length": 19,
       "value": "\"arActivityManager\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 9060,
+      "offset": 10229,
       "length": 8,
       "value": "\"loaded\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 10214,
+      "offset": 11383,
       "length": 43,
       "value": "\"variable rate registration not supported!\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 10558,
+      "offset": 11727,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 10639,
+      "offset": 11808,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 10719,
+      "offset": 11888,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 10817,
+      "offset": 11986,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 10927,
+      "offset": 12096,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 11026,
+      "offset": 12195,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 11932,
+      "offset": 13101,
       "length": 32,
       "value": "\"Touch \/ Face ID authentication\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "FloatLiteral",
-      "offset": 13684,
+      "offset": 14853,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 15084,
+      "offset": 16253,
       "length": 50,
       "value": "\"window.resonai.internal.mergeDeep(window, state)\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 15148,
+      "offset": 16317,
       "length": 7,
       "value": "\"state\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 15548,
+      "offset": 16717,
       "length": 54,
       "value": "\"window.resonai.internal.mergeDeep(window, \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 15600,
+      "offset": 16769,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 15789,
+      "offset": 16958,
       "length": 36,
       "value": "\"Couldn't encode JS state: \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 15824,
+      "offset": 16993,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "BooleanLiteral",
-      "offset": 15957,
+      "offset": 17126,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraInteractor.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "FloatLiteral",
-      "offset": 16009,
+      "offset": 17178,
       "length": 3,
       "value": "1.5"
     },
@@ -59877,49 +61168,49 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1124,
+      "offset": 1166,
       "length": 26,
       "value": "\"https:\/\/vera.resonai.com\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2067,
+      "offset": 2120,
       "length": 26,
       "value": "\"registration.resonai.com\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2103,
+      "offset": 2156,
       "length": 3,
       "value": "443"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "Array",
-      "offset": 3962,
+      "offset": 4113,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4011,
+      "offset": 4162,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4059,
+      "offset": 4210,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 4096,
+      "offset": 4247,
       "length": 5,
       "value": "false"
     },
@@ -77144,233 +78435,233 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
       "offset": 288,
       "length": 13,
       "value": "\"no_internet\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 15,
       "value": "\"splash_screen\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 18,
       "value": "\"splash_screen_2b\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
       "offset": 586,
       "length": 6,
       "value": "\"html\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1594,
+      "offset": 745,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 1997,
+      "offset": 1148,
       "length": 11,
       "value": "\"mergeDeep\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 2025,
+      "offset": 1176,
       "length": 4,
       "value": "\"js\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2216,
+      "offset": 1367,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 2277,
+      "offset": 1428,
       "length": 74,
       "value": "\"Couldn't read local js file deepMerge.js - \""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 2350,
+      "offset": 1501,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2766,
+      "offset": 1917,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3450,
+      "offset": 2601,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3508,
+      "offset": 2659,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 4669,
+      "offset": 3820,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 5169,
+      "offset": 4320,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 5209,
+      "offset": 4360,
       "length": 7,
       "value": "\"Error\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "Dictionary",
-      "offset": 5410,
+      "offset": 4561,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 5538,
+      "offset": 4689,
       "length": 73,
       "value": "\"Taking photo from ARSession when it is not active\/transparent - ignored\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 1468,
+      "offset": 615,
       "length": 13,
       "value": "\"VeraSDK.VeraPresenter\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 5986,
+      "offset": 5137,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "Array",
-      "offset": 6049,
+      "offset": 5200,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 6555,
+      "offset": 5706,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 6599,
+      "offset": 5750,
       "length": 40,
       "value": "\"ios 14 not available. No limit domains\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7187,
+      "offset": 6338,
       "length": 23,
       "value": "\"Authentication Failed\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7256,
+      "offset": 6407,
       "length": 13,
       "value": "\"User Cancel\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7317,
+      "offset": 6468,
       "length": 15,
       "value": "\"System Cancel\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7382,
+      "offset": 6533,
       "length": 45,
       "value": "\"Please goto the Settings & Turn On Passcode\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7482,
+      "offset": 6633,
       "length": 32,
       "value": "\"TouchID or FaceID Not Enrolled\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7565,
+      "offset": 6716,
       "length": 71,
       "value": "\"TouchID or FaceID Lockout Please goto the Settings & Turn On Passcode\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7681,
+      "offset": 6832,
       "length": 12,
       "value": "\"App Cancel\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7743,
+      "offset": 6894,
       "length": 17,
       "value": "\"Invalid Context\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 7797,
+      "offset": 6948,
       "length": 49,
       "value": "\"Oops, something went wrong with authentication!\""
     },
     {
-      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/VeraPresenter.swift",
+      "filePath": "\/Users\/s2dent\/Developer\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 9593,
+      "offset": 8744,
       "length": 28,
       "value": "\"WebView process terminated\""
     },
