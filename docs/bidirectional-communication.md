@@ -80,4 +80,4 @@ Vera.useEventHandler { [weak self] event in
     }
 }
 ```
-To test receiving messages from ARXs, open the `Communication Demo` app on our sample site. Tap `Send Native Message`, and, if implemented correctly, you should receive a test event.  **_In the example above the app will display an alert_**.
+To test that your implementation of receiving messages from ARXs is successful, you can use our sample site. After achieving registration, you should open the `Communications Demo` app via the Vera menu. Tap **Send Native Message**, and, if implemented correctly, you should receive a test event.  **_In the example above the app will display an alert_**.
