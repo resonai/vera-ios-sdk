@@ -67,10 +67,17 @@ Vera.handleEvent(
 The same way you send events to ARXs, you can receive events from ARXs.
 
 ```swift
-Vera.useEventHandler { event in
+Vera.useEventHandler { [weak self] event in
     switch event {
     case let .handleMessage(sender, data):
         print("ARX \(sender): \(data)")
+        let controller = UIAlertController(title: sender, message: data, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: "OK", style: .default))
+        self?.present(controller, animated: true)
+    /// handle other events if necessary
+    default:
+        break
     }
 }
 ```
+To test receiving messages from ARXs, open the `Communication Demo` app on our sample site. Tap `Send Native Message`, and, if implemented correctly, you should receive a test event.  **_In the example above the app will display an alert_**.
