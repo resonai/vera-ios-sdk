@@ -14,7 +14,7 @@ A computer vision enterprise platform that transforms buildings into intelligent
 
 ### CocoaPods
 
-To integrate VeraSDK into your Xcode project using [CocoaPods](cp), add it to your `Podfile`:
+To integrate VeraSDK into your Xcode project using [CocoaPods](https://cocoapods.org), add it to your `Podfile`:
 
 ```ruby
 pod 'VeraSDK', :git => 'https://github.com/resonai/vera-ios-sdk'
@@ -28,19 +28,7 @@ $ pod install
 
 ### Swift Package Manager
 
-To integrate VeraSDK using [Swift Package Manager](spm), add the package dependency to your `Package.swift`:
-
-```swift
-dependencies: [
-  .package(url: "https://github.com/resonai/vera-ios-sdk", branch: "main")
-]
-```
-
-#### Xcode
-
-From Xcode 11 it is possible to [add Swift Package dependencies to Xcode
-projects][xcode-spm] and link targets to products of those packages; this is the
-easiest way to integrate VeraSDK with an existing `xcodeproj`.
+Since binary frameworks are very poorly supported by SPM, we dropped official support for it at the moment. If you are not using CocoaPods and SPM integration doesn't work out-the-box create us an issue.
 
 ## Integration
 
@@ -95,7 +83,5 @@ If your app doesn't already access the camera, we recommend using something like
 * "`<your app>` needs access to the camera in order to render AR."
 * "`<your app>` needs location access to provide accurate AR experiences."
 
-
-[cp]: https://cocoapods.org
 [spm]: https://github.com/apple/swift-package-manager
 [xcode-spm]: https://help.apple.com/xcode/mac/current/#/devb83d64851
