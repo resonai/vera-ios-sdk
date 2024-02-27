@@ -309,6 +309,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 @class NSTimer;
 @class UITapGestureRecognizer;
 
@@ -348,6 +349,7 @@ SWIFT_PROTOCOL("_TtP7VeraSDK16VeraDelegateObjC_")
 - (void)veraNeedsToLogin;
 - (void)veraNeedsToLogout;
 - (void)veraShouldRefreshToken;
+- (void)veraWillClose;
 - (void)handleVeraMessageWithSender:(NSString * _Nonnull)sender data:(NSString * _Nonnull)data;
 @end
 
@@ -704,6 +706,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 @class NSTimer;
 @class UITapGestureRecognizer;
 
@@ -743,6 +746,7 @@ SWIFT_PROTOCOL("_TtP7VeraSDK16VeraDelegateObjC_")
 - (void)veraNeedsToLogin;
 - (void)veraNeedsToLogout;
 - (void)veraShouldRefreshToken;
+- (void)veraWillClose;
 - (void)handleVeraMessageWithSender:(NSString * _Nonnull)sender data:(NSString * _Nonnull)data;
 @end
 

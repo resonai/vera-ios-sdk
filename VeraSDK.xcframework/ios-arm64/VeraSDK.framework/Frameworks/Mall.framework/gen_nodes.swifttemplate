@@ -1,0 +1,87 @@
+import Foundation
+import Combine
+
+
+<% let MAX_INPUTS: Int = argument["maxInputs"] as! Int %>
+
+extension CombineNodes {
+<% for params in 2...MAX_INPUTS {%>
+<% let allPStr: String = (0..<params).map({ "P" + String($0) }).joined(separator: ",") %>
+static func Combine<%= params %><<%= allPStr %>>(
+<% for p in 0..<params { %> _ input<%= p %>: InputNode<P<%= p %>><%= p < params - 1 ? ", " : "" %>
+<% } %>
+) -> AnyPublisher<(<%= allPStr %>), Never>
+where <% for p in 0..<params { %>P<%= p %>: ExpressibleByNilLiteral<%= p < params - 1 ? ", " : "" %><% } %>
+{
+  switch (<% for p in 0..<params {%>input<%= p %>.inType<%= p < params - 1 ? ", " : "" %><% } -%>) {
+  <% for triggers in 0...params { -%>
+    <% for reads in 0...(params - triggers) { -%>
+      <% let zips = params - triggers - reads -%>
+      <% let zipPStr: String = ((params-zips)..<params).map({ "P" + String($0) }).joined(separator: ",") -%>
+      <% let readsPStr: String = (triggers..<(triggers + reads)).map({ "P" + String($0) }).joined(separator: ",") -%>
+      <% let readsPTypeStr: String = reads > 1 ? "(" + readsPStr + ")?" : readsPStr -%>
+      <% let triggersPStr: String = (0..<triggers).map({ "P" + String($0) }).joined(separator: ",") -%>
+      <% let triggersPTypeStr: String = triggers > 1 ? "(" + triggersPStr + ")" + (triggers < params ? "?" : "") : triggersPStr -%>
+      <% let inTypes = (0..<params).map { p -> String in
+         if p < triggers {
+           return ".trigger"
+         } else if p < triggers + reads {
+           return ".reads"
+         } else {
+           return ".zip"
+         }
+      } %>
+
+      // triggers: <%= triggers %>,  reads: <%= reads %>,  zip: <%= zips %>
+      case (<% for (p, t) in inTypes.enumerated() { -%><%= t %><% if p < params - 1 { %>, <% } %><%_ } // params %>):
+      <% if zips == 1 { -%>
+      <%_ %>  fatalError("Cannot accept 1 zip, must be 2+ or none")
+      <% continue -%>
+      <%_ } else if zips > 1 { -%>
+      <%_ %>  let zipPub: AnyPublisher<(<%= zipPStr %>)<% if zips < params { %>?<% } %>, Never> = Publishers.Zip<% if zips > 2 { %><%= zips %><% } %>(<% for z in (params-zips)..<params { -%>input<%= z -%>.publisher<%= z < params - 1 ? ", " : "" %><% } %>)<% -%>
+             <%_ if zips < params { %>.map({ $0 as (<%= zipPStr %>)? })<% } %>.eraseToAnyPublisher()
+
+      <% if zips == params { -%>  return zipPub.dropFirst().eraseToAnyPublisher()<% continue -%><% } -%>
+      <% } -%>
+      <% if reads == params { -%><% _%>
+        fatalError("Cannot accept all reads")
+      <% continue -%>
+      <% } else if reads > 1 { -%><% _%>
+        let readPub: AnyPublisher<<%= readsPTypeStr %>, Never> = Publishers.CombineLatest<% if reads > 2 { %><%= reads %><% } %>(<% for r in triggers..<(triggers+reads) { -%>input<%= r -%>.publisher<%= r < (triggers+reads-1) ? ", " : "" %><% } %>)
+             .map({ $0 as <%= readsPTypeStr %> }).eraseToAnyPublisher()
+      <%_ } else if reads == 1 { -%><% _%>
+        let readPub: AnyPublisher<P<%= triggers %>, Never> = input<%= triggers %>.publisher.eraseToAnyPublisher()
+      <% } -%>
+      <% if triggers > 1 { -%><% _%>
+        let triggerPub: AnyPublisher<<%= triggersPTypeStr %>, Never> = Publishers.CombineLatest<% if triggers > 2 { %><%= triggers %><% } %>(<% for t in 0..<triggers { -%>input<%= t -%>.publisher<%= t < triggers - 1 ? ", " : "" %><% } %>)
+             <% if triggers < params { %>.map({ $0 as <%= triggersPTypeStr %> }).eraseToAnyPublisher()<% } else { -%><% _%>.dropFirst().eraseToAnyPublisher()
+        return triggerPub<% continue; } %>
+      <% } else if triggers == 1 { -%><% _%>
+        let triggerPub: AnyPublisher<P0, Never> = input0.publisher.eraseToAnyPublisher()
+      <% } -%>
+      <% if reads == 0 { -%><% _%>
+        let grouped: AnyPublisher<(<%= triggersPTypeStr %>, (<%= zipPStr %>)?), Never> = Publishers.CombineLatest(triggerPub, zipPub).dropFirst().eraseToAnyPublisher()
+        let res: AnyPublisher<(<%= allPStr %>), Never> = grouped.map { (tt: <%= triggersPTypeStr %>, zz: (<%= zipPStr %>)?) -> (<%= allPStr %>) in
+      <% } else if zips == 0 { -%><% _%>
+        let grouped: AnyPublisher<(<%= triggersPTypeStr %>, <%= readsPTypeStr %>), Never> = Publishers.CombineInputTypes(trigger: triggerPub, read: readPub).eraseToAnyPublisher()
+        let res: AnyPublisher<(<%= allPStr %>), Never> = grouped.map { (tt: <%= triggersPTypeStr %>, rr: <%= readsPTypeStr %>) -> (<%= allPStr %>) in
+      <% } else if triggers == 0 { -%><% _%>
+        let grouped: AnyPublisher<((<%= zipPStr %>)?, <% if reads == 1 { %>P0<% } else { %>(<% for r in 0..<reads { %>P<%= r %><% if r < reads - 1 { %>, <% } %><% } %>)?<% } %>), Never> = Publishers.CombineInputTypes(trigger: zipPub, read: readPub).eraseToAnyPublisher()
+        let res: AnyPublisher<(<%= allPStr %>), Never> =  grouped.map { (zz: (<%= zipPStr %>)?, rr: <%= readsPTypeStr %>) -> (<%= allPStr %>) in
+      <% } else { -%><% _%>
+        let grouped = Publishers.CombineInputTypes(trigger: triggerPub, read: readPub, zip: zipPub).eraseToAnyPublisher()
+        let res: AnyPublisher<(<%= allPStr %>), Never> =  grouped.map { (tt: <%= triggersPTypeStr %>, rr: <%= readsPTypeStr %>, zz: (<%= zipPStr %>)?) -> (<%= allPStr %>) in
+      <% } -%>
+         <%_ %>      return (<% for t in 0..<triggers { %>tt<% if triggers > 1 { %> != nil ? tt!.<%= t %> : nil as P<%= t %><% } else { %> as P0<% } %><% if t < params - 1 { %>, <% } %><% } -%>
+                        <%_ %><% for r in 0..<reads { %>rr<% if reads > 1 { %> != nil ? rr!.<%= r %> : nil as P<%= r + triggers %><% } else { %> as P<%= triggers %><% } %><% if r + triggers < params - 1 { %>, <% } %><% } -%>
+                        <%_ %><% for z in 0..<zips { %>zz<% if zips > 1 { %> != nil ? zz!.<%= z %> : nil as P<%= triggers + reads + z %><% } %><% if z + triggers + reads < params - 1 { %>, <% } %><% } -%>)
+          }.eraseToAnyPublisher()
+        return res
+    <% } // reads -%>
+  <% } // triggers %>
+      default:
+        fatalError("The combination you input \((<% for p in 0..<params {%>input<%= p %>.inType<%= p < params - 1 ? ", " : "" %><% } %>)) is not supported - please ensure that the inputs are ordered .trigger < .reads < .zip")
+  }
+}
+<% } %>
+}

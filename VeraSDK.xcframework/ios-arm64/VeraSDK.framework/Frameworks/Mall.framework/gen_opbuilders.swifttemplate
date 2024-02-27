@@ -1,0 +1,59 @@
+import Foundation
+import Combine
+
+<%- includeFile("ApplicativeType.swift") %>
+
+<% let MAX_INPUTS: Int = argument["maxInputs"] as! Int %>
+<% let MAX_OUTPUTS: Int = argument["maxOutputs"] as! Int %>
+
+// MARK: OpBuilder
+<% for params in 1...MAX_INPUTS {%>
+<% for outputs in 1...MAX_OUTPUTS { %>
+// MARK: <%= params %> inputs, <%= outputs %> outputs
+public extension OpBuilder {
+  <% for type in ApplicativeType.allCases { %>
+    <% let multiout = outputs > 1 || type.isMultiOut -%>
+    <% let transformApplicativeType = type.transformApplicativeType(params: params, outputs: outputs) %>
+
+    // <%= type.rawValue %> - applicative
+    static func buildBlock<<% for p in 0..<params { %>P<%= p %>, <% } %><% for z in 0..<outputs { %>Z<%= z %>: OutputNode<% if z < outputs - 1 { %>, <% } %><% } %>>(
+    <% for p in 0..<params { %>_ input<%= p %>: InputNode<P<%= p %>>, <% } %>
+    _ transformApplicative: <%= transformApplicativeType %><<% for p in 0..<params { %>P<%= p %>, <% } %>Z0.<%= type.transformOutputType %><% for z in 1..<outputs { %>, Z<%= z %>.Output<% } %>>,
+    <% for z in 0..<outputs { %>_ output<%= z %>: Z<%= z %><% if z < outputs - 1 { %>, <% } %><% } %>) -> AnyCancellable
+    where <% for p in 0..<params { %>P<%= p %>: ExpressibleByNilLiteral<%= p < params - 1 ? ", " : "" %><% } %>
+    {
+      let inTypes: [InType] = [<% for p in 0..<params { %>input<%= p %>.inType<% if p < params - 1 { %>, <% } %><% } %>]
+      precondition(inTypes.contains(InType.trigger) || inTypes.filter({ $0 == InType.zip }).count >= 2, "Must have at least one trigger or two zips")
+      precondition(inTypes.sorted(by: { (x: InType, y: InType) -> Bool in
+        return x == InType.trigger || y == InType.zip
+      }) == inTypes, "Inputs must be ordered .trigger < .reads < .zip")
+      let publisher: AnyPublisher<<% if params > 1 { %>(<% } %><% for p in 0..<params { %>P<%= p %><% if p < params - 1 { %>, <% } %><% } %><% if params > 1 { %>)<% } %>, Never> =
+      <% if params == 1 { %>  input0.publisher.dropFirst().eraseToAnyPublisher() <% } else { %>  CombineNodes.Combine<%= params %>(<% for p in 0..<params { %>input<%= p %><% if p < params - 1 { %>, <% } %><% } %>)<% } %>
+      let publisherApplicative: AnyPublisher<<% if params > 1 { %>(<% } %><% for p in 0..<params { %>P<%= p %><% if p < params - 1 { %>, <% } %><% } %><% if params > 1 { %>)<% } %>, Never> =
+          transformApplicative.scheduler != nil ? publisher.subscribe(on: transformApplicative.scheduler!).receive(on: transformApplicative.scheduler!).eraseToAnyPublisher() : publisher
+  
+      let mapped = publisherApplicative.map(transformApplicative.transform)<% if type.isOptional { %>.filter({ $0.0 }).map({ (<% for z in 0..<outputs { %>$0.<%= z + 1 %><% if z < outputs - 1 { %>, <% } %><% } %>) })<% } %>
+      <% if outputs == 1 { -%>
+      <%_ %>return mapped.assign(to: output0)
+      <% } else { %>
+      return mapped.sink { (z0: <% if type.isEscaping { %>@escaping <% } %>Z0.<%= type.transformOutputType %>, <% for z in 1..<outputs { %>z<%= z %>: Z<%= z %>.Output<% if z < outputs - 1 { %>, <% } %><% } %>) in
+        output0.<%= type.transformOutputOp %>(z0)
+        <% for z in 1..<outputs { %>output<%=z %>.push(z<%= z %>)
+        <% } %>
+      }
+    <% } %>}
+  
+     // <%= type.rawValue %> - transform only
+    static func buildBlock<<% for p in 0..<params { %>P<%= p %>, <% } %><% for z in 0..<outputs { %>Z<%= z %>: OutputNode<% if z < outputs - 1 { %>, <% } %><% } %>>(
+    <% for p in 0..<params { %>_ input<%= p %>: InputNode<P<%= p %>>, <% } %>
+    _ transform: @escaping (<% for p in 0..<params { %>P<%= p %><% if p < params - 1 { %>, <% } %><% } %>) -> <% if multiout { %>(<% if type.isOptional { %>Bool, <% } -%><% } -%>
+    Z0.<%= type.transformOutputType %><% for z in 1..<outputs { %>, Z<%= z %>.Output<% } %><% if multiout { %>)<% } %>,
+    <% for z in 0..<outputs { %>_ output<%= z %>: Z<%= z %><% if z < outputs - 1 { %>, <% } %><% } %>) -> AnyCancellable
+    where <% for p in 0..<params { %>P<%= p %>: ExpressibleByNilLiteral<%= p < params - 1 ? ", " : "" %><% } %>
+    {
+      return buildBlock(<% for p in 0..<params { %>input<%= p %>,<% } %> <%= transformApplicativeType %>(scheduler: nil, transform: transform), <% for z in 0..<outputs { %>output<%= z %><% if z < outputs - 1 { %>, <% } %><% } %>)
+    }
+  <% } %>
+}
+<% } %>
+<% } %>

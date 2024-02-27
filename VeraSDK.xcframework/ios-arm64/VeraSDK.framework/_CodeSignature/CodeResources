@@ -4,13 +4,45 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/Mall.framework/Info.plist</key>
+		<data>
+		/t7boldtI/sPd0RiISQAhxQYe5w=
+		</data>
+		<key>Frameworks/Mall.framework/Mall</key>
+		<data>
+		bCYtUTFJ59UNYptDVM6frsAqsPo=
+		</data>
+		<key>Frameworks/Mall.framework/README.md</key>
+		<data>
+		X8z8vspP33oNJAsHHE24SAkd/u8=
+		</data>
+		<key>Frameworks/Mall.framework/_CodeSignature/CodeResources</key>
+		<data>
+		3OloVtQCh+BdMsN3aJj6co9jVOg=
+		</data>
+		<key>Frameworks/Mall.framework/gen_nodes.swifttemplate</key>
+		<data>
+		MTH8kezEPPEkIIJ15OdmoqTnbT8=
+		</data>
+		<key>Frameworks/Mall.framework/gen_opbuilders.swifttemplate</key>
+		<data>
+		66qxh+GI9Rjitp1fLuf1ldQKiww=
+		</data>
+		<key>Frameworks/Mall.framework/gen_publishers.swifttemplate</key>
+		<data>
+		ccf9nqn3DCEK7O9NozIXsrizwrA=
+		</data>
+		<key>Frameworks/Mall.framework/gen_transform_applicative.swifttemplate</key>
+		<data>
+		e7Jw2p9B/1XfnD00oJe7fpyorgk=
+		</data>
 		<key>Headers/ShaderTypes.h</key>
 		<data>
 		IxinWWaTgjW/eAX1TTvloHnd4iU=
 		</data>
 		<key>Headers/VeraSDK-Swift.h</key>
 		<data>
-		15MgpvNd9NPIsuGP9x5Jt01CDYQ=
+		60boRmzDd2a7dACWTQiJr0Zanww=
 		</data>
 		<key>Headers/VeraSDK.h</key>
 		<data>
@@ -22,27 +54,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rjWd28xnnZbcdWfYqduIR5fdrPA=
+		qS4ZdOzwJHpGegx1VYK0vFVmd+s=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Z90pInQp6ogNGeRYCSSrsN+Y+f8=
+		U9KTVG6105CSVQaSxE/Ff9wRShA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		irabSZmdUd4hTLISs+ZWlPBHuz8=
+		Co1LWEveglfqVGqJiGfRZmRO9XQ=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3pVV0bDnKyPSZ1XIivFqdu0GaII=
+		ePhrlis4i74sFS7PWoRP+Ok0L4s=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		irabSZmdUd4hTLISs+ZWlPBHuz8=
+		Co1LWEveglfqVGqJiGfRZmRO9XQ=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QLpfIs6RAM4+NcMnpQFCB0o0MQI=
+		yJJcVv2eIoFeuTiGN1DRa9UHDCs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,6 +103,62 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/Mall.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FyfdnirNpi/RC5ZiAHQnm93lkEKpSF/E4BHnCVzpt1k=
+			</data>
+		</dict>
+		<key>Frameworks/Mall.framework/Mall</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wwe/vd3wPdOi0grDWe5knZoKbi9zKEVSHQM9Gm2ghxU=
+			</data>
+		</dict>
+		<key>Frameworks/Mall.framework/README.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2EFMDV1D9enaly/WAHxNDwRUeGBsiTIoW7awnIB0jso=
+			</data>
+		</dict>
+		<key>Frameworks/Mall.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gHntflgIKI4Z/Qs+OZQ81KhhWXuXKyr5K26UnQBGh8U=
+			</data>
+		</dict>
+		<key>Frameworks/Mall.framework/gen_nodes.swifttemplate</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			elTo8D8/qg8x20Jh81PWGrC66E8QyO8bTn8WP+IhX7o=
+			</data>
+		</dict>
+		<key>Frameworks/Mall.framework/gen_opbuilders.swifttemplate</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DtMKOYB9Jhp9D0/OueDreiUdN7gKGx2QzuIonUiEaZ8=
+			</data>
+		</dict>
+		<key>Frameworks/Mall.framework/gen_publishers.swifttemplate</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0b6R0qRXBWX/iGeqSOPV6hIChPq6V6eAxrTCf6jnRNQ=
+			</data>
+		</dict>
+		<key>Frameworks/Mall.framework/gen_transform_applicative.swifttemplate</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uv7r1wFywMFdYk2alWIZuTXbfbaUFKzxJMK1qT5gUXM=
+			</data>
+		</dict>
 		<key>Headers/ShaderTypes.h</key>
 		<dict>
 			<key>hash2</key>
@@ -82,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YDQrXURYMYDTn/EBTzo+i70s2iwPRThn16GhaFNjwuo=
+			MCL1QC0YgwAWsP04yYjk7C5WCPYTEoG+jsNPfz3G8I0=
 			</data>
 		</dict>
 		<key>Headers/VeraSDK.h</key>
@@ -103,35 +191,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+UBYILd4C9c6x2vrjdZfhK+5j/Xf4A4l/0rGKnJimbs=
+			OqFUwrwOGgYQRnnIiVjrNgfyGxW8OuSJkwsw3urPq2g=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9vhOiRvalbofsdDsCF0l96yGx0+rZeK12yPJxMxLh28=
+			OS3RbuFMA6B3vAeTgQQcFXASQfT+uhhU/WYtsxtV6/c=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RmUtprMKnx6yDNMVuWSWxlJKVh5Ta23IE+MVwbilKjc=
+			LAowSSEYgyt4fjOJfCpg+njvWv6O686b62z6hOB/3ss=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9vhOiRvalbofsdDsCF0l96yGx0+rZeK12yPJxMxLh28=
+			OS3RbuFMA6B3vAeTgQQcFXASQfT+uhhU/WYtsxtV6/c=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			atFWqpl075To0Lc8QowamriPH66+YKa23F1xKF7LU/0=
+			bNXsFJ+sf3s0H6HOc8G79jVTVzPT1RiuwXRk3RCnaps=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
