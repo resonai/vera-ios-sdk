@@ -15,7 +15,6 @@ import Foundation
 import GameplayKit
 import JavaScriptCore
 import LocalAuthentication
-import Mall
 import Metal
 import MetalKit
 import NetworkExtension
