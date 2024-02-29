@@ -349,7 +349,6 @@ SWIFT_PROTOCOL("_TtP7VeraSDK16VeraDelegateObjC_")
 - (void)veraNeedsToLogin;
 - (void)veraNeedsToLogout;
 - (void)veraShouldRefreshToken;
-- (void)veraWillClose;
 - (void)handleVeraMessageWithSender:(NSString * _Nonnull)sender data:(NSString * _Nonnull)data;
 @end
 
@@ -746,7 +745,6 @@ SWIFT_PROTOCOL("_TtP7VeraSDK16VeraDelegateObjC_")
 - (void)veraNeedsToLogin;
 - (void)veraNeedsToLogout;
 - (void)veraShouldRefreshToken;
-- (void)veraWillClose;
 - (void)handleVeraMessageWithSender:(NSString * _Nonnull)sender data:(NSString * _Nonnull)data;
 @end
 
