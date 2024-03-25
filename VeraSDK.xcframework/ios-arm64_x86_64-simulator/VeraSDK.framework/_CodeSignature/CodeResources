@@ -36,6 +36,10 @@
 		<data>
 		e7Jw2p9B/1XfnD00oJe7fpyorgk=
 		</data>
+		<key>GoogleService-Info.plist</key>
+		<data>
+		SUjZ0W0v4PbAq0SLzfsLADD6q34=
+		</data>
 		<key>Headers/ShaderTypes.h</key>
 		<data>
 		IxinWWaTgjW/eAX1TTvloHnd4iU=
@@ -54,15 +58,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		F9mTsT4pgBeaSIhAOkmNG/y3AyA=
+		chDdkhGgvP3icrU6jtJlcUl43y4=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8TFDn3qN+Xk5OPXDcuXJeswitaM=
+		IhWgo9+jDAojG+ZyTfw1V39YBvQ=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Vk3tz8qo1sPu5vcsFmovUKzRw7A=
+		gXvLEOFp70JlispTckIc95G2hY4=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -70,19 +74,19 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vk3tz8qo1sPu5vcsFmovUKzRw7A=
+		gXvLEOFp70JlispTckIc95G2hY4=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		l8GwWdS14C4MuW45uK0Id/Qnj9k=
+		oZbp0nVeIEPXya06Une7bQMVOF4=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8TFDn3qN+Xk5OPXDcuXJeswitaM=
+		IhWgo9+jDAojG+ZyTfw1V39YBvQ=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1JHgAhgR65b3phhAqJauO4ZawHU=
+		aTdI4oOuXtSs2z8cc+aVllNCTEc=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,11 +94,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1JHgAhgR65b3phhAqJauO4ZawHU=
+		aTdI4oOuXtSs2z8cc+aVllNCTEc=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Zo5oWyjOvaeuC2HeBhDzn4U5Cr4=
+		gurf5179vWWnKToefaUlAcUBJ+s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -179,6 +183,13 @@
 			uv7r1wFywMFdYk2alWIZuTXbfbaUFKzxJMK1qT5gUXM=
 			</data>
 		</dict>
+		<key>GoogleService-Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GIlfQNr+0CwChgofL7eleW26YDNdpz0IFmPEZ2xUb7o=
+			</data>
+		</dict>
 		<key>Headers/ShaderTypes.h</key>
 		<dict>
 			<key>hash2</key>
@@ -211,14 +222,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JfqfF1Yafk4PJyYlcR4Lfd9rwSd4Yt8nwn4SGr21npE=
+			TOEYMo2oDVraAmqAcsd9DFRec4B2IWcWKYjuF7YHroA=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o0dre8mgPxPLU9i/EBUBBbe1ouhORibhrEyOhxzjwLo=
+			jobRETZ0WOyca1rVsO5cpqLWEc0iCYgL/emDh1wQ2EY=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -232,28 +243,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o0dre8mgPxPLU9i/EBUBBbe1ouhORibhrEyOhxzjwLo=
+			jobRETZ0WOyca1rVsO5cpqLWEc0iCYgL/emDh1wQ2EY=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f7nz4hL/7hNLOX8ufHzDwUDJks4xXY28hU3Me7a5nrE=
+			rGIbSiWmyFlMEWlsxCxfpue5rJi1SWGbQsUvfmQ54bg=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JfqfF1Yafk4PJyYlcR4Lfd9rwSd4Yt8nwn4SGr21npE=
+			TOEYMo2oDVraAmqAcsd9DFRec4B2IWcWKYjuF7YHroA=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S4Hk7BhqxWhnUYmBJ1jFDr7Ug63WfN1kjzzlCfu4db8=
+			X7pUWn02eA3PcjDXQrbIoca2vQUrca2HnRa00/xn60Y=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -267,14 +278,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S4Hk7BhqxWhnUYmBJ1jFDr7Ug63WfN1kjzzlCfu4db8=
+			X7pUWn02eA3PcjDXQrbIoca2vQUrca2HnRa00/xn60Y=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1rdiWqTRHpkK21B0PLLaNMYxEKjsG0lBmVnzf8ndVPY=
+			HFPNhEgPf48oQ5PqKh3sovhDXG0SKQyRo4FyB3IlB1M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

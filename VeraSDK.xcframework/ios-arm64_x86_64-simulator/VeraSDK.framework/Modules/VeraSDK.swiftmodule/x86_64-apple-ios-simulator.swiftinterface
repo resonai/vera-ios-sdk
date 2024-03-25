@@ -12,6 +12,7 @@ import CoreLocation
 import CoreMotion
 import FirebaseAuthUI
 import FirebaseCore
+import FirebaseCrashlytics
 import FirebaseGoogleAuthUI
 import FirebaseOAuthUI
 import FirebasePhoneAuthUI

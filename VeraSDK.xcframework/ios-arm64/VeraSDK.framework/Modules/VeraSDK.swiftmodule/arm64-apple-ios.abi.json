@@ -8672,6 +8672,13 @@
       },
       {
         "kind": "Import",
+        "name": "FirebaseCore",
+        "printedName": "FirebaseCore",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -11764,6 +11771,13 @@
         "kind": "Import",
         "name": "LocalAuthentication",
         "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "VeraSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseCrashlytics",
+        "printedName": "FirebaseCrashlytics",
         "declKind": "Import",
         "moduleName": "VeraSDK"
       },
@@ -31798,14 +31812,14 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "FloatLiteral",
-      "offset": 502,
+      "offset": 522,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraInteractor.swift",
       "kind": "StringLiteral",
-      "offset": 285,
+      "offset": 305,
       "length": 14,
       "value": "\"VeraSDK.VeraInteractor\""
     },
@@ -38938,63 +38952,91 @@
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 408,
+      "offset": 435,
       "length": 13,
       "value": "\"no_internet\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 470,
+      "offset": 497,
       "length": 17,
       "value": "\"splash_screen_4\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 786,
+      "offset": 813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 1189,
+      "offset": 1216,
       "length": 11,
       "value": "\"mergeDeep\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 1217,
+      "offset": 1244,
       "length": 4,
       "value": "\"js\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1408,
+      "offset": 1435,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 1469,
+      "offset": 1496,
       "length": 74,
       "value": "\"Couldn't read local js file deepMerge.js - \""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1569,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 656,
+      "offset": 1736,
+      "length": 20,
+      "value": "\"GoogleService-Info\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 1766,
+      "length": 7,
+      "value": "\"plist\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 1812,
+      "length": 23,
+      "value": "\"VERA_SDK_FIREBASE_APP\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 1914,
+      "length": 23,
+      "value": "\"VERA_SDK_FIREBASE_APP\""
+    },
+    {
+      "filePath": "\/Users\/s2dent\/Developer\/resonai\/resonai2\/irocket\/client\/ios\/VeraSDK\/Core\/Module\/VeraPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
       "length": 13,
       "value": "\"VeraSDK.VeraPresenter\""
     },
