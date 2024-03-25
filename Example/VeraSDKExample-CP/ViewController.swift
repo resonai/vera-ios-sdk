@@ -129,7 +129,7 @@ class ViewController: UIViewController {
             /// They are added here to inform about their existence.
             Vera.useConfig(
                 .init(
-                    domain: URL(string: "https://vera.resonai.com")!,
+                    domain: URL(string: "https://demo-vera.resonai.com")!,
                     registration: .init(
                         url: URL(string: "registration.resonai.com")!,
                         port: 443

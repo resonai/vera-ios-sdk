@@ -1,5 +1,114 @@
 PODS:
+  - AppAuth (1.7.3):
+    - AppAuth/Core (= 1.7.3)
+    - AppAuth/ExternalUserAgent (= 1.7.3)
+  - AppAuth/Core (1.7.3)
+  - AppAuth/ExternalUserAgent (1.7.3):
+    - AppAuth/Core
   - Cognex.cmbSDK (2.7.1)
+  - Firebase/CoreOnly (10.23.0):
+    - FirebaseCore (= 10.23.0)
+  - Firebase/Crashlytics (10.23.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 10.23.0)
+  - FirebaseAppCheckInterop (10.23.0)
+  - FirebaseAuth (10.23.0):
+    - FirebaseAppCheckInterop (~> 10.17)
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GTMSessionFetcher/Core (< 4.0, >= 2.1)
+    - RecaptchaInterop (~> 100.0)
+  - FirebaseAuthUI (13.1.0):
+    - FirebaseAuth (< 11.0, >= 8.0)
+    - FirebaseCore
+  - FirebaseCore (10.23.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.12)
+    - GoogleUtilities/Logger (~> 7.12)
+  - FirebaseCoreExtension (10.23.0):
+    - FirebaseCore (~> 10.0)
+  - FirebaseCoreInternal (10.23.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseCrashlytics (10.23.0):
+    - FirebaseCore (~> 10.5)
+    - FirebaseInstallations (~> 10.0)
+    - FirebaseRemoteConfigInterop (~> 10.23)
+    - FirebaseSessions (~> 10.5)
+    - GoogleDataTransport (~> 9.2)
+    - GoogleUtilities/Environment (~> 7.8)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
+    - PromisesObjC (~> 2.1)
+  - FirebaseGoogleAuthUI (13.1.0):
+    - FirebaseAuth
+    - FirebaseAuthUI
+    - FirebaseCore
+    - GoogleSignIn (~> 6.0)
+  - FirebaseInstallations (10.23.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - FirebaseOAuthUI (13.1.0):
+    - FirebaseAuth (< 11.0, >= 8.0)
+    - FirebaseAuthUI (< 14.0, >= 12.0.2)
+  - FirebasePhoneAuthUI (13.1.0):
+    - FirebaseAuth
+    - FirebaseAuthUI
+  - FirebaseRemoteConfigInterop (10.23.0)
+  - FirebaseSessions (10.23.0):
+    - FirebaseCore (~> 10.5)
+    - FirebaseCoreExtension (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleDataTransport (~> 9.2)
+    - GoogleUtilities/Environment (~> 7.10)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
+    - PromisesSwift (~> 2.1)
+  - FirebaseUI/Auth (13.1.0):
+    - FirebaseAuthUI (~> 13.0)
+  - FirebaseUI/Google (13.1.0):
+    - FirebaseGoogleAuthUI (~> 13.0)
+  - FirebaseUI/OAuth (13.1.0):
+    - FirebaseOAuthUI (~> 13.0)
+  - FirebaseUI/Phone (13.1.0):
+    - FirebasePhoneAuthUI (~> 13.0)
+  - GoogleDataTransport (9.4.1):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleSignIn (6.2.4):
+    - AppAuth (~> 1.5)
+    - GTMAppAuth (~> 1.3)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.13.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Environment (7.13.0):
+    - GoogleUtilities/Privacy
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.13.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Network (7.13.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Privacy
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.13.0)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (7.13.0)
+  - GoogleUtilities/Reachability (7.13.0):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/UserDefaults (7.13.0):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - GTMAppAuth (1.3.1):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.5)
+  - GTMSessionFetcher/Core (2.3.0)
   - libwebp (1.2.4):
     - libwebp/demux (= 1.2.4)
     - libwebp/mux (= 1.2.4)
@@ -9,11 +118,25 @@ PODS:
   - libwebp/mux (1.2.4):
     - libwebp/demux
   - libwebp/webp (1.2.4)
+  - nanopb (2.30910.0):
+    - nanopb/decode (= 2.30910.0)
+    - nanopb/encode (= 2.30910.0)
+  - nanopb/decode (2.30910.0)
+  - nanopb/encode (2.30910.0)
+  - PromisesObjC (2.4.0)
+  - PromisesSwift (2.4.0):
+    - PromisesObjC (= 2.4.0)
+  - RecaptchaInterop (100.0.0)
   - ScanditBarcodeCapture (6.19.3):
     - ScanditCaptureCore (= 6.19.3)
   - ScanditCaptureCore (6.19.3)
-  - VeraSDK (1.1.2):
+  - VeraSDK (1.2.3):
     - Cognex.cmbSDK (= 2.7.1)
+    - Firebase/Crashlytics
+    - FirebaseUI/Auth
+    - FirebaseUI/Google
+    - FirebaseUI/OAuth
+    - FirebaseUI/Phone
     - libwebp (= 1.2.4)
     - ScanditBarcodeCapture
 
@@ -22,8 +145,33 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AppAuth
     - Cognex.cmbSDK
+    - Firebase
+    - FirebaseAppCheckInterop
+    - FirebaseAuth
+    - FirebaseAuthUI
+    - FirebaseCore
+    - FirebaseCoreExtension
+    - FirebaseCoreInternal
+    - FirebaseCrashlytics
+    - FirebaseGoogleAuthUI
+    - FirebaseInstallations
+    - FirebaseOAuthUI
+    - FirebasePhoneAuthUI
+    - FirebaseRemoteConfigInterop
+    - FirebaseSessions
+    - FirebaseUI
+    - GoogleDataTransport
+    - GoogleSignIn
+    - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
     - libwebp
+    - nanopb
+    - PromisesObjC
+    - PromisesSwift
+    - RecaptchaInterop
     - ScanditBarcodeCapture
     - ScanditCaptureCore
 
@@ -32,12 +180,37 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
+  AppAuth: a13994980c1ec792f7e2e665acd4d4aa6be43240
   Cognex.cmbSDK: 26cc1fb7e9bb7d41aacac4242af64fbed1045c9b
+  Firebase: 333ec7c6b12fa09c77b5162cda6b862102211d50
+  FirebaseAppCheckInterop: a1955ce8c30f38f87e7d091630e871e91154d65d
+  FirebaseAuth: 22eb85d3853141de7062bfabc131aa7d6335cade
+  FirebaseAuthUI: 9b4de780078d674019a2bfc560bb812f23b45ff1
+  FirebaseCore: 63efb128decaebb04c4033ed4e05fb0bb1cccef1
+  FirebaseCoreExtension: cb88851781a24e031d1b58e0bd01eb1f46b044b5
+  FirebaseCoreInternal: 6a292e6f0bece1243a737e81556e56e5e19282e3
+  FirebaseCrashlytics: b7aca2d52dd2440257a13741d2909ad80745ac6c
+  FirebaseGoogleAuthUI: 420e5b1c10f13a47c18579303d93275842f1a8a0
+  FirebaseInstallations: 42d6ead4605d6eafb3b6683674e80e18eb6f2c35
+  FirebaseOAuthUI: 5f19522e97d992841163d89a0b44afe315674020
+  FirebasePhoneAuthUI: 4e32b332ba0484a0b6cf8246c93c23a24f9dbcad
+  FirebaseRemoteConfigInterop: cbc87ffa4932719a7911a08e94510f18f026f5a7
+  FirebaseSessions: f06853e30f99fe42aa511014d7ee6c8c319f08a3
+  FirebaseUI: d3e0d3f81f5c464554945195a6133a3ab905b6a7
+  GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
+  GoogleSignIn: 5651ce3a61e56ca864160e79b484cd9ed3f49b7a
+  GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
+  GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
+  GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
   libwebp: f62cb61d0a484ba548448a4bd52aabf150ff6eef
+  nanopb: 438bc412db1928dac798aa6fd75726007be04262
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
+  RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
   ScanditBarcodeCapture: 449e359e83d45c8999bb3a85fd50fe31bdf2407d
   ScanditCaptureCore: cfd23f33f6a88e7db1d0eff1b7657718ce4a88b2
-  VeraSDK: 7d045bb36b82a1921410e44da0efa64b33c757c5
+  VeraSDK: fe6b5809b693669b205ffb015ec2a2756f4dcb91
 
 PODFILE CHECKSUM: f748bc024f0292b72d12fb1c2a67eef6dd1454a0
 
-COCOAPODS: 1.14.2
+COCOAPODS: 1.14.3

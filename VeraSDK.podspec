@@ -23,6 +23,11 @@ Pod::Spec.new do |s|
   s.dependency            'libwebp', '1.2.4'
   s.dependency            'Cognex.cmbSDK', '2.7.1'
   s.dependency            'ScanditBarcodeCapture'
+  s.dependency            'Firebase/Crashlytics'
+  s.dependency            'FirebaseUI/Auth'
+  s.dependency            'FirebaseUI/OAuth'
+  s.dependency            'FirebaseUI/Google'
+  s.dependency            'FirebaseUI/Phone'
 
   s.vendored_frameworks = 'VeraSDK.xcframework'
 end
