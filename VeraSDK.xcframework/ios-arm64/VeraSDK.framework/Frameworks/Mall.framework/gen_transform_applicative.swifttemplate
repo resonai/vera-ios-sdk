@@ -1,0 +1,27 @@
+import Foundation
+import Combine
+
+<% let MAX_INPUTS: Int = argument["maxInputs"] as! Int %>
+<% let MAX_OUTPUTS: Int = argument["maxOutputs"] as! Int %>
+
+// MARK: TransformApplicative
+<% for params in 1...MAX_INPUTS {%>
+<% for outputs in 1...MAX_OUTPUTS { %>
+<% for filter in [false, true] { %>
+<% let multiout = filter || outputs > 1 -%>
+// MARK: <%= params %> inputs, <%= outputs %> outputs
+public struct TransformApplicative<%= params %>_<%= outputs %><% if filter { %>F<% } %><<% for p in 0..<params { %>P<%= p %>,<% } %><%_ for z in 0..<outputs { %>Z<%= z %><% if z < outputs - 1 { %>, <% } _%><% } _%>  > {
+  let scheduler: DispatchQueue?
+  let transform: (<% for p in 0..<params { %>P<%= p %><% if p < params - 1 { %>, <% } %><% } %>) -> <% if multiout { %>(<% } %><% if filter { %>Bool, <% } -%> <%_ for z in 0..<outputs { %>Z<%= z %><% if z < outputs - 1 { %>, <% } _%><% } _%> <% if multiout { %>)<% } %>
+
+  public init(
+    scheduler: DispatchQueue?,
+    transform: @escaping (<% for p in 0..<params { %>P<%= p %><% if p < params - 1 { %>, <% } %><% } %>) -> <% if multiout { %>(<% } %><% if filter { %>Bool, <% } -%> <%_ for z in 0..<outputs { %>Z<%= z %><% if z < outputs - 1 { %>, <% } _%><% } _%> <% if multiout { %>)<% } %>
+  ) {
+    self.scheduler = scheduler
+    self.transform = transform
+  }
+}
+<% } %>
+<% } %>
+<% } %>

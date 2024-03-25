@@ -1,0 +1,22 @@
+import Foundation
+import Combine
+
+<% let MAX_INPUTS: Int = argument["maxInputs"] as! Int %>
+
+<% for combo in ["CombineLatest", "Zip"] { %>
+extension Publishers {
+<% for params in 5...MAX_INPUTS {%>
+public static func <%= combo %><%= params %><<% for p in 0..<params { %>P<%= p %> : Publisher<%= p < params - 1 ? ", " : "" %><% } %>>(
+<% for p in 0..<params { %> _ publisher<%= p %>: P<%= p %><%= p < params - 1 ? ", " : "" %><% } %>
+) -> AnyPublisher<(<% for p in 0..<params { %>P<%= p %>.Output<%= p < params - 1 ? ", " : "" %><% } %>), P0.Failure>
+where <% for p in 1..<params { %>P<%= p %>.Failure == P0.Failure <%= p < params - 1 ? ", " : "" %><% } %>
+{
+  let pubs: AnyPublisher<(<% for p in 3..<params { %>P<%= p %>.Output<% if p < params - 1 { %>,<% } %><% } %>), P0.Failure> =
+      <%= combo %><% if params > 5 { %><%= params - 3 %><% } %>(<% for p in 3..<params { %>publisher<%= p %><% if p < params - 1 { %>,<% } %><% } %>).eraseToAnyPublisher()
+  return <%= combo %>4(<% for p in 0..<3 { %>publisher<%= p %>,<% } %> pubs).map { (p0, p1, p2, pp) -> (<% for p in 0..<params { %>P<%= p %>.Output<%= p < params - 1 ? ", " : "" %><% } %>) in
+    return (p0, p1, p2, <% for p in 3..<params { %>pp.<%= p - 3 %><% if p < params - 1 { %>, <% } %><% } %>)
+  }.eraseToAnyPublisher()
+}
+<% } %>
+}
+<% } %>
