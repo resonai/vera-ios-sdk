@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/Mall.framework/Mall</key>
 		<data>
-		VxaIZvYUwBua0bsfhI+V73zxB+E=
+		NjiRy1YweYorB329Qp3Yah2OVY0=
 		</data>
 		<key>Frameworks/Mall.framework/README.md</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yUD1BbBHpjH0eXe3sW5KZIvrXDI=
+		xGkEVNZAqzKPxiL9y6Pos41QB3s=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Gf0z3hfi0b1SFIvyjs0lOYY6ZwI=
+		TXzW0pySEc8OPHaSuvTaAg0enZA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		U+1q4NLkqZzihxfSlNm0YGSVxmg=
+		vqbTnFL9oZ7oISEYFjNDviDgZ/w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V/oXUOiXkg4nbuwNEdxJYeD/webovuRNaRWNw/7L+zo=
+			Tfdj3vCLNcf4vXn5v7scBSfQ9hX9OIgBo7pQjdNgkRw=
 			</data>
 		</dict>
 		<key>Frameworks/Mall.framework/README.md</key>
@@ -202,7 +202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jX0/bta9M86aPVLqBNQt3zgAbXKrgjKjuZY/jQJvAjM=
+			5LCJBGBR+bI30aQbcWVLQnGr7HRhJ8tTU67qTl96T2Q=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -230,7 +230,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XlYyD6vJ+sEQYc0xOgobEhAxoMHVRNGchqwwIYEnecM=
+			GPKjA+opv87DLLRRBE3D+JI6E8t61MNuValG3dlk2aQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
