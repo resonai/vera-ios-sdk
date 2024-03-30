@@ -91,7 +91,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             vera.view.leadingAnchor.constraint(equalTo: container.view.leadingAnchor),
             vera.view.trailingAnchor.constraint(equalTo: container.view.trailingAnchor),
-            vera.view.heightAnchor.constraint(equalToConstant: 240),
+            vera.view.heightAnchor.constraint(equalToConstant: 360),
             vera.view.topAnchor.constraint(equalTo: container.view.safeAreaLayoutGuide.topAnchor, constant: 24)
         ])
 
