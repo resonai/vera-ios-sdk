@@ -10,6 +10,25 @@ import VeraSDK
 
 class ViewController: UIViewController {
     var vera: UIViewController?
+    var url: URL = .init(string: "https://vera.resonai.com")!
+
+    // textfield for environment url
+    private lazy var urlTextField: UITextField = {
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.placeholder = "Environment URL"
+        textField.borderStyle = .roundedRect
+        textField.text = url.absoluteString
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        return textField
+    }()
+
+    //textFieldDidChange
+
+    @objc func textFieldDidChange() {
+        guard let text = urlTextField.text, let url = URL(string: text) else { return }
+        self.url = url
+    }
 
     private lazy var fullscreenButton: UIButton = {
         let button = UIButton()
@@ -43,8 +62,12 @@ class ViewController: UIViewController {
 
         view.addSubview(partialButton)
         view.addSubview(fullscreenButton)
+        view.addSubview(urlTextField)
 
         NSLayoutConstraint.activate([
+            urlTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            urlTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            urlTextField.widthAnchor.constraint(equalToConstant: 250),
             partialButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -12),
             partialButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             partialButton.widthAnchor.constraint(equalToConstant: 196),
@@ -52,6 +75,12 @@ class ViewController: UIViewController {
             fullscreenButton.centerXAnchor.constraint(equalTo: partialButton.centerXAnchor),
             partialButton.widthAnchor.constraint(equalTo: fullscreenButton.widthAnchor)
         ])
+
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+    }
+
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
 
     @objc func fullscreenButtonTapped() {
@@ -129,7 +158,7 @@ class ViewController: UIViewController {
             /// They are added here to inform about their existence.
             Vera.useConfig(
                 .init(
-                    domain: URL(string: "https://vera.resonai.com")!,
+                    domain: self.url,
                     registration: .init(
                         url: URL(string: "registration.resonai.com")!,
                         port: 443
