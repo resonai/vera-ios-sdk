@@ -367,6 +367,7 @@
 				INFOPLIST_FILE = VeraSDKDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Magic needs camera access in order to happen!";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Vera needs location access to provide accurate AR experiences.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To save this image we need access to your Photos and Videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -403,6 +404,7 @@
 				INFOPLIST_FILE = VeraSDKDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Magic needs camera access in order to happen!";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Vera needs location access to provide accurate AR experiences.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To save this image we need access to your Photos and Videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
