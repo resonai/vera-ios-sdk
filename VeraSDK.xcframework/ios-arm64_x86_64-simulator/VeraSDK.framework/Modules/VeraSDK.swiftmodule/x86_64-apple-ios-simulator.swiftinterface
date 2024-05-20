@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios13.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VeraSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VeraSDK
 import ARKit
 import AVFoundation
 import Accelerate
@@ -18,10 +17,12 @@ import LocalAuthentication
 import Metal
 import MetalKit
 import NetworkExtension
+import Photos
 import ScanditBarcodeCapture
 import ScanditCaptureCore
 import Security
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 @_exported import VeraSDK
@@ -32,7 +33,6 @@ import _SwiftConcurrencyShims
 import libwebp
 import os
 import simd
-postfix operator >!
 public struct HRToastConfig {
   public init()
 }
@@ -215,6 +215,7 @@ extension VeraSDK.Logger {
   @objc func veraNeedsToLogin()
   @objc func veraNeedsToLogout()
   @objc func veraShouldRefreshToken()
+  @objc func veraWillClose()
   @objc func handleVeraMessage(sender: Swift.String, data: Swift.String)
 }
 public struct ConsoleLogger : VeraSDK.Logger {
@@ -229,26 +230,10 @@ public enum Vera {
   public static func getController() -> UIKit.UIViewController
   public static func getView() -> UIKit.UIView
 }
-public protocol OutputNode : AnyObject {
-  associatedtype Output
-  typealias Updater = (Self.Output) -> Self.Output
-  typealias FilterUpdater = (Self.Output) -> (Swift.Bool, Self.Output)
-  func push(_ value: Self.Output)
-  func update(_ with: @escaping Self.Updater)
-  func maybeUpdate(_ with: @escaping Self.FilterUpdater)
-}
-extension Combine.CurrentValueSubject : VeraSDK.OutputNode {
-  final public func push(_ value: Output)
-  final public func update(_ with: (Output) -> Output)
-  final public func maybeUpdate(_ with: (Output) -> (Swift.Bool, Output))
-}
-prefix operator ~>
 @objc @_inheritsConvenienceInitializers public class VeraSDKObjC : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
 }
-postfix operator >?
-postfix operator >%
 public typealias VeraEventHandler = (VeraSDK.Vera.Event) -> Swift.Void
 extension VeraSDK.Vera {
   public enum AuthenticationToken : Swift.Equatable {
@@ -268,6 +253,7 @@ extension VeraSDK.Vera {
     case login
     case logout
     case refreshToken
+    case close
     case handleMessage(sender: Swift.String, data: Swift.String)
   }
 }

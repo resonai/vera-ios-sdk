@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/VeraSDK-Swift.h</key>
 		<data>
-		q9vEWvVwIVa2Le7gLD9S4E0+yJ4=
+		D/qmvEJknrwhDZK/72oBkqcdN+8=
 		</data>
 		<key>Headers/VeraSDK.h</key>
 		<data>
@@ -22,27 +22,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2dFCf6UI5+OuILEdvDa9mn7aWJA=
+		rnlH1YTdQGksdUMx4X7XFve/yR4=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		uuGzh/O6FzOLNnzfr/+02K+oOeg=
+		qEc+J2YdGNeHduawirnAYrGa8iM=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		mqVNPPXdseMrlChAhvlDDAY3c+E=
+		6tH54CkKKgN6pIr/TET5XdyHlQw=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3pVV0bDnKyPSZ1XIivFqdu0GaII=
+		GOmp/HB6aLt99KFEQKK+tj/a9c0=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mqVNPPXdseMrlChAhvlDDAY3c+E=
+		6tH54CkKKgN6pIr/TET5XdyHlQw=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		oyZGcBvO7BcIRcmbi9UCDjX31YQ=
+		Bnp692XwIe3czTHjVC/YSEyRzaQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		BdHynsSfIgChXqhI/Ap7pJPXj6M=
+		hzb57yOQ59zDbel/wCiFJUBSUIE=
 		</data>
 		<key>mergeDeep.js</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5cBk5+An84PzQD3iP2fMHGImDRcri1CfjgbuDuRKoQ=
+			ktB440tCwi12vYmDQuS09bgtgpWffYFpy6+S1oDFwGg=
 			</data>
 		</dict>
 		<key>Headers/VeraSDK.h</key>
@@ -103,35 +103,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IdFzZqncqn6QqFsygwItgk1N444TgsH0KWb+nlX0260=
+			0Ja9LkvAepeSon9UYxhNYwUblj9G3hXmHxSwB1KxrG8=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/WKk/yxBqpcV99TzppFsi1Dn/7J/iMlI+Jr+BjaxYz8=
+			Ss20jGlCX85rUfVJAWlz6mHYxx3PW0yYoc1A4MYozt0=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RmUtprMKnx6yDNMVuWSWxlJKVh5Ta23IE+MVwbilKjc=
+			W7EYdqLYqg34ISFUpXxdjDiF+5B0SOi9p7uXGjfnAtA=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/WKk/yxBqpcV99TzppFsi1Dn/7J/iMlI+Jr+BjaxYz8=
+			Ss20jGlCX85rUfVJAWlz6mHYxx3PW0yYoc1A4MYozt0=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnbPNw8o7A0F69Dtofh0ry2wzK4FKOM6fuC/FGspxTA=
+			lPP+i6JX99ZD86y/60sWkIZ/R3O26kov9uCl5cafL7A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dlYZQjQszDuqLqf8i/0pDj2W6NzT3hLM3bUAcusBLJE=
+			ZFda2Egti7bZN5ZtrSyUV6YSTqSXWsuVhoY9e+MU5L4=
 			</data>
 		</dict>
 		<key>mergeDeep.js</key>
