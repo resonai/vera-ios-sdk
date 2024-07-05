@@ -99,7 +99,7 @@ You might need to [enable web inspector on device](https://developer.apple.com/d
 
 1. Launch Safari on mac
 2. Connect your device using a USB cable (can be done via wireless debug too)
-3. Close Vera
+3. Close the screen in your app containing Vera
 4. Enter Develop menu and choose your device, look for your application's web view. If the SDK is closed properly, you should not see any entry for the Vera web view.
 
 ## Info.plist Keys
