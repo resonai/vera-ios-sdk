@@ -57,11 +57,18 @@ Vera.useConfig(
 )
 ```
 
-4. Build an instance of `VeraViewController` and present it.
+4. Build an instance of `VeraViewController` and present or embed it.
 
 ```swift
+//Present
 let vera = Vera.getController()
 present(vera, animated: true)
+
+//Embed
+vera.willMove(toParent: rootVc)
+rootVc.addChild(vera)
+rootVc.view.addSubview(vera.view)
+vera.didMove(toParent: rootVc)
 ```
 
 5. Please refer to the [testing docs](./docs/testing.md) to learn how to test if the integration was successful.
@@ -69,6 +76,31 @@ present(vera, animated: true)
 ## Bi-directional Communication
 
 Check the [bi-directional communication docs](./docs/bidirectional-communication.md) to learn how to send and receive events from the SDK.
+
+## Closing the SDK
+
+To close the Vera SDK and return to your application, you can just dismiss/remove Vera view controller:
+
+Here's a sample code snippet to do so:
+```swift
+//Presented
+vera.dismiss(animated: true)
+
+//Embeded
+vera.willMove(toParent: nil)
+vera.view.removeFromSuperview()
+vera.removeFromParent()
+vera.didMove(toParent: nil)
+```
+
+To ensure that Vera was closed propery you can check for existing web views using Safari [Develop](https://support.apple.com/en-md/guide/safari/sfri20948/mac) menu:
+
+You might need to [enable web inspector on device](https://developer.apple.com/documentation/safari-developer-tools/inspecting-ios)
+
+1. Launch Safari on mac
+2. Connect your device using a USB cable (can be done via wireless debug too)
+3. Close the screen in your app containing Vera
+4. Enter Develop menu and choose your device, look for your application's web view. If the SDK is closed properly, you should not see any entry for the Vera web view.
 
 ## Info.plist Keys
 
