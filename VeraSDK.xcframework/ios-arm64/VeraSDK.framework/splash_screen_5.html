@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: only light;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERA</title>
+
+  <style>
+    html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #0E0521;
+    }
+    .container {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .resonai-logo {
+      position: absolute;
+      bottom: 40px;
+    }
+    .loader-space {
+      display: block;
+      width: 40%;
+      height: 4px;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 2px;
+      margin-bottom: 2vh;
+      animation: glow 1500ms infinite ease-in-out;
+    }
+  @keyframes glow {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="loader-space"></div>
+  <img class="resonai-logo" src="powered_by_resonai_logo.png" width="154" height="24" alt="vera_logo">
+</div>
+</body>
+</html>

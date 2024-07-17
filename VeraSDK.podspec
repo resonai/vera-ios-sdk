@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                = 'VeraSDK'
-  s.version             = '1.2.7'
+  s.version             = '1.2.8'
   s.summary             = 'Transform commercial buildings into intelligent environments using just your phone.'
   s.homepage            = 'https://github.com/resonai/vera-ios-sdk'
   s.license             = { :type => 'MIT', :file => 'LICENSE' }
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.dependency            'libwebp', '1.2.4'
   s.dependency            'Cognex.cmbSDK', '2.7.1'
-  s.dependency            'ScanditBarcodeCapture'
+  s.dependency            'ScanditBarcodeCapture', '6.24.1'
 
   s.vendored_frameworks = 'VeraSDK.xcframework'
 end

@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rnlH1YTdQGksdUMx4X7XFve/yR4=
+		/Cuh3npWxlCbszhNcTpEfYicVzA=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qEc+J2YdGNeHduawirnAYrGa8iM=
+		70f/4WJht5aGFQAfhOh4uEQliR4=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Bnp692XwIe3czTHjVC/YSEyRzaQ=
+		vYQ7rEcPpyWY31qgjW+zVLWn5tE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		hzb57yOQ59zDbel/wCiFJUBSUIE=
+		WuNpD++xYd+i5hUUKWan4Ev4UU8=
 		</data>
 		<key>mergeDeep.js</key>
 		<data>
@@ -64,9 +64,9 @@
 		<data>
 		T7VpezBF9JyroZQ9a7E4CYvREwE=
 		</data>
-		<key>splash_screen_4.html</key>
+		<key>splash_screen_5.html</key>
 		<data>
-		B9zt+i1eACwLwGMRGbADevOPyPY=
+		JESPCtn4xG9FFZOCp4EwcwImJTM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Ja9LkvAepeSon9UYxhNYwUblj9G3hXmHxSwB1KxrG8=
+			atubHaGSuysQMbrvEZt5G1K1O4piYU5pw1nsopw7cGM=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lPP+i6JX99ZD86y/60sWkIZ/R3O26kov9uCl5cafL7A=
+			mYeHA195byJbH1vie+DwRi7DWAPD4zLsF0ojO0ZnilE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZFda2Egti7bZN5ZtrSyUV6YSTqSXWsuVhoY9e+MU5L4=
+			G4b6ki9gNN0HOIS5RHVIFojaJooIxnKL4jemW5btJ3Q=
 			</data>
 		</dict>
 		<key>mergeDeep.js</key>
@@ -169,11 +169,11 @@
 			rL5WXiwrdQ2pa7zLlt0wPgNdiQ/MC/Cjepo+WCiE2ds=
 			</data>
 		</dict>
-		<key>splash_screen_4.html</key>
+		<key>splash_screen_5.html</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			15tgTKgWkIBc1M/dixfcMAKCfyGLtUvXTzCM58luMSg=
+			sW9pI1tkVRDhvxqUxWIxOiyT5lFii7imEdQUMJyd2wU=
 			</data>
 		</dict>
 	</dict>

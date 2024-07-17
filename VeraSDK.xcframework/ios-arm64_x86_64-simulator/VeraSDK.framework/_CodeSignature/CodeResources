@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OLIGkqxZXi62nrB45VGt9R00RBE=
+		Sjx6WotsDBPlloBp1R0/hugTKJE=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ebh+eK5oLjgcqECWZ4/M/f/5aHw=
+		ts+VcaEkVLuFyzkn/4wbwrIjM2M=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8uYXeF2R7q5TKM7c6xJyipGYsi0=
+		HfzB7U3oa46yfk7+GarDifexXRs=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ebh+eK5oLjgcqECWZ4/M/f/5aHw=
+		ts+VcaEkVLuFyzkn/4wbwrIjM2M=
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MK/aaulAW5Y36gSZLdMIYuxg+Ds=
+		7LWo4ZoIscI3+h4YCQn7AOkCth0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		iFDAs8zoNwVFZvAlr0UWf2oATCs=
+		djCk7Vz+ltTgBQZxEXBixO8gOyo=
 		</data>
 		<key>mergeDeep.js</key>
 		<data>
@@ -84,9 +84,9 @@
 		<data>
 		T7VpezBF9JyroZQ9a7E4CYvREwE=
 		</data>
-		<key>splash_screen_4.html</key>
+		<key>splash_screen_5.html</key>
 		<data>
-		B9zt+i1eACwLwGMRGbADevOPyPY=
+		JESPCtn4xG9FFZOCp4EwcwImJTM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9BUwh7zCGFB2/Y5Wpr5wQ8CbHwGsLPFwNPde6shNueg=
+			Zf5uy1VciFch+zWpVbFUq8dcAo1Ki6jCxACvC4PXPRM=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -151,14 +151,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YquiLhRWtMwQ0J0ecl19eZbnU2oyqHRXIN2zEUq7eiM=
+			5HkTw41/CGVUh1YDmdv79bOjVQ88U6MXuPIp9o+YyFs=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9BUwh7zCGFB2/Y5Wpr5wQ8CbHwGsLPFwNPde6shNueg=
+			Zf5uy1VciFch+zWpVbFUq8dcAo1Ki6jCxACvC4PXPRM=
 			</data>
 		</dict>
 		<key>Modules/VeraSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -186,7 +186,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mH+Lug3NnBZVY/OvNQM4QI4vAMnzgZ1T8OZ2tTk54aQ=
+			u5gSkSEplN2jue4J1zu/1LQ4tjaTCpXW9IeWAbutVfU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -200,7 +200,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			76wZyoO75wZrHumI+TyaIXrUS86658bX9luA8SWESSg=
+			v2hB6vheJw3Usl/chXPAW+OWz+O4oJYwXp8oIu9sf7U=
 			</data>
 		</dict>
 		<key>mergeDeep.js</key>
@@ -224,11 +224,11 @@
 			rL5WXiwrdQ2pa7zLlt0wPgNdiQ/MC/Cjepo+WCiE2ds=
 			</data>
 		</dict>
-		<key>splash_screen_4.html</key>
+		<key>splash_screen_5.html</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			15tgTKgWkIBc1M/dixfcMAKCfyGLtUvXTzCM58luMSg=
+			sW9pI1tkVRDhvxqUxWIxOiyT5lFii7imEdQUMJyd2wU=
 			</data>
 		</dict>
 	</dict>
