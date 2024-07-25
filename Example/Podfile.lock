@@ -9,13 +9,13 @@ PODS:
   - libwebp/mux (1.2.4):
     - libwebp/demux
   - libwebp/webp (1.2.4)
-  - ScanditBarcodeCapture (6.19.3):
-    - ScanditCaptureCore (= 6.19.3)
-  - ScanditCaptureCore (6.19.3)
-  - VeraSDK (1.2.7):
+  - ScanditBarcodeCapture (6.24.1):
+    - ScanditCaptureCore (= 6.24.1)
+  - ScanditCaptureCore (6.24.1)
+  - VeraSDK (1.2.8):
     - Cognex.cmbSDK (= 2.7.1)
     - libwebp (= 1.2.4)
-    - ScanditBarcodeCapture
+    - ScanditBarcodeCapture (= 6.24.1)
 
 DEPENDENCIES:
   - VeraSDK (from `..`)
@@ -34,9 +34,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Cognex.cmbSDK: 26cc1fb7e9bb7d41aacac4242af64fbed1045c9b
   libwebp: f62cb61d0a484ba548448a4bd52aabf150ff6eef
-  ScanditBarcodeCapture: 449e359e83d45c8999bb3a85fd50fe31bdf2407d
-  ScanditCaptureCore: cfd23f33f6a88e7db1d0eff1b7657718ce4a88b2
-  VeraSDK: fabb08e83c0230e78a943d737f42d98a2c28b1e7
+  ScanditBarcodeCapture: bdc2de60279f83c1194f3224cd6a885285f5587f
+  ScanditCaptureCore: 14acbf8226173df25a691053c761a8d226b84d1b
+  VeraSDK: 001d7cb9d43e454d6b04ac3c60be0a6e8758b29f
 
 PODFILE CHECKSUM: f36ae562fee444d4281b4fc83867f6fc99b50044
 
