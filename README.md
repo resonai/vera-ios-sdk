@@ -45,7 +45,7 @@ import VeraSDK
 
 2. Add the required [Info.plist keys](#infoplist-keys) if your app doesn't already.
 
-3. Create a configuration object. Most fields are optional, check the [example integration](https://github.com/resonai/vera-ios-sdk/blob/main/Example/VeraSDKExample-CP/ViewController.swift) for more parameters.
+3. Create a configuration object. Most fields are optional, check the [example integration](https://github.com/resonai/vera-ios-sdk/blob/main/Example/VeraSDKDemo/ViewController.swift) for more parameters.
 
 ```swift
 Vera.useConfig(
